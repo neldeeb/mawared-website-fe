@@ -69,10 +69,9 @@ const Footer = () => {
             (+971) 050 460 2733
           </div>
         </div>
-
-        {/* Bottom section */}
       </div>
 
+      {/* Bottom section */}
       <div className="flex flex-col md:flex-row justify-between items-center bg-[#00000033] px-24 h-[81px]">
         <p className="text-white text-sm font-normal">
           All rights reserved for MAWARED HR 2025 ©
