@@ -8,19 +8,20 @@ type Props = {
 
 const Layout = ({ children }: Props) => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       {/* Start of navbar component */}
       <Navbar />
       {/* End of navbar component */}
 
       {/* Start of children of layout */}
-      {children}
+
+      <main className="flex-grow container mx-auto">{children}</main>
       {/* End of children of layout */}
 
       {/* Start of footer component */}
       <Footer />
       {/* End of footer component */}
-    </>
+    </div>
   );
 };
 
