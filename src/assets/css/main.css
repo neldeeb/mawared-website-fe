@@ -1,4 +1,4 @@
-/*--------------------------------------- Start of tailwindcss utlites ---------------------------------------*/
+/*--------------------------------------- Start of tailwindcss utilities ---------------------------------------*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -66,8 +66,39 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  @font-face {
+    font-family: "poppins-regular";
+    src: url("../fonts/poppins-regular-webfont.eot");
+    src: url("../fonts/poppins-regular-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("../fonts/poppins-regular-webfont.woff2") format("woff2"),
+      url("../fonts/poppins-regular-webfont.woff") format("woff"),
+      url("../fonts/poppins-regular-webfont.ttf") format("truetype"),
+      url("../fonts/poppins-regular-webfont.svg#poppinsregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
 }
-/*--------------------------------------- End of tailwindcss utlites ---------------------------------------*/
+
+@layer utilities {
+  .custom-nav-shadow-box-style {
+    box-shadow: 0px 0px 4px 0px #00000040;
+    backdrop-filter: blur(64px);
+  }
+
+  .custom-nav-btn-style {
+    height: 43px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    color: white;
+    background: linear-gradient(92.75deg, #1997e1 2.86%, #2cb1ff 97.77%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/*--------------------------------------- End of tailwindcss utilities ---------------------------------------*/
 
 /*--------------------------------------- Start of General styles ---------------------------------------*/
 html {
@@ -75,8 +106,10 @@ html {
 }
 
 body {
+  font-family: "poppins-regular", sans-serif;
+  text-transform: capitalize;
   min-height: 100%;
-  background-image: url("./img/mawared-bg.png");
+  background-image: url("/img/mawared-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
