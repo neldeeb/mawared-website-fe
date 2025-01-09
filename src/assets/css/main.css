@@ -117,6 +117,12 @@
     color: white;
     text-transform: uppercase;
   }
+
+  .custom-contact-card-style {
+    border-radius: 43px;
+    background: #f3f5f9;
+    border: 1px solid #31303026;
+  }
 }
 /*--------------------------------------- End of tailwindcss utilities ---------------------------------------*/
 
@@ -137,6 +143,11 @@ body {
   padding: 0;
   overflow-x: hidden;
   text-align: inherit;
+}
+
+:focus {
+  color: #000000;
+  outline: none;
 }
 
 /* Start of scroll bar style */
