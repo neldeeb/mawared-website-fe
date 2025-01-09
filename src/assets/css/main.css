@@ -84,6 +84,23 @@
     align-items: center;
     justify-content: center;
   }
+
+  .custom-linear-bg-blue-wavy-color-style {
+    background: linear-gradient(180deg, #1997e1 0%, #2cb1ff 100%);
+  }
+
+  .custom-accordion-style {
+    background: white;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 0px 16px 0px #080f340f;
+  }
+
+  .active-custom-accordion-style {
+    box-shadow: 0px 0px 16px 0px #1c9be53d;
+    border-color: #1997e1;
+  }
 }
 /*--------------------------------------- End of tailwindcss utilities ---------------------------------------*/
 
@@ -93,7 +110,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   min-height: 100%;
   background-image: url("/img/mawared-bg.png");
   background-size: cover;
