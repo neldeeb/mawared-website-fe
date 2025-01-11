@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "@/containers/HomePage";
+import FeaturesPage from "@/containers/FeaturesPage";
 
 const AppRoutes = () => {
   return (
     <Router>
       <Routes>
-        <Route path="*" element={<HomePage />} />
+        <Route path="*" element={<FeaturesPage />} />
       </Routes>
     </Router>
   );
