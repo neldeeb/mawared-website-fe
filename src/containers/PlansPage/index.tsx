@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 const PlansPage = () => {
   return (
     <Layout>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center p-24">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text[#303030]">
+          <h2 className="text-4xl font-bold text-[#303030]">
             Choose The
             <span className="text-customBlueWaveyColor mx-2">Perfect Plan</span>
             For Your Business
@@ -21,7 +21,7 @@ const PlansPage = () => {
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <div className="custom-price-card-style flex flex-col h-full">
             <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold text[#303030] mb-8">
+              <h3 className="text-3xl font-bold text-[#303030] mb-8">
                 Standard
               </h3>
 

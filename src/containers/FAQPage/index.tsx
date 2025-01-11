@@ -14,8 +14,8 @@ const FAQPage = () => {
 
   return (
     <Layout>
-      <div className="flex flex-col justify-center items-center">
-        <h1 className="text-4xl font-bold text[#303030]">
+      <div className="flex flex-col justify-center items-center p-24">
+        <h1 className="text-4xl font-bold text-[#303030]">
           Frequently Asked
           <span className="text-customBlueWaveyColor mx-2">Questions</span>(FAQ)
         </h1>

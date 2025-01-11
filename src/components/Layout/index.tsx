@@ -15,7 +15,7 @@ const Layout = ({ children }: Props) => {
 
       {/* Start of children of layout */}
 
-      <main className="flex-grow p-24">{children}</main>
+      <main className="flex-grow">{children}</main>
       {/* End of children of layout */}
 
       {/* Start of footer component */}

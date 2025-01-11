@@ -26,9 +26,9 @@ const ContactUsPage = () => {
 
   return (
     <Layout>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center p-24">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text[#303030] flex items-center justify-center">
+          <h2 className="text-4xl font-bold text-[#303030] flex items-center justify-center">
             Let's
             <span className="text-customBlueWaveyColor mx-2">Connect</span> And
             Collaborate!{" "}

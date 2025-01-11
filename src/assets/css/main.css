@@ -123,6 +123,24 @@
     background: #f3f5f9;
     border: 1px solid #31303026;
   }
+
+  .custom-mawared-btn-style {
+    height: 54px;
+    padding: 12px 36px;
+    border-radius: 12px;
+    background: linear-gradient(92.75deg, #1997e1 2.86%, #2cb1ff 97.77%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+  }
+
+  .custom-client-card-style {
+    padding: 36px 24px;
+    border-radius: 24px;
+    background: #0000000d;
+    backdrop-filter: blur(18px);
+  }
 }
 /*--------------------------------------- End of tailwindcss utilities ---------------------------------------*/
 
