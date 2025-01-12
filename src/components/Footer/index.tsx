@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="bg-[#313030]">
       <div className="flex flex-col px-24">
         {/* Top section */}
-        <div className="flex flex-col md:flex-row justify-between items-center pt-11">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-11 gap-10">
           <img
             src="/img/mawared-white-logo.png"
             alt="mawared-logo"
@@ -11,21 +11,33 @@ const Footer = () => {
           />
 
           <div className="flex items-center gap-4">
-            <a href="#" className="hover:opacity-90 transition-opacity">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.qu_attendance"
+              target="_blank"
+              className="hover:opacity-90 transition-opacity"
+            >
               <img
                 src="/img/google-play-icon.png"
                 alt="Get it on Google Play"
                 className="h-12"
               />
             </a>
-            <a href="#" className="hover:opacity-90 transition-opacity">
+            <a
+              href="https://apps.apple.com/us/app/mawared-hr/id1572304856"
+              target="_blank"
+              className="hover:opacity-90 transition-opacity"
+            >
               <img
                 src="/img/apple-store-icon.png"
                 alt="Download on App Store"
                 className="h-12"
               />
             </a>
-            <a href="#" className="hover:opacity-90 transition-opacity">
+            <a
+              href="https://install.appcenter.ms/users/aelbawab-arabiclocalizer.com/apps/serene-hr/distribution_groups/public/releases/12"
+              target="_blank"
+              className="hover:opacity-90 transition-opacity"
+            >
               <img
                 src="/img/app-gallery-icon.png"
                 alt="Explore it on AppGallery"
@@ -72,24 +84,36 @@ const Footer = () => {
       </div>
 
       {/* Bottom section */}
-      <div className="flex flex-col md:flex-row justify-between items-center bg-[#00000033] px-24 h-[81px]">
-        <p className="text-white text-sm font-normal">
-          All rights reserved for MAWARED HR 2025 ©
+      <div className="flex flex-col md:flex-row justify-between items-center bg-[#00000033] px-24 gap-0 md:gap-10">
+        <p className="text-white text-sm font-normal my-4">
+          All rights reserved for MAWARED HR {new Date().getFullYear()} ©
         </p>
 
-        <div className="flex items-center gap-4">
-          <a href="#" className="hover:opacity-90 transition-opacity">
+        <div className="flex items-center gap-4 my-4">
+          <a
+            href="https://www.facebook.com/MawaredHR"
+            target="_blank"
+            className="hover:opacity-90 transition-opacity"
+          >
             <img src="/img/facebook-icon.png" alt="facebook" />
           </a>
-          <a href="#" className="hover:opacity-90 transition-opacity">
+          <a
+            href="https://www.instagram.com/mawaredhrsystem"
+            target="_blank"
+            className="hover:opacity-90 transition-opacity"
+          >
             <img src="/img/instgram-icon.png" alt="instgram" />
           </a>
-          <a href="#" className="hover:opacity-90 transition-opacity">
+          <a
+            href="https://eg.linkedin.com/company/mawaredhr-system"
+            target="_blank"
+            className="hover:opacity-90 transition-opacity"
+          >
             <img src="/img/linkedn-icon.png" alt="linkedn" />
           </a>
         </div>
 
-        <p className="text-white text-sm font-normal">
+        <p className="text-white text-sm font-normal my-4">
           Privacy policy and using conditions
         </p>
       </div>

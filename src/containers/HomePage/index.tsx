@@ -204,7 +204,11 @@ const HomePage = () => {
             </p>
 
             <div className="flex items-center justify-center gap-4 mt-8">
-              <a href="#" className="hover:opacity-90 transition-opacity">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.qu_attendance"
+                target="_blank"
+                className="hover:opacity-90 transition-opacity"
+              >
                 <img
                   src="/img/google-play-icon.png"
                   alt="Get it on Google Play"
@@ -212,7 +216,11 @@ const HomePage = () => {
                 />
               </a>
 
-              <a href="#" className="hover:opacity-90 transition-opacity">
+              <a
+                href="https://apps.apple.com/us/app/mawared-hr/id1572304856"
+                target="_blank"
+                className="hover:opacity-90 transition-opacity"
+              >
                 <img
                   src="/img/apple-store-icon.png"
                   alt="Download on App Store"
@@ -220,7 +228,11 @@ const HomePage = () => {
                 />
               </a>
 
-              <a href="#" className="hover:opacity-90 transition-opacity">
+              <a
+                href="https://install.appcenter.ms/users/aelbawab-arabiclocalizer.com/apps/serene-hr/distribution_groups/public/releases/12"
+                target="_blank"
+                className="hover:opacity-90 transition-opacity"
+              >
                 <img
                   src="/img/app-gallery-icon.png"
                   alt="Explore it on AppGallery"
