@@ -180,7 +180,8 @@ body {
   text-align: inherit;
 }
 
-:focus {
+input:focus,
+textarea:focus {
   color: #000000;
   outline: none;
 }
