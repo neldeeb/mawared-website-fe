@@ -1,6 +1,14 @@
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Revolutionize = () => {
+  const navigate = useNavigate();
+
+  // handle navigate to page function
+  const handleNavigateToPage = () => {
+    navigate(`/contact`);
+  };
+
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="text-center mb-12">
@@ -22,7 +30,10 @@ const Revolutionize = () => {
         </p>
       </div>
 
-      <Button className="custom-mawared-btn-style font-medium text-xl mt-4">
+      <Button
+        className="custom-mawared-btn-style font-medium text-xl mt-4"
+        onClick={handleNavigateToPage}
+      >
         Book a free demo
       </Button>
     </div>

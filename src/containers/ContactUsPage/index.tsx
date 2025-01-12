@@ -1,20 +1,59 @@
 import Layout from "@/components/Layout";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { useMutation } from "@apollo/client";
+import { sendEmailMutation } from "../../graphql/mutations";
+import toast from "react-hot-toast";
+import { ColorRing } from "react-loader-spinner";
 
 const ContactUsPage = () => {
+  // useStates
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     message: "",
   });
+  const [formErrorMessage, setFormErrorMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
+  // handle form validation function
+  const handleFormValidation = () => {
+    // for email validation format
+    let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    if (
+      formData?.email?.match(regex) &&
+      formData?.name != "" &&
+      formData?.phone != "" &&
+      formData?.message != ""
+    ) {
+      return true;
+    } else {
+      // set error message
+      setFormErrorMessage(
+        "Please fill all required fields or type right email format."
+      );
+      return false;
+    }
   };
 
+  // handle form submit function
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    // client side validation
+    if (!handleFormValidation()) {
+      return;
+    } else {
+      // reset form error message
+      setFormErrorMessage("");
+
+      // send email
+      handleSendMail();
+    }
+  };
+
+  // handle reset form function
   const handleReset = () => {
     setFormData({
       name: "",
@@ -24,6 +63,81 @@ const ContactUsPage = () => {
     });
   };
 
+  // Start of handle send message mutation
+  const handleSendMail = () => {
+    sendEmail({
+      variables: {
+        name: formData?.name,
+        email: formData?.email,
+        phone: formData?.phone,
+        message: formData?.message,
+      },
+    })
+      .then((response) => {
+        if (response?.errors) {
+          // trigger toaster
+          toast.error(
+            "There is something went wrong, please try again later.",
+            {
+              style: {
+                border: "1px solid #f64c4c",
+                padding: "10px",
+                color: "#f64c4c",
+              },
+              iconTheme: {
+                primary: "#f64c4c",
+                secondary: "#fff",
+              },
+            }
+          );
+        }
+      })
+      .catch((error) => {
+        // trigger toaster
+        toast.error(error?.message ?? "Something went wrong", {
+          style: {
+            border: "1px solid #f64c4c",
+            padding: "10px",
+            color: "#f64c4c",
+          },
+          iconTheme: {
+            primary: "#f64c4c",
+            secondary: "#fff",
+          },
+        });
+        console.log("catch", { error });
+      });
+  };
+
+  const [sendEmail, { loading: isSendEmailLoading }] = useMutation(
+    sendEmailMutation,
+    {
+      onCompleted: (data) => {
+        if (data?.sendContactEmail?.status === "success") {
+          // trigger toaster
+          toast.success(
+            "Your email has been sent successfully, we appreciate you contacting us.",
+            {
+              style: {
+                border: "1px solid #27b40c",
+                padding: "10px",
+                color: "#27b40c",
+              },
+              iconTheme: {
+                primary: "#27b40c",
+                secondary: "#fff",
+              },
+            }
+          );
+
+          // handle reset form
+          handleReset();
+        }
+      },
+    }
+  );
+  // End of handle send message mutation
+
   return (
     <Layout>
       <div className="flex flex-col justify-center items-center p-24">
@@ -31,7 +145,7 @@ const ContactUsPage = () => {
           <h2 className="text-4xl font-bold text-[#303030] flex items-center justify-center">
             Let's
             <span className="text-customBlueWaveyColor mx-2">Connect</span> And
-            Collaborate!{" "}
+            Collaborate!
             <img
               src="/img/rocket-icon.png"
               alt="rocket-icon"
@@ -46,10 +160,14 @@ const ContactUsPage = () => {
         </div>
 
         <div className="w-full custom-contact-card-style overflow-hidden my-6">
-          <div className="grid grid-cols-1 md:grid-cols-2">
-            <img src="/img/contact-img.png" alt="contact-img" />
+          <div className="grid grid-cols-1 lg:grid-cols-2">
+            <img
+              src="/img/contact-img.png"
+              alt="contact-img"
+              className="h-full"
+            />
 
-            <form onSubmit={handleSubmit} className="p-12 bg-[#F3F5F9]">
+            <form className="p-12 bg-[#F3F5F9]">
               <div className="space-y-14">
                 <div className="flex items-center">
                   <label
@@ -130,10 +248,17 @@ const ContactUsPage = () => {
                 </div>
               </div>
 
+              {formErrorMessage && (
+                <div className="text-base font-normal text-[#f64c4c] mt-6">
+                  {formErrorMessage}
+                </div>
+              )}
+
               <div className="flex gap-4 mt-16">
                 <Button
                   type="button"
                   onClick={handleReset}
+                  disabled={isSendEmailLoading}
                   className="flex-1 bg-[#31303033] hover:bg-[#31303033] py-2 px-6 font-medium text-base text-[#313030] h-12"
                 >
                   Reset
@@ -142,8 +267,17 @@ const ContactUsPage = () => {
                 <Button
                   type="submit"
                   className="w-full custom-linear-bg-blue-wavy-color-style py-2 px-6 text-white font-medium text-base h-12"
+                  onClick={handleSubmit}
                 >
-                  Send
+                  {isSendEmailLoading ? (
+                    <ColorRing
+                      visible={isSendEmailLoading}
+                      wrapperStyle={{ height: "2rem", width: "2rem" }}
+                      colors={["#fff", "#fff", "#fff", "#fff", "#fff"]}
+                    />
+                  ) : (
+                    "Send"
+                  )}
                 </Button>
               </div>
             </form>
