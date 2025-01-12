@@ -6,9 +6,13 @@ const AboutUsPage = () => {
   return (
     <Layout>
       <div className="flex justify-between items-center pt-24 gap-10">
-        <img src="/img/our-company-img-left.png" alt="our-company-img-left" />
+        <img
+          src="/img/our-company-img-left.png"
+          alt="our-company-img-left"
+          className="hidden lg:block"
+        />
 
-        <div className="text-center">
+        <div className="text-center mx-10 md:mx-0">
           <h2 className="text-5xl font-semibold text-[#191919] mb-16">
             Our Company
           </h2>
@@ -22,7 +26,11 @@ const AboutUsPage = () => {
           </p>
         </div>
 
-        <img src="/img/our-company-img-rigth.png" alt="our-company-img-rigth" />
+        <img
+          src="/img/our-company-img-rigth.png"
+          alt="our-company-img-rigth"
+          className="hidden lg:block"
+        />
       </div>
 
       <div className="flex flex-col justify-center items-center p-24">
@@ -50,8 +58,8 @@ const AboutUsPage = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-4 mb-40 gap-16">
-          <div className="flex flex-col justify-center items-center">
+        <div className="grid grid-cols-2 lg:grid-cols-4 mb-40 gap-16">
+          <div className="flex flex-col justify-center items-center text-center">
             <div className="custom-team-card-style">
               <img src="/img/employee-img.png" alt="employee-img" />
             </div>
@@ -63,7 +71,7 @@ const AboutUsPage = () => {
             </p>
           </div>
 
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center text-center">
             <div className="custom-team-card-style">
               <img src="/img/employee-img.png" alt="employee-img" />
             </div>
@@ -75,7 +83,7 @@ const AboutUsPage = () => {
             </p>
           </div>
 
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center text-center">
             <div className="custom-team-card-style">
               <img src="/img/employee-img.png" alt="employee-img" />
             </div>
@@ -87,7 +95,7 @@ const AboutUsPage = () => {
             </p>
           </div>
 
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center text-center">
             <div className="custom-team-card-style">
               <img src="/img/employee-img.png" alt="employee-img" />
             </div>
@@ -99,7 +107,7 @@ const AboutUsPage = () => {
             </p>
           </div>
 
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center text-center">
             <div className="custom-team-card-style">
               <img src="/img/employee-img.png" alt="employee-img" />
             </div>
@@ -111,7 +119,7 @@ const AboutUsPage = () => {
             </p>
           </div>
 
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center text-center">
             <div className="custom-team-card-style">
               <img src="/img/employee-img.png" alt="employee-img" />
             </div>
@@ -123,7 +131,7 @@ const AboutUsPage = () => {
             </p>
           </div>
 
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center text-center">
             <div className="custom-team-card-style">
               <img src="/img/employee-img.png" alt="employee-img" />
             </div>
@@ -135,7 +143,7 @@ const AboutUsPage = () => {
             </p>
           </div>
 
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center text-center">
             <div className="custom-team-card-style">
               <img src="/img/employee-img.png" alt="employee-img" />
             </div>

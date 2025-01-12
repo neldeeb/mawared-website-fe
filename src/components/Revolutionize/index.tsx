@@ -12,13 +12,13 @@ const Revolutionize = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-[#303030] flex items-center justify-center">
+        <h2 className="text-4xl font-bold text-[#303030] flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-0">
           Let’s Revolutionize Your
           <span className="text-customBlueWaveyColor mx-2">HR Together!</span>
           <img
             src="/img/rocket-icon.png"
             alt="rocket-icon"
-            className="h-10 mx-4"
+            className="h-10 mx-2"
           />
         </h2>
 
