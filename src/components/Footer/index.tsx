@@ -10,7 +10,7 @@ const Footer = () => {
             className="h-10"
           />
 
-          <div className="flex items-center gap-4">
+          <div className="flex flex-col lg:flex-row items-center gap-4">
             <a
               href="https://play.google.com/store/apps/details?id=com.qu_attendance"
               target="_blank"

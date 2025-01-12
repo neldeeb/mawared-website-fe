@@ -23,14 +23,14 @@ const HomePage = () => {
     <Layout>
       <div className="flex flex-col justify-center items-center p-24">
         <div className="text-center mb-12">
-          <h2 className="text-5xl font-bold text-[#303030]">
+          <h2 className="text-3xl lg:text-5xl font-bold text-[#303030]">
             HR Management.
             <span className="text-customBlueWaveyColor mx-2">
               Anytime, Anywhere
             </span>
           </h2>
 
-          <p className="text-[#303030] font-medium text-2xl mt-8">
+          <p className="text-[#303030] font-medium text-xl lg:text-2xl mt-8">
             Manage your HR Tasks with Easier and Faster Approach
           </p>
         </div>
@@ -43,7 +43,7 @@ const HomePage = () => {
 
         <hr className="my-16 w-full" />
 
-        <h3 className="font-medium text-3xl text-[#313030]">
+        <h3 className="font-medium text-3xl text-[#313030] text-center">
           Trusted by over <span className="font-extrabold mx-2">300+</span>
           Businesses. Empowering Workforces Every Day.
         </h3>
@@ -93,20 +93,20 @@ const HomePage = () => {
         <hr className="my-16 w-full" />
 
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-[#303030]">
+          <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             Features That Make HR
             <span className="text-customBlueWaveyColor mx-2">
               Easier and Faster
             </span>
           </h2>
 
-          <p className="text-[#303030] font-medium text-2xl mt-8">
+          <p className="text-[#303030] font-medium text-xl lg:text-2xl mt-8">
             Combining Next-Gen tools with intuitive design to improve workforce
             management and simplify HR processes.
           </p>
         </div>
 
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="flex flex-col justify-center items-center">
             <img src="/img/iphone-view.png" alt="iphone-view" />
           </div>
@@ -115,7 +115,7 @@ const HomePage = () => {
             <div className="flex flex-col justify-center items-center">
               <div className="flex flex-col gap-2 justify-center items-center mb-12">
                 <img src="/img/smart-att-icon.png" alt="smart-att-icon" />
-                <p className="text-[#313030] font-semibold text-xl text-center">
+                <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
                   Smart Attendance Tracking
                 </p>
               </div>
@@ -125,14 +125,14 @@ const HomePage = () => {
                   src="/img/efficient-emp-icon.png"
                   alt="efficient-emp-icon"
                 />
-                <p className="text-[#313030] font-semibold text-xl text-center">
+                <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
                   Efficient Employee Requests
                 </p>
               </div>
 
               <div className="flex flex-col gap-2 justify-center items-center mb-12">
                 <img src="/img/flex-icon.png" alt="flex-icon" />
-                <p className="text-[#313030] font-semibold text-xl text-center">
+                <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
                   Customizable and Flexible Work Scheduling
                 </p>
               </div>
@@ -141,29 +141,29 @@ const HomePage = () => {
             <div className="flex flex-col justify-center items-center">
               <div className="flex flex-col gap-2 justify-center items-center mb-12">
                 <img src="/img/payroll-icon.png" alt="payroll-icon" />
-                <p className="text-[#313030] font-semibold text-xl text-center">
+                <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
                   Automated Payroll Processing
                 </p>
               </div>
 
               <div className="flex flex-col gap-2 justify-center items-center mb-12">
                 <img src="/img/realtime-icon.png" alt="realtime-icon" />
-                <p className="text-[#313030] font-semibold text-xl text-center">
+                <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
                   Real-Time Insights
                 </p>
               </div>
 
               <div className="flex flex-col gap-2 justify-center items-center mb-12">
                 <img src="/img/real-time-icon.png" alt="real-time-icon" />
-                <p className="text-[#313030] font-semibold text-xl text-center">
+                <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
                   Document Management Made Simple
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="col-start-2 flex justify-center items-center">
-            <Button className="custom-mawared-btn-style font-medium text-xl mb-12 w-1/2">
+          <div className="col-start-2 lg:flex justify-center items-center hidden">
+            <Button className="custom-mawared-btn-style font-medium text-base lg:text-xl mb-12 w-1/2">
               Explore All Features
             </Button>
           </div>
@@ -172,13 +172,13 @@ const HomePage = () => {
         <hr className="my-16 w-full" />
 
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#303030]">
+          <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             Reasons to
             <span className="text-customBlueWaveyColor mx-2">invest</span>
             in Mawared HR
           </h2>
 
-          <p className="text-[#303030] font-medium text-2xl mt-8">
+          <p className="text-[#303030] font-medium text-xl lg:text-2xl mt-8">
             Unlock the full potential of your business with Mawared HR’s
             innovative solutions. Our platform offers a range of benefits
             designed to enhance HR efficiency and reliability
@@ -190,7 +190,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="custom-linear-bg-blue-wavy-color-style py-16 px-60 mb-24 h-96">
+      <div className="hidden lg:block custom-linear-bg-blue-wavy-color-style py-16 px-60 mb-24 h-96">
         <div className="grid grid-cols-2 relative">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-semibold text-white">
@@ -250,7 +250,7 @@ const HomePage = () => {
 
       <div className="flex flex-col justify-center items-center p-24">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-[#303030]">
+          <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             Powerful
             <span className="text-customBlueWaveyColor mx-2">Features</span>
             for Seamless HR Management
@@ -261,8 +261,8 @@ const HomePage = () => {
           <img src="/img/features-icons.png" alt="features-icons" />
         </div>
 
-        <div className="grid grid-cols-2 mt-20">
-          <div className="flex flex-col justify-center">
+        <div className="grid lg:grid-cols-2 mt-20">
+          <div className="flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
             <h3 className="text-3xl font-semibold text-[#303030] mb-8">
               Employee Management
             </h3>
@@ -295,130 +295,135 @@ const HomePage = () => {
         <hr className="my-16 w-full" />
 
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#303030]">
+          <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             What
             <span className="text-customBlueWaveyColor mx-2">Our Clients</span>
             Are Saying
           </h2>
         </div>
 
-        <Carousel
-          plugins={[
-            Autoplay({
-              delay: 2000,
-            }),
-          ]}
-        >
-          <CarouselContent className="-ml-1">
-            <CarouselItem className="basis-1/3 px-8">
-              <Card className="custom-client-card-style">
-                <CardHeader>
-                  <CardTitle className="font-normal text-xl text-black">
-                    Product teams
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="my-6">
-                  <p className="font-normal text-xl text-black">
-                    The web and mobile apps are intuitive and seamless. Managing
-                    HR tasks is effortless, whether I’m at my desk or on the go
-                  </p>
-                </CardContent>
-                <CardFooter className="flex items-center">
-                  <Avatar className="h-16 w-16">
-                    <AvatarImage src="/img/client.png" />
-                    <AvatarFallback className="bg-[#D9D9D9] font-normal text-xl text-black border border-[#313030]">
-                      CN
-                    </AvatarFallback>
-                  </Avatar>
-
-                  <div className="flex flex-col gap-1 mx-3">
-                    <h4 className="font-semibold text-xl text-black">
-                      Client name
-                    </h4>
-                    <p className="font-normal text-base text-black">
-                      Team lead
+        <div className="w-full">
+          <Carousel
+            plugins={[
+              Autoplay({
+                delay: 2000,
+              }),
+            ]}
+          >
+            <CarouselContent className="-ml-1">
+              <CarouselItem className="lg:basis-1/3 px-8">
+                <Card className="custom-client-card-style">
+                  <CardHeader>
+                    <CardTitle className="font-normal text-base lg:text-xl text-black">
+                      Product teams
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="my-6">
+                    <p className="font-normal text-base lg:text-xl text-black">
+                      The web and mobile apps are intuitive and seamless.
+                      Managing HR tasks is effortless, whether I’m at my desk or
+                      on the go
                     </p>
-                  </div>
-                </CardFooter>
-              </Card>
-            </CarouselItem>
+                  </CardContent>
+                  <CardFooter className="flex flex-col lg:flex-row gap-2 lg:gap-0 items-center">
+                    <Avatar className="h-16 w-16">
+                      <AvatarImage src="/img/client.png" />
+                      <AvatarFallback className="bg-[#D9D9D9] font-normal text-base lg:text-xl text-black border border-[#313030]">
+                        CN
+                      </AvatarFallback>
+                    </Avatar>
 
-            <CarouselItem className="basis-1/3 px-8">
-              <Card className="custom-client-card-style">
-                <CardHeader>
-                  <CardTitle className="font-normal text-xl text-black">
-                    Product teams
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="my-6">
-                  <p className="font-normal text-xl text-black">
-                    The web and mobile apps are intuitive and seamless. Managing
-                    HR tasks is effortless, whether I’m at my desk or on the go
-                  </p>
-                </CardContent>
-                <CardFooter className="flex items-center">
-                  <Avatar className="h-16 w-16">
-                    <AvatarImage src="/img/client.png" />
-                    <AvatarFallback className="bg-[#D9D9D9] font-normal text-xl text-black border border-[#313030]">
-                      CN
-                    </AvatarFallback>
-                  </Avatar>
+                    <div className="flex flex-col gap-1 mx-3">
+                      <h4 className="font-semibold text-base lg:text-xl text-black">
+                        Client name
+                      </h4>
+                      <p className="font-normal text-base text-black">
+                        Team lead
+                      </p>
+                    </div>
+                  </CardFooter>
+                </Card>
+              </CarouselItem>
 
-                  <div className="flex flex-col gap-1 mx-3">
-                    <h4 className="font-semibold text-xl text-black">
-                      Client name
-                    </h4>
-                    <p className="font-normal text-base text-black">
-                      Team lead
+              <CarouselItem className="lg:basis-1/3 px-8">
+                <Card className="custom-client-card-style">
+                  <CardHeader>
+                    <CardTitle className="font-normal text-base lg:text-xl text-black">
+                      Product teams
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="my-6">
+                    <p className="font-normal text-base lg:text-xl text-black">
+                      The web and mobile apps are intuitive and seamless.
+                      Managing HR tasks is effortless, whether I’m at my desk or
+                      on the go
                     </p>
-                  </div>
-                </CardFooter>
-              </Card>
-            </CarouselItem>
+                  </CardContent>
+                  <CardFooter className="flex flex-col lg:flex-row gap-2 lg:gap-0 items-center">
+                    <Avatar className="h-16 w-16">
+                      <AvatarImage src="/img/client.png" />
+                      <AvatarFallback className="bg-[#D9D9D9] font-normal text-base lg:text-xl text-black border border-[#313030]">
+                        CN
+                      </AvatarFallback>
+                    </Avatar>
 
-            <CarouselItem className="basis-1/3 px-8">
-              <Card className="custom-client-card-style">
-                <CardHeader>
-                  <CardTitle className="font-normal text-xl text-black">
-                    Product teams
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="my-6">
-                  <p className="font-normal text-xl text-black">
-                    The web and mobile apps are intuitive and seamless. Managing
-                    HR tasks is effortless, whether I’m at my desk or on the go
-                  </p>
-                </CardContent>
-                <CardFooter className="flex items-center">
-                  <Avatar className="h-16 w-16">
-                    <AvatarImage src="/img/client.png" />
-                    <AvatarFallback className="bg-[#D9D9D9] font-normal text-xl text-black border border-[#313030]">
-                      CN
-                    </AvatarFallback>
-                  </Avatar>
+                    <div className="flex flex-col gap-1 mx-3">
+                      <h4 className="font-semibold text-base lg:text-xl text-black">
+                        Client name
+                      </h4>
+                      <p className="font-normal text-base text-black">
+                        Team lead
+                      </p>
+                    </div>
+                  </CardFooter>
+                </Card>
+              </CarouselItem>
 
-                  <div className="flex flex-col gap-1 mx-3">
-                    <h4 className="font-semibold text-xl text-black">
-                      Client name
-                    </h4>
-                    <p className="font-normal text-base text-black">
-                      Team lead
+              <CarouselItem className="lg:basis-1/3 px-8">
+                <Card className="custom-client-card-style">
+                  <CardHeader>
+                    <CardTitle className="font-normal text-base lg:text-xl text-black">
+                      Product teams
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="my-6">
+                    <p className="font-normal text-base lg:text-xl text-black">
+                      The web and mobile apps are intuitive and seamless.
+                      Managing HR tasks is effortless, whether I’m at my desk or
+                      on the go
                     </p>
-                  </div>
-                </CardFooter>
-              </Card>
-            </CarouselItem>
-          </CarouselContent>
+                  </CardContent>
+                  <CardFooter className="flex flex-col lg:flex-row gap-2 lg:gap-0 items-center">
+                    <Avatar className="h-16 w-16">
+                      <AvatarImage src="/img/client.png" />
+                      <AvatarFallback className="bg-[#D9D9D9] font-normal text-base lg:text-xl text-black border border-[#313030]">
+                        CN
+                      </AvatarFallback>
+                    </Avatar>
 
-          <CarouselPrevious className="border border-[#313030]" />
+                    <div className="flex flex-col gap-1 mx-3">
+                      <h4 className="font-semibold text-base lg:text-xl text-black">
+                        Client name
+                      </h4>
+                      <p className="font-normal text-base text-black">
+                        Team lead
+                      </p>
+                    </div>
+                  </CardFooter>
+                </Card>
+              </CarouselItem>
+            </CarouselContent>
 
-          <CarouselNext className="border border-[#313030]" />
-        </Carousel>
+            <CarouselPrevious className="border border-[#313030]" />
+
+            <CarouselNext className="border border-[#313030]" />
+          </Carousel>
+        </div>
 
         <hr className="my-16 w-full" />
 
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#303030]">
+          <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             Empowering Businesses Across
             <span className="text-customBlueWaveyColor mx-2">The Globe</span>
           </h2>
@@ -437,7 +442,7 @@ const HomePage = () => {
         <hr className="my-16 w-full" />
 
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#303030]">
+          <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             Trusted by
             <span className="text-customBlueWaveyColor mx-2">
               Industry Leaders
