@@ -1,10 +1,5 @@
 import { useState } from "react";
-
-// define faq accordion props interface
-interface FaqAccordionProps {
-  question: string;
-  answer: string;
-}
+import { FaqAccordionProps } from "@/types/faq";
 
 const FaqAccordion = ({ question, answer }: FaqAccordionProps) => {
   // useStates
