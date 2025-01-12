@@ -32,19 +32,17 @@ const HomePage = () => {
       <div className="flex flex-col justify-center items-center p-24">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-5xl font-bold text-[#303030]">
-            HR Management.
-            <span className="text-customBlueWaveyColor mx-2">
-              Anytime, Anywhere
-            </span>
+            Human Resources.
+            <span className="text-customBlueWaveyColor mx-2">Reimagined.</span>
           </h2>
 
           <p className="text-[#303030] font-medium text-xl lg:text-2xl mt-8">
-            Manage your HR Tasks with Easier and Faster Approach
+            The Ultimate Cloud-Based HRMS Platform For Your HR Operations.
           </p>
         </div>
 
         <Button
-          className="custom-mawared-btn-style font-medium text-xl mb-12 hover:opacity-90 transition-opacity"
+          className="custom-mawared-btn-style font-bold text-xl mb-12 hover:opacity-90 transition-opacity"
           onClick={() => handleNavigateToPage(`/features`)}
         >
           See Mawared HR in Action
@@ -55,12 +53,12 @@ const HomePage = () => {
         <hr className="my-16 w-full" />
 
         <h3 className="font-medium text-3xl text-[#313030] text-center">
-          Trusted by over <span className="font-extrabold mx-2">300+</span>
+          Trusted by over <span className="font-extrabold mx-2">400+</span>
           Businesses. Empowering Workforces Every Day.
         </h3>
 
         <Button
-          className="custom-mawared-btn-style font-medium text-xl my-12 hover:opacity-90 transition-opacity"
+          className="custom-mawared-btn-style font-bold text-xl my-12 hover:opacity-90 transition-opacity"
           onClick={() => handleNavigateToPage(`/contact`)}
         >
           Join the Empowered
@@ -178,7 +176,7 @@ const HomePage = () => {
 
           <div className="col-start-2 lg:flex justify-center items-center hidden">
             <Button
-              className="custom-mawared-btn-style font-medium text-base lg:text-xl mb-12 w-1/2 hover:opacity-90 transition-opacity"
+              className="custom-mawared-btn-style font-bold text-base lg:text-xl mb-12 w-1/2 hover:opacity-90 transition-opacity"
               onClick={() => handleNavigateToPage(`/features`)}
             >
               Explore All Features
@@ -190,15 +188,15 @@ const HomePage = () => {
 
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
-            Reasons to
-            <span className="text-customBlueWaveyColor mx-2">invest</span>
-            in Mawared HR
+            What You Get When You
+            <span className="text-customBlueWaveyColor mx-2">
+              Join Mawared HR
+            </span>
           </h2>
 
           <p className="text-[#303030] font-medium text-xl lg:text-2xl mt-8">
-            Unlock the full potential of your business with Mawared HR’s
-            innovative solutions. Our platform offers a range of benefits
-            designed to enhance HR efficiency and reliability
+            Experience the measurable impact of using Mawared HR Digital
+            Solutions
           </p>
         </div>
 
@@ -211,13 +209,14 @@ const HomePage = () => {
         <div className="grid grid-cols-2 relative">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-semibold text-white">
-              Get Mawared HR on the Go
+              Your HR Office in Your Pocket
             </h2>
 
             <p className="text-white font-medium text-xl mt-8">
-              Take your HR management on the go with the Mawared HR Mobile App.
-              Whether you're using an Android or iOS device, stay connected to
-              your HR data and manage key processes anytime, anywhere.
+              Designed for convenience, the Mawared HR App ensures you never
+              miss anything in managing your workforce. Empower your team with
+              the Mawared HR Mobile App. Whether on Android, iOS, or Huawei,
+              handle your HR tasks seamlessly—anytime, anywhere.
             </p>
 
             <div className="flex items-center justify-center gap-4 mt-8">
@@ -270,7 +269,7 @@ const HomePage = () => {
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             Powerful
             <span className="text-customBlueWaveyColor mx-2">Features</span>
-            for Seamless HR Management
+            that elevate HR Management
           </h2>
         </div>
 
@@ -296,12 +295,6 @@ const HomePage = () => {
             <img src="/img/employee-managment.png" alt="employee-managment" />
           </div>
         </div>
-
-        <hr className="my-16 w-full" />
-
-        {/* Start of Revolutionize component  */}
-        <Revolutionize />
-        {/* End of Revolutionize component  */}
 
         <hr className="my-16 w-full" />
 
@@ -452,12 +445,6 @@ const HomePage = () => {
 
         <hr className="my-16 w-full" />
 
-        {/* Start of Revolutionize component  */}
-        <Revolutionize />
-        {/* End of Revolutionize component  */}
-
-        <hr className="my-16 w-full" />
-
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             Trusted by
@@ -505,6 +492,12 @@ const HomePage = () => {
 
           <CarouselNext className="border border-[#313030]" />
         </Carousel>
+
+        <hr className="my-16 w-full" />
+
+        {/* Start of Revolutionize component  */}
+        <Revolutionize />
+        {/* End of Revolutionize component  */}
       </div>
     </Layout>
   );
