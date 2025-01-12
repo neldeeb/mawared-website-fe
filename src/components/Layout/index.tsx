@@ -1,5 +1,7 @@
+import { useState } from "react";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
+import { useNavigate } from "react-router-dom";
 
 // define layout children props type
 type Props = {
@@ -7,6 +9,36 @@ type Props = {
 };
 
 const Layout = ({ children }: Props) => {
+  // useStates
+  const [visible, setVisible] = useState(false);
+
+  const navigate = useNavigate();
+
+  // handle navigate to page function
+  const handleNavigateToPage = () => {
+    navigate(`/contact`);
+  };
+
+  // start of handle to top sticky page content btn function
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300) {
+      setVisible(true);
+    } else if (scrolled <= 300) {
+      setVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  window.addEventListener("scroll", toggleVisible);
+  // End of handle to top sticky page content btn function
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Start of navbar component */}
@@ -21,6 +53,27 @@ const Layout = ({ children }: Props) => {
       {/* Start of footer component */}
       <Footer />
       {/* End of footer component */}
+
+      {/* start of sticky chat btn */}
+      <button
+        onClick={handleNavigateToPage}
+        className="custom-sticky-chat-btn-style"
+        title="Chat with us"
+      >
+        <img src="/img/chat-icon.png" alt="chat-icon" />
+      </button>
+      {/* End of sticky chat btn */}
+
+      {/* start of sticky scroll to top btn */}
+      <button
+        onClick={scrollToTop}
+        style={{ display: visible ? "inline" : "none" }}
+        className="custom-sticky-scroll-to-page-btn-style"
+        title="Go to top"
+      >
+        <img src="/img/click-icon.png" alt="click-icon" />
+      </button>
+      {/* End of sticky scroll to top btn */}
     </div>
   );
 };
