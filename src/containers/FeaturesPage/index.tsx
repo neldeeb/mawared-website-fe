@@ -25,7 +25,7 @@ const FeaturesPage = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-6 mb-40">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-40">
           <Card className="custom-features-card-style">
             <CardHeader>
               <CardTitle>
@@ -98,12 +98,12 @@ const FeaturesPage = () => {
           </Card>
         </div>
 
-        <div className="flex mb-40">
-          <div className="flex items-center w-1/2 me-16">
+        <div className="lg:flex mb-40">
+          <div className="flex items-center justify-center lg:justify-start w-full 2xl:w-1/2 me-16">
             <img src="/img/employees-module.png" alt="employees-module" />
           </div>
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <Card className="border-0 bg-transparent shadow-none">
               <CardHeader>
                 <CardTitle>
