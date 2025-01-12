@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import FeaturesPage from "@/containers/FeaturesPage";
+import AboutUsPage from "@/containers/AboutUsPage";
 
 const AppRoutes = () => {
   return (
     <Router>
       <Routes>
-        <Route path="*" element={<FeaturesPage />} />
+        <Route path="*" element={<AboutUsPage />} />
       </Routes>
     </Router>
   );

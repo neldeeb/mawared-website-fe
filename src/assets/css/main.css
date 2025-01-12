@@ -147,6 +147,17 @@
     border-radius: 24px;
     background: white;
   }
+
+  .custom-team-card-style {
+    border-radius: 24px;
+    border: 1px solid #d3d9dd;
+    background: linear-gradient(0deg, #ffffff, #ffffff),
+      linear-gradient(
+        244.49deg,
+        rgba(174, 170, 158, 0.65) 4.77%,
+        rgba(202, 202, 194, 0.65) 92.97%
+      );
+  }
 }
 /*--------------------------------------- End of tailwindcss utilities ---------------------------------------*/
 
