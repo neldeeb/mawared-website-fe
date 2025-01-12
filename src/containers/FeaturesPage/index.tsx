@@ -45,11 +45,11 @@ const FeaturesPage = () => {
                 structure.
               </p>
             </CardContent>
-            <CardFooter>
+            {/* <CardFooter>
               <a href="#">
                 <img src="/img/learn-more-btn.png" alt="learn-more-btn" />
               </a>
-            </CardFooter>
+            </CardFooter> */}
           </Card>
 
           <Card className="custom-features-card-style">
@@ -67,11 +67,11 @@ const FeaturesPage = () => {
                 Helps in monitoring department-specific workload trends.
               </p>
             </CardContent>
-            <CardFooter>
+            {/* <CardFooter>
               <a href="#">
                 <img src="/img/learn-more-btn.png" alt="learn-more-btn" />
               </a>
-            </CardFooter>
+            </CardFooter> */}
           </Card>
 
           <Card className="custom-features-card-style">
@@ -90,11 +90,11 @@ const FeaturesPage = () => {
                 and exporting the data.
               </p>
             </CardContent>
-            <CardFooter>
+            {/* <CardFooter>
               <a href="#">
                 <img src="/img/learn-more-btn.png" alt="learn-more-btn" />
               </a>
-            </CardFooter>
+            </CardFooter> */}
           </Card>
         </div>
 
@@ -119,11 +119,11 @@ const FeaturesPage = () => {
                   tasks and improve collaboration.
                 </p>
               </CardContent>
-              <CardFooter>
+              {/* <CardFooter>
                 <a href="#">
                   <img src="/img/learn-more-btn.png" alt="learn-more-btn" />
                 </a>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
 
             <Card className="border-0 bg-transparent shadow-none">
@@ -141,11 +141,11 @@ const FeaturesPage = () => {
                   ensuring seamless coordination.
                 </p>
               </CardContent>
-              <CardFooter>
+              {/* <CardFooter>
                 <a href="#">
                   <img src="/img/learn-more-btn.png" alt="learn-more-btn" />
                 </a>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
 
             <Card className="border-0 bg-transparent shadow-none">
@@ -163,11 +163,11 @@ const FeaturesPage = () => {
                   transfers, and leaves effortlessly.
                 </p>
               </CardContent>
-              <CardFooter>
+              {/* <CardFooter>
                 <a href="#">
                   <img src="/img/learn-more-btn.png" alt="learn-more-btn" />
                 </a>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
 
             <Card className="border-0 bg-transparent shadow-none">
@@ -185,11 +185,11 @@ const FeaturesPage = () => {
                   centralized repository.
                 </p>
               </CardContent>
-              <CardFooter>
+              {/* <CardFooter>
                 <a href="#">
                   <img src="/img/learn-more-btn.png" alt="learn-more-btn" />
                 </a>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
           </div>
         </div>

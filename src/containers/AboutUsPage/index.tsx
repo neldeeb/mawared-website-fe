@@ -1,6 +1,5 @@
 import Layout from "@/components/Layout";
 import Revolutionize from "@/components/Revolutionize";
-import { Button } from "@/components/ui/button";
 
 const AboutUsPage = () => {
   return (
@@ -156,7 +155,7 @@ const AboutUsPage = () => {
           </div>
         </div>
 
-        <div className="text-center mb-20">
+        {/* <div className="text-center mb-20">
           <h2 className="text-4xl font-semibold text-[#191919] mb-12">
             Join Mawared HR
             <span className="text-customBlueWaveyColor mx-2">team</span>
@@ -177,7 +176,7 @@ const AboutUsPage = () => {
 
         <Button className="custom-mawared-btn-style font-medium text-xl mb-40">
           Discover our careers
-        </Button>
+        </Button> */}
 
         {/* Start of Revolutionize component  */}
         <Revolutionize />

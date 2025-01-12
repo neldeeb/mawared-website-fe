@@ -29,8 +29,8 @@ const Navbar = () => {
           <div
             className={
               currentRoute?.pathname === "/"
-                ? "font-semibold text-xl text-customBlueWaveyColor"
-                : "font-medium text-xl text-[#313030]"
+                ? "font-semibold text-xl text-customBlueWaveyColor hover:scale-110"
+                : "font-medium text-xl text-[#313030] hover:scale-110"
             }
           >
             Home
@@ -40,8 +40,8 @@ const Navbar = () => {
           <div
             className={
               currentRoute?.pathname === "/features"
-                ? "font-semibold text-xl text-customBlueWaveyColor"
-                : "font-medium text-xl text-[#313030]"
+                ? "font-semibold text-xl text-customBlueWaveyColor hover:scale-110"
+                : "font-medium text-xl text-[#313030] hover:scale-110"
             }
           >
             Features
@@ -51,8 +51,8 @@ const Navbar = () => {
           <div
             className={
               currentRoute?.pathname === "/faq"
-                ? "font-semibold text-xl text-customBlueWaveyColor"
-                : "font-medium text-xl text-[#313030]"
+                ? "font-semibold text-xl text-customBlueWaveyColor hover:scale-110"
+                : "font-medium text-xl text-[#313030] hover:scale-110"
             }
           >
             FAQ
@@ -62,8 +62,8 @@ const Navbar = () => {
           <div
             className={
               currentRoute?.pathname === "/plans"
-                ? "font-semibold text-xl text-customBlueWaveyColor"
-                : "font-medium text-xl text-[#313030]"
+                ? "font-semibold text-xl text-customBlueWaveyColor hover:scale-110"
+                : "font-medium text-xl text-[#313030] hover:scale-110"
             }
           >
             Plans
@@ -73,8 +73,8 @@ const Navbar = () => {
           <div
             className={
               currentRoute?.pathname === "/about"
-                ? "font-semibold text-xl text-customBlueWaveyColor"
-                : "font-medium text-xl text-[#313030]"
+                ? "font-semibold text-xl text-customBlueWaveyColor hover:scale-110"
+                : "font-medium text-xl text-[#313030] hover:scale-110"
             }
           >
             About
@@ -84,7 +84,7 @@ const Navbar = () => {
 
       <div className="hidden lg:flex">
         <Button
-          className="flex custom-nav-btn-style font-medium text-lg"
+          className="flex custom-nav-btn-style font-medium text-lg hover:opacity-90 transition-opacity"
           onClick={handleNavigateToPage}
         >
           Book a live demo

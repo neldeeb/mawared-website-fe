@@ -17,8 +17,16 @@ import {
 } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Autoplay from "embla-carousel-autoplay";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
+  // handle navigate to page function
+  const handleNavigateToPage = (route: string) => {
+    navigate(route);
+  };
+
   return (
     <Layout>
       <div className="flex flex-col justify-center items-center p-24">
@@ -35,7 +43,10 @@ const HomePage = () => {
           </p>
         </div>
 
-        <Button className="custom-mawared-btn-style font-medium text-xl mb-12">
+        <Button
+          className="custom-mawared-btn-style font-medium text-xl mb-12 hover:opacity-90 transition-opacity"
+          onClick={() => handleNavigateToPage(`/features`)}
+        >
           See Mawared HR in Action
         </Button>
 
@@ -48,7 +59,10 @@ const HomePage = () => {
           Businesses. Empowering Workforces Every Day.
         </h3>
 
-        <Button className="custom-mawared-btn-style font-medium text-xl my-12">
+        <Button
+          className="custom-mawared-btn-style font-medium text-xl my-12 hover:opacity-90 transition-opacity"
+          onClick={() => handleNavigateToPage(`/contact`)}
+        >
           Join the Empowered
         </Button>
 
@@ -163,7 +177,10 @@ const HomePage = () => {
           </div>
 
           <div className="col-start-2 lg:flex justify-center items-center hidden">
-            <Button className="custom-mawared-btn-style font-medium text-base lg:text-xl mb-12 w-1/2">
+            <Button
+              className="custom-mawared-btn-style font-medium text-base lg:text-xl mb-12 w-1/2 hover:opacity-90 transition-opacity"
+              onClick={() => handleNavigateToPage(`/features`)}
+            >
               Explore All Features
             </Button>
           </div>

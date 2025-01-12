@@ -1,7 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { PricingPlan } from "@/types/pricing";
+import { useNavigate } from "react-router-dom";
 
 const PlanCard = ({ name, price, description, features }: PricingPlan) => {
+  const navigate = useNavigate();
+
+  // handle navigate to page function
+  const handleNavigateToPage = () => {
+    navigate(`/contact`);
+  };
+
   return (
     <div className="custom-price-card-style flex flex-col h-full">
       <div className="text-center mb-8">
@@ -42,7 +50,10 @@ const PlanCard = ({ name, price, description, features }: PricingPlan) => {
 
       <hr />
 
-      <Button className="custom-price-btn-style font-semibold text-lg mt-8 uppercase">
+      <Button
+        className="custom-price-btn-style font-semibold text-lg mt-8 uppercase hover:opacity-90 transition-opacity"
+        onClick={handleNavigateToPage}
+      >
         Get started
       </Button>
     </div>

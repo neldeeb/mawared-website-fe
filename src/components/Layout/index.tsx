@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import { useNavigate } from "react-router-dom";
@@ -18,6 +18,11 @@ const Layout = ({ children }: Props) => {
   const handleNavigateToPage = () => {
     navigate(`/contact`);
   };
+
+  // when i navigate to any page by default opens at the top
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // start of handle to top sticky page content btn function
   const toggleVisible = () => {

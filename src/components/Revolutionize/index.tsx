@@ -31,7 +31,7 @@ const Revolutionize = () => {
       </div>
 
       <Button
-        className="custom-mawared-btn-style font-medium text-base lg:text-xl mt-4"
+        className="custom-mawared-btn-style font-medium text-base lg:text-xl mt-4 hover:opacity-90 transition-opacity"
         onClick={handleNavigateToPage}
       >
         Book a free demo
