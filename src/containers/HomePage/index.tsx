@@ -30,7 +30,7 @@ const HomePage = () => {
   return (
     <Layout>
       <div className="flex flex-col justify-center items-center p-24">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-in slide-in-from-top fade-in-25 duration-1000 ease-linear">
           <h2 className="text-3xl lg:text-5xl font-bold text-[#303030]">
             Human Resources.
             <span className="text-customBlueWaveyColor mx-2">Reimagined.</span>
@@ -42,13 +42,13 @@ const HomePage = () => {
         </div>
 
         <Button
-          className="custom-mawared-btn-style font-bold text-xl mb-12 hover:opacity-90 transition-opacity"
+          className="custom-mawared-btn-style font-bold text-xl mb-12 hover:opacity-90 transition-opacity animate-in slide-in-from-left fade-in-25 duration-1000 ease-linear"
           onClick={() => handleNavigateToPage(`/features`)}
         >
           See Mawared HR in Action
         </Button>
 
-        <img src="/img/laptop-view.png" alt="laptop-view" />
+        <img src="/img/laptop-view.png" alt="laptop-view" className="animate-in slide-in-from-left fade-in-25 duration-1000 ease-linear" />
 
         <hr className="my-16 w-full" />
 

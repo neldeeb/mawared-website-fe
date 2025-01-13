@@ -62,7 +62,7 @@ const Layout = ({ children }: Props) => {
       {/* start of sticky chat btn */}
       <button
         onClick={handleNavigateToPage}
-        className="custom-sticky-chat-btn-style"
+        className="custom-sticky-chat-btn-style animate-bounce"
         title="Chat with us"
       >
         <img src="/img/chat-icon.png" alt="chat-icon" />
