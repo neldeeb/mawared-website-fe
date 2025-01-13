@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Observer } from "tailwindcss-intersect";
 
 // define layout children props type
@@ -14,7 +14,9 @@ const Layout = ({ children }: Props) => {
   const [visible, setVisible] = useState(false);
 
   const navigate = useNavigate();
+  const currentRoute = useLocation();
 
+  // start the observer intersect for animation
   Observer.start();
 
   // handle navigate to page function
@@ -63,13 +65,15 @@ const Layout = ({ children }: Props) => {
       {/* End of footer component */}
 
       {/* start of sticky chat btn */}
-      <button
-        onClick={handleNavigateToPage}
-        className="custom-sticky-chat-btn-style animate-bounce"
-        title="Chat with us"
-      >
-        <img src="/img/chat-icon.png" alt="chat-icon" />
-      </button>
+      {currentRoute?.pathname === "/contact" ? null : (
+        <button
+          onClick={handleNavigateToPage}
+          className="custom-sticky-chat-btn-style animate-bounce"
+          title="Chat with us"
+        >
+          <img src="/img/chat-icon.png" alt="chat-icon" />
+        </button>
+      )}
       {/* End of sticky chat btn */}
 
       {/* start of sticky scroll to top btn */}
