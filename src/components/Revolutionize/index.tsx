@@ -10,7 +10,7 @@ const Revolutionize = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center intersect:animate-fade-right animate-duration-700 animate-ease-linear">
       <div className="text-center mb-12">
         <h2 className="text-xl lg:text-4xl font-bold text-[#303030] flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-0">
           Let’s Revolutionize Your
@@ -18,7 +18,7 @@ const Revolutionize = () => {
           <img
             src="/img/rocket-icon.png"
             alt="rocket-icon"
-            className="h-10 mx-2"
+            className="h-10 mx-2 animate-pulse"
           />
         </h2>
 

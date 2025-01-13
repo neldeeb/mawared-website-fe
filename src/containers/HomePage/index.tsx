@@ -30,7 +30,7 @@ const HomePage = () => {
   return (
     <Layout>
       <div className="flex flex-col justify-center items-center p-24">
-        <div className="text-center mb-12 animate-in slide-in-from-top fade-in-25 duration-1000 ease-linear">
+        <div className="text-center mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear">
           <h2 className="text-3xl lg:text-5xl font-bold text-[#303030]">
             Human Resources.
             <span className="text-customBlueWaveyColor mx-2">Reimagined.</span>
@@ -42,29 +42,34 @@ const HomePage = () => {
         </div>
 
         <Button
-          className="custom-mawared-btn-style font-bold text-xl mb-12 hover:opacity-90 transition-opacity animate-in slide-in-from-left fade-in-25 duration-1000 ease-linear"
+          className="custom-mawared-btn-style font-bold text-xl mb-12 hover:opacity-90 transition-opacity intersect:animate-fade-right animate-duration-700 animate-ease-linear"
           onClick={() => handleNavigateToPage(`/features`)}
         >
           See Mawared HR in Action
         </Button>
 
-        <img src="/img/laptop-view.png" alt="laptop-view" className="animate-in slide-in-from-left fade-in-25 duration-1000 ease-linear" />
+        <img
+          src="/img/laptop-view.png"
+          alt="laptop-view"
+          className="intersect:animate-fade-right animate-duration-700 animate-ease-linear"
+        />
 
         <hr className="my-16 w-full" />
 
-        <h3 className="font-medium text-3xl text-[#313030] text-center">
+        <h3 className="font-medium text-3xl text-[#313030] text-center intersect:animate-jump-in animate-duration-1000 animate-ease-linear">
           Trusted by over <span className="font-extrabold mx-2">400+</span>
           Businesses. Empowering Workforces Every Day.
         </h3>
 
         <Button
-          className="custom-mawared-btn-style font-bold text-xl my-12 hover:opacity-90 transition-opacity"
+          className="custom-mawared-btn-style font-bold text-xl my-12 hover:opacity-90 transition-opacity intersect:animate-jump-in animate-duration-1000 animate-ease-linear"
           onClick={() => handleNavigateToPage(`/contact`)}
         >
           Join the Empowered
         </Button>
 
         <Carousel
+          className="intersect:animate-jump-in animate-duration-1000 animate-ease-linear"
           plugins={[
             Autoplay({
               delay: 2000,
@@ -104,7 +109,7 @@ const HomePage = () => {
 
         <hr className="my-16 w-full" />
 
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             Features That Make HR
             <span className="text-customBlueWaveyColor mx-2">
@@ -119,11 +124,11 @@ const HomePage = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center intersect:animate-fade-left animate-duration-700 animate-ease-linear">
             <img src="/img/iphone-view.png" alt="iphone-view" />
           </div>
 
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-2 intersect:animate-fade-right animate-duration-700 animate-ease-linear">
             <div className="flex flex-col justify-center items-center">
               <div className="flex flex-col gap-2 justify-center items-center mb-12">
                 <img src="/img/smart-att-icon.png" alt="smart-att-icon" />
@@ -174,7 +179,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="col-start-2 lg:flex justify-center items-center hidden">
+          <div className="col-start-2 lg:flex justify-center items-center hidden intersect:animate-fade-up animate-duration-700 animate-ease-linear">
             <Button
               className="custom-mawared-btn-style font-bold text-base lg:text-xl mb-12 w-1/2 hover:opacity-90 transition-opacity"
               onClick={() => handleNavigateToPage(`/features`)}
@@ -186,7 +191,7 @@ const HomePage = () => {
 
         <hr className="my-16 w-full" />
 
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 intersect:animate-jump animate-duration-700 animate-ease-linear">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             What You Get When You
             <span className="text-customBlueWaveyColor mx-2">
@@ -200,14 +205,14 @@ const HomePage = () => {
           </p>
         </div>
 
-        <div className="mb-12">
+        <div className="mb-12 intersect:animate-jump animate-duration-700 animate-ease-linear">
           <img src="/img/reasons-img.png" alt="reasons-img" />
         </div>
       </div>
 
       <div className="hidden lg:block custom-linear-bg-blue-wavy-color-style py-16 px-60 mb-24 h-96">
         <div className="grid grid-cols-2 relative">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 intersect:animate-fade-right animate-duration-700 animate-ease-in-out">
             <h2 className="text-4xl font-semibold text-white">
               Your HR Office in Your Pocket
             </h2>
@@ -258,14 +263,14 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="absolute right-0 -bottom-[115px]">
+          <div className="absolute right-0 -bottom-[115px] intersect:animate-fade-right animate-duration-700 animate-ease-in-out">
             <img src="/img/app-mobile-img.png" alt="app-mobile-img" />
           </div>
         </div>
       </div>
 
       <div className="flex flex-col justify-center items-center p-24">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 intersect:animate-jump animate-duration-1000 animate-ease-linear">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             Powerful
             <span className="text-customBlueWaveyColor mx-2">Features</span>
@@ -273,11 +278,11 @@ const HomePage = () => {
           </h2>
         </div>
 
-        <div className="mb-12">
+        <div className="mb-12 intersect:animate-jump animate-duration-1000 animate-ease-linear">
           <img src="/img/features-icons.png" alt="features-icons" />
         </div>
 
-        <div className="grid lg:grid-cols-2 mt-20">
+        <div className="grid lg:grid-cols-2 mt-20 intersect:animate-jump animate-duration-1000 animate-ease-linear">
           <div className="flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
             <h3 className="text-3xl font-semibold text-[#303030] mb-8">
               Employee Management
@@ -298,13 +303,13 @@ const HomePage = () => {
 
         <hr className="my-16 w-full" />
 
-        <div className="flex justify-center items-center my-12">
+        <div className="flex justify-center items-center my-12 intersect:animate-fade-right animate-duration-700 animate-ease-linear">
           <img src="/img/flexibility-view.png" alt="flexibility-view" />
         </div>
 
         <hr className="my-16 w-full" />
 
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 intersect:animate-jump-in animate-duration-1000 animate-ease-linear">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             What
             <span className="text-customBlueWaveyColor mx-2">Our Clients</span>
@@ -312,7 +317,7 @@ const HomePage = () => {
           </h2>
         </div>
 
-        <div className="w-full">
+        <div className="w-full intersect:animate-fade-down animate-duration-700 animate-ease-linear">
           <Carousel
             plugins={[
               Autoplay({
@@ -432,20 +437,20 @@ const HomePage = () => {
 
         <hr className="my-16 w-full" />
 
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 intersect:animate-jump-in animate-duration-1000 animate-ease-linear">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             Empowering Businesses Across
             <span className="text-customBlueWaveyColor mx-2">The Globe</span>
           </h2>
         </div>
 
-        <div className="flex justify-center items-center my-12">
+        <div className="flex justify-center items-center my-12 intersect:animate-jump-in animate-duration-1000 animate-ease-linear">
           <img src="/img/globe.png" alt="globe" />
         </div>
 
         <hr className="my-16 w-full" />
 
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 intersect:animate-jump-in animate-duration-1000 animate-ease-linear">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             Trusted by
             <span className="text-customBlueWaveyColor mx-2">
@@ -456,6 +461,7 @@ const HomePage = () => {
         </div>
 
         <Carousel
+          className="intersect:animate-jump-in animate-duration-1000 animate-ease-linear"
           plugins={[
             Autoplay({
               delay: 2000,

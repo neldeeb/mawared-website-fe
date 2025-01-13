@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import { useNavigate } from "react-router-dom";
+import { Observer } from "tailwindcss-intersect";
 
 // define layout children props type
 type Props = {
@@ -13,6 +14,8 @@ const Layout = ({ children }: Props) => {
   const [visible, setVisible] = useState(false);
 
   const navigate = useNavigate();
+
+  Observer.start();
 
   // handle navigate to page function
   const handleNavigateToPage = () => {
