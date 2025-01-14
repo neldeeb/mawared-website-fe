@@ -31,9 +31,11 @@ const HomePage = () => {
     <Layout>
       <div className="flex flex-col justify-center items-center p-24">
         <div className="text-center mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
-          <h2 className="text-3xl lg:text-5xl font-bold text-[#303030]">
+          <h2 className="text-3xl lg:text-5xl font-semibold text-[#303030]">
             Human Resources.
-            <span className="text-customBlueWaveyColor mx-2">Reimagined.</span>
+            <span className="text-customBlueWaveyColor mx-2 font-bold">
+              Reimagined.
+            </span>
           </h2>
 
           <p className="text-[#303030] font-medium text-xl lg:text-2xl mt-8">
@@ -42,7 +44,7 @@ const HomePage = () => {
         </div>
 
         <Button
-          className="custom-mawared-btn-style font-bold text-xl mb-12 hover:opacity-90 transition-opacity intersect:animate-fade-right animate-duration-700 animate-ease-linear intersect-once"
+          className="custom-mawared-btn-style font-medium text-xl mb-12 hover:opacity-90 transition-opacity intersect:animate-fade-right animate-duration-700 animate-ease-linear intersect-once"
           onClick={() => handleNavigateToPage(`/features`)}
         >
           See Mawared HR in Action
@@ -62,7 +64,7 @@ const HomePage = () => {
         </h3>
 
         <Button
-          className="custom-mawared-btn-style font-bold text-xl my-12 hover:opacity-90 transition-opacity intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once"
+          className="custom-mawared-btn-style font-medium text-xl my-12 hover:opacity-90 transition-opacity intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once"
           onClick={() => handleNavigateToPage(`/contact`)}
         >
           Join the Empowered
@@ -180,7 +182,7 @@ const HomePage = () => {
 
           <div className="col-start-2 lg:flex justify-center items-center hidden intersect:animate-fade-up animate-duration-700 animate-ease-linear intersect-once">
             <Button
-              className="custom-mawared-btn-style font-bold text-base lg:text-xl mb-12 w-1/2 hover:opacity-90 transition-opacity"
+              className="custom-mawared-btn-style font-medium text-base lg:text-xl mb-12 w-1/2 hover:opacity-90 transition-opacity"
               onClick={() => handleNavigateToPage(`/features`)}
             >
               Explore All Features
