@@ -82,7 +82,16 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="hidden lg:flex">
+      <div className="hidden lg:flex items-center justify-center gap-10">
+        <a
+          href="https://app.mawared-hr.com/login"
+          target="_blank"
+          className="cursor-pointer text-[#23AAEB] font-medium text-lg flex items-center"
+        >
+          Login
+          <img src="/img/login-icon.png" alt="login-icon" className="px-1" />
+        </a>
+
         <Button
           className="flex custom-nav-btn-style font-medium text-lg hover:opacity-90 transition-opacity"
           onClick={handleNavigateToPage}
@@ -160,6 +169,19 @@ const Navbar = () => {
             </DrawerHeader>
 
             <DrawerFooter className="flex justify-center items-center gap-6">
+              <a
+                href="https://app.mawared-hr.com/login"
+                target="_blank"
+                className="cursor-pointer text-[#23AAEB] font-medium text-lg flex items-center"
+              >
+                Login
+                <img
+                  src="/img/login-icon.png"
+                  alt="login-icon"
+                  className="px-1"
+                />
+              </a>
+
               <Button
                 className="custom-nav-btn-style font-medium text-lg w-1/2"
                 onClick={handleNavigateToPage}
