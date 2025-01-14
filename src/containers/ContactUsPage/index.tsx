@@ -149,7 +149,7 @@ const ContactUsPage = () => {
             <img
               src="/img/rocket-icon.png"
               alt="rocket-icon"
-              className="h-10 mx-4"
+              className="h-10 mx-4 animate-pulse"
             />
           </h2>
 

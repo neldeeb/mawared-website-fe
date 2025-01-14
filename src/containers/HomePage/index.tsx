@@ -56,20 +56,19 @@ const HomePage = () => {
 
         <hr className="my-16 w-full" />
 
-        <h3 className="font-medium text-3xl text-[#313030] text-center intersect:animate-jump-in animate-duration-1000 animate-ease-linear intersect-once">
+        <h3 className="font-medium text-3xl text-[#313030] text-center">
           Trusted by over <span className="font-extrabold mx-2">400+</span>
           Businesses. Empowering Workforces Every Day.
         </h3>
 
         <Button
-          className="custom-mawared-btn-style font-bold text-xl my-12 hover:opacity-90 transition-opacity intersect:animate-jump-in animate-duration-1000 animate-ease-linear intersect-once"
+          className="custom-mawared-btn-style font-bold text-xl my-12 hover:opacity-90 transition-opacity intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once"
           onClick={() => handleNavigateToPage(`/contact`)}
         >
           Join the Empowered
         </Button>
 
         <Carousel
-          className="intersect:animate-jump-in animate-duration-1000 animate-ease-linear intersect-once"
           plugins={[
             Autoplay({
               delay: 2000,
@@ -191,7 +190,7 @@ const HomePage = () => {
 
         <hr className="my-16 w-full" />
 
-        <div className="text-center mb-16 intersect:animate-jump animate-duration-700 animate-ease-linear intersect-once">
+        <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             What You Get When You
             <span className="text-customBlueWaveyColor mx-2">
@@ -205,7 +204,7 @@ const HomePage = () => {
           </p>
         </div>
 
-        <div className="mb-12 intersect:animate-jump animate-duration-700 animate-ease-linear intersect-once">
+        <div className="mb-12 intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once">
           <img src="/img/reasons-img.png" alt="reasons-img" />
         </div>
       </div>
@@ -270,7 +269,7 @@ const HomePage = () => {
       </div>
 
       <div className="flex flex-col justify-center items-center p-24">
-        <div className="text-center mb-12 intersect:animate-jump animate-duration-1000 animate-ease-linear intersect-once">
+        <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             Powerful
             <span className="text-customBlueWaveyColor mx-2">Features</span>
@@ -278,11 +277,11 @@ const HomePage = () => {
           </h2>
         </div>
 
-        <div className="mb-12 intersect:animate-jump animate-duration-1000 animate-ease-linear">
+        <div className="mb-12">
           <img src="/img/features-icons.png" alt="features-icons" />
         </div>
 
-        <div className="grid lg:grid-cols-2 mt-20 intersect:animate-jump animate-duration-1000 animate-ease-linear intersect-once">
+        <div className="grid lg:grid-cols-2 mt-20">
           <div className="flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
             <h3 className="text-3xl font-semibold text-[#303030] mb-8">
               Employee Management
@@ -309,7 +308,7 @@ const HomePage = () => {
 
         <hr className="my-16 w-full" />
 
-        {/* <div className="text-center mb-16 intersect:animate-jump-in animate-duration-1000 animate-ease-linear intersect-once">
+        {/* <div className="text-center mb-16 intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             What
             <span className="text-customBlueWaveyColor mx-2">Our Clients</span>
@@ -437,20 +436,20 @@ const HomePage = () => {
 
         <hr className="my-16 w-full" /> */}
 
-        <div className="text-center mb-16 intersect:animate-jump-in animate-duration-1000 animate-ease-linear intersect-once">
+        <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             Empowering Businesses Across
             <span className="text-customBlueWaveyColor mx-2">The Globe</span>
           </h2>
         </div>
 
-        <div className="flex justify-center items-center my-12 intersect:animate-jump-in animate-duration-1000 animate-ease-linear intersect-once">
+        <div className="flex justify-center items-center my-12 intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once">
           <img src="/img/globe.png" alt="globe" />
         </div>
 
         <hr className="my-16 w-full" />
 
-        <div className="text-center mb-16 intersect:animate-jump-in animate-duration-1000 animate-ease-linear intersect-once">
+        <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             Trusted by
             <span className="text-customBlueWaveyColor mx-2">
@@ -461,7 +460,6 @@ const HomePage = () => {
         </div>
 
         <Carousel
-          className="intersect:animate-jump-in animate-duration-1000 animate-ease-linear intersect-once"
           plugins={[
             Autoplay({
               delay: 2000,
