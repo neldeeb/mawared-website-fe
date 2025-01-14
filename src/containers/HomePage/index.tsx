@@ -288,7 +288,7 @@ const HomePage = () => {
             <h3 className="text-3xl font-semibold text-[#303030] mb-8">
               Employee Management
             </h3>
-            <p className="text-xl font-normal text-[#303030]">
+            <p className="text-xl font-normal text-[#303030] break-all">
               Effortlessly manage your entire workforce from one centralized
               system. Track employee profiles, roles, performance, and
               attendance with ease. Automate routine tasks, streamline
