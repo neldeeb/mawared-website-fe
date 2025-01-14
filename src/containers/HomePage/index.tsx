@@ -8,14 +8,14 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+// import {
+//   Card,
+//   CardContent,
+//   CardFooter,
+//   CardHeader,
+//   CardTitle,
+// } from "@/components/ui/card";
+// import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Autoplay from "embla-carousel-autoplay";
 import { useNavigate } from "react-router-dom";
 

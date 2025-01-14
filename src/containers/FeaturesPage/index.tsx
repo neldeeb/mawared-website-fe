@@ -3,7 +3,7 @@ import Revolutionize from "@/components/Revolutionize";
 import {
   Card,
   CardContent,
-  CardFooter,
+  // CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
