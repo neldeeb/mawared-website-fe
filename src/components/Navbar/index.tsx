@@ -58,7 +58,7 @@ const Navbar = () => {
             FAQ
           </div>
         </Link>
-        <Link to="/plans">
+        {/* <Link to="/plans">
           <div
             className={
               currentRoute?.pathname === "/plans"
@@ -68,7 +68,7 @@ const Navbar = () => {
           >
             Plans
           </div>
-        </Link>
+        </Link> */}
         <Link to="/about">
           <div
             className={
@@ -134,7 +134,7 @@ const Navbar = () => {
                     FAQ
                   </div>
                 </Link>
-                <Link to="/plans">
+                {/* <Link to="/plans">
                   <div
                     className={
                       currentRoute?.pathname === "/plans"
@@ -144,7 +144,7 @@ const Navbar = () => {
                   >
                     Plans
                   </div>
-                </Link>
+                </Link> */}
                 <Link to="/about">
                   <div
                     className={
