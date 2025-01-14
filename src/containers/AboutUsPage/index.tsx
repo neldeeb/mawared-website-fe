@@ -45,7 +45,7 @@ const AboutUsPage = () => {
           <img src="/img/our-mission-vision.png" alt="our-mission-vision" />
         </div>
 
-        <div className="text-center mb-20">
+        {/* <div className="text-center mb-20">
           <h2 className="text-4xl font-semibold text-[#191919] mb-12">
             Meet our team
           </h2>
@@ -153,7 +153,7 @@ const AboutUsPage = () => {
               Senior Backend
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* <div className="text-center mb-20">
           <h2 className="text-4xl font-semibold text-[#191919] mb-12">
