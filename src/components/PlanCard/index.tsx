@@ -41,7 +41,7 @@ const PlanCard = ({ name, price, description, features }: PricingPlan) => {
         <ul className="space-y-4">
           {features?.map((feature, index) => (
             <li key={index} className="flex items-start gap-3">
-              <img src="/img/check-icon.png" alt="check-icon" />
+              <img src="./img/check-icon.png" alt="check-icon" />
               <span>{feature}</span>
             </li>
           ))}

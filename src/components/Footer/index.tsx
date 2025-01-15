@@ -5,7 +5,7 @@ const Footer = () => {
         {/* Top section */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-11 gap-10">
           <img
-            src="/img/mawared-white-logo.png"
+            src="./img/mawared-white-logo.png"
             alt="mawared-logo"
             className="h-10"
           />
@@ -17,7 +17,7 @@ const Footer = () => {
               className="hover:opacity-90 transition-opacity"
             >
               <img
-                src="/img/google-play-icon.png"
+                src="./img/google-play-icon.png"
                 alt="Get it on Google Play"
                 className="h-12"
               />
@@ -28,7 +28,7 @@ const Footer = () => {
               className="hover:opacity-90 transition-opacity"
             >
               <img
-                src="/img/apple-store-icon.png"
+                src="./img/apple-store-icon.png"
                 alt="Download on App Store"
                 className="h-12"
               />
@@ -39,7 +39,7 @@ const Footer = () => {
               className="hover:opacity-90 transition-opacity"
             >
               <img
-                src="/img/app-gallery-icon.png"
+                src="./img/app-gallery-icon.png"
                 alt="Explore it on AppGallery"
                 className="h-12"
               />
@@ -50,34 +50,34 @@ const Footer = () => {
         {/* Contact info */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 text-sm font-normal py-12">
           <div className="flex items-center gap-6 text-white">
-            <img src="/img/location-icon.png" alt="location-icon" />
+            <img src="./img/location-icon.png" alt="location-icon" />
             24 Aziz Koheil st from Abdel Hamid AlDeeb St., Tharwat, Alexandria,
             21599,Egypt.
           </div>
 
           <div className="flex items-center gap-6 text-white">
-            <img src="/img/location-icon.png" alt="location-icon" />
+            <img src="./img/location-icon.png" alt="location-icon" />
             22 Goal Gamal St. Off Gamaet ElDewal El Arabeya St., Mohandeseen,
             Giza, Egypt.
           </div>
 
           <div className="flex items-center gap-6 text-white">
-            <img src="/img/location-icon.png" alt="location-icon" />
+            <img src="./img/location-icon.png" alt="location-icon" />
             Al Kunoz Business Center Building C, 3rd floor, Dubai, UAE.
           </div>
 
           <div className="flex items-center gap-6 text-white">
-            <img src="/img/call-icon.png" alt="call-icon" />
+            <img src="./img/call-icon.png" alt="call-icon" />
             (+20) 03 5849945
           </div>
 
           <div className="flex items-center gap-6 text-white">
-            <img src="/img/email-icon.png" alt="email-icon" />
+            <img src="./img/email-icon.png" alt="email-icon" />
             info@mawaredhr.com
           </div>
 
           <div className="flex items-center gap-6 text-white">
-            <img src="/img/call-icon.png" alt="call-icon" />
+            <img src="./img/call-icon.png" alt="call-icon" />
             (+971) 050 460 2733
           </div>
         </div>
@@ -95,21 +95,21 @@ const Footer = () => {
             target="_blank"
             className="hover:opacity-90 transition-opacity"
           >
-            <img src="/img/facebook-icon.png" alt="facebook" />
+            <img src="./img/facebook-icon.png" alt="facebook" />
           </a>
           <a
             href="https://www.instagram.com/mawaredhrsystem"
             target="_blank"
             className="hover:opacity-90 transition-opacity"
           >
-            <img src="/img/instgram-icon.png" alt="instgram" />
+            <img src="./img/instgram-icon.png" alt="instgram" />
           </a>
           <a
             href="https://eg.linkedin.com/company/mawaredhr-system"
             target="_blank"
             className="hover:opacity-90 transition-opacity"
           >
-            <img src="/img/linkedn-icon.png" alt="linkedn" />
+            <img src="./img/linkedn-icon.png" alt="linkedn" />
           </a>
         </div>
 

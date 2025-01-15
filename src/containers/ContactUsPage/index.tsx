@@ -147,7 +147,7 @@ const ContactUsPage = () => {
             <span className="text-customBlueWaveyColor mx-2">Connect</span> And
             Collaborate!
             <img
-              src="/img/rocket-icon.png"
+              src="./img/rocket-icon.png"
               alt="rocket-icon"
               className="h-10 mx-4 animate-pulse"
             />
@@ -162,7 +162,7 @@ const ContactUsPage = () => {
         <div className="w-full custom-contact-card-style overflow-hidden my-6">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <img
-              src="/img/contact-img.png"
+              src="./img/contact-img.png"
               alt="contact-img"
               className="h-full"
             />

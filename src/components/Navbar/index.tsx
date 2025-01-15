@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-[#FFFFFFA6] flex items-center justify-between custom-nav-shadow-box-style gap-10 px-24 h-20 fixed w-full z-50">
-      <img src="/img/mawared-logo.png" alt="logo" />
+      <img src="./img/mawared-logo.png" alt="logo" />
 
       <div className="items-center justify-between gap-10 hidden lg:flex">
         <Link to="/">
@@ -89,7 +89,7 @@ const Navbar = () => {
           className="cursor-pointer text-[#23AAEB] font-medium text-lg flex items-center"
         >
           Login
-          <img src="/img/login-icon.png" alt="login-icon" className="px-1" />
+          <img src="./img/login-icon.png" alt="login-icon" className="px-1" />
         </a>
 
         <Button
@@ -176,7 +176,7 @@ const Navbar = () => {
               >
                 Login
                 <img
-                  src="/img/login-icon.png"
+                  src="./img/login-icon.png"
                   alt="login-icon"
                   className="px-1"
                 />

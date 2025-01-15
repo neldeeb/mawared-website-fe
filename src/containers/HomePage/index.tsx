@@ -51,7 +51,7 @@ const HomePage = () => {
         </Button>
 
         <img
-          src="/img/laptop-view.png"
+          src="./img/laptop-view.png"
           alt="laptop-view"
           className="intersect:animate-fade-right animate-duration-700 animate-ease-linear intersect-once"
         />
@@ -79,27 +79,27 @@ const HomePage = () => {
         >
           <CarouselContent className="-ml-1">
             <CarouselItem className="basis-1/6 pl-2">
-              <img src="/img/talabat-logo.png" alt="talabat-logo" />
+              <img src="./img/talabat-logo.png" alt="talabat-logo" />
             </CarouselItem>
 
             <CarouselItem className="basis-1/6 pl-2">
-              <img src="/img/iq-logo.png" alt="iq-logo" />
+              <img src="./img/iq-logo.png" alt="iq-logo" />
             </CarouselItem>
 
             <CarouselItem className="basis-1/6 pl-2">
-              <img src="/img/tabibi-logo.png" alt="tabibi-logo" />
+              <img src="./img/tabibi-logo.png" alt="tabibi-logo" />
             </CarouselItem>
 
             <CarouselItem className="basis-1/6 pl-2">
-              <img src="/img/caizo-logo.png" alt="caizo-logo" />
+              <img src="./img/caizo-logo.png" alt="caizo-logo" />
             </CarouselItem>
 
             <CarouselItem className="basis-1/6 pl-2">
-              <img src="/img/derma-logo.png" alt="derma-logo" />
+              <img src="./img/derma-logo.png" alt="derma-logo" />
             </CarouselItem>
 
             <CarouselItem className="basis-1/6 pl-2">
-              <img src="/img/handler-logo.png" alt="handler-logo" />
+              <img src="./img/handler-logo.png" alt="handler-logo" />
             </CarouselItem>
           </CarouselContent>
 
@@ -126,13 +126,13 @@ const HomePage = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="flex flex-col justify-center items-center intersect:animate-fade-left animate-duration-700 animate-ease-linear intersect-once">
-            <img src="/img/iphone-view.png" alt="iphone-view" />
+            <img src="./img/iphone-view.png" alt="iphone-view" />
           </div>
 
           <div className="grid grid-cols-2 intersect:animate-fade-right animate-duration-700 animate-ease-linear intersect-once">
             <div className="flex flex-col justify-center items-center">
               <div className="flex flex-col gap-2 justify-center items-center mb-12">
-                <img src="/img/smart-att-icon.png" alt="smart-att-icon" />
+                <img src="./img/smart-att-icon.png" alt="smart-att-icon" />
                 <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
                   Smart Attendance Tracking
                 </p>
@@ -140,7 +140,7 @@ const HomePage = () => {
 
               <div className="flex flex-col gap-2 justify-center items-center mb-12">
                 <img
-                  src="/img/efficient-emp-icon.png"
+                  src="./img/efficient-emp-icon.png"
                   alt="efficient-emp-icon"
                 />
                 <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
@@ -149,7 +149,7 @@ const HomePage = () => {
               </div>
 
               <div className="flex flex-col gap-2 justify-center items-center mb-12">
-                <img src="/img/flex-icon.png" alt="flex-icon" />
+                <img src="./img/flex-icon.png" alt="flex-icon" />
                 <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
                   Customizable and Flexible Work Scheduling
                 </p>
@@ -158,21 +158,21 @@ const HomePage = () => {
 
             <div className="flex flex-col justify-center items-center">
               <div className="flex flex-col gap-2 justify-center items-center mb-12">
-                <img src="/img/payroll-icon.png" alt="payroll-icon" />
+                <img src="./img/payroll-icon.png" alt="payroll-icon" />
                 <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
                   Automated Payroll Processing
                 </p>
               </div>
 
               <div className="flex flex-col gap-2 justify-center items-center mb-12">
-                <img src="/img/realtime-icon.png" alt="realtime-icon" />
+                <img src="./img/realtime-icon.png" alt="realtime-icon" />
                 <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
                   Real-Time Insights
                 </p>
               </div>
 
               <div className="flex flex-col gap-2 justify-center items-center mb-12">
-                <img src="/img/real-time-icon.png" alt="real-time-icon" />
+                <img src="./img/real-time-icon.png" alt="real-time-icon" />
                 <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
                   Document Management Made Simple
                 </p>
@@ -207,7 +207,7 @@ const HomePage = () => {
         </div>
 
         <div className="mb-12 intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once">
-          <img src="/img/reasons-img.png" alt="reasons-img" />
+          <img src="./img/reasons-img.png" alt="reasons-img" />
         </div>
       </div>
 
@@ -232,7 +232,7 @@ const HomePage = () => {
                 className="hover:opacity-90 transition-opacity"
               >
                 <img
-                  src="/img/google-play-icon.png"
+                  src="./img/google-play-icon.png"
                   alt="Get it on Google Play"
                   className="h-12"
                 />
@@ -244,7 +244,7 @@ const HomePage = () => {
                 className="hover:opacity-90 transition-opacity"
               >
                 <img
-                  src="/img/apple-store-icon.png"
+                  src="./img/apple-store-icon.png"
                   alt="Download on App Store"
                   className="h-12"
                 />
@@ -256,7 +256,7 @@ const HomePage = () => {
                 className="hover:opacity-90 transition-opacity"
               >
                 <img
-                  src="/img/app-gallery-icon.png"
+                  src="./img/app-gallery-icon.png"
                   alt="Explore it on AppGallery"
                   className="h-12"
                 />
@@ -265,7 +265,7 @@ const HomePage = () => {
           </div>
 
           <div className="absolute right-0 -bottom-[115px] intersect:animate-fade-right animate-duration-700 animate-ease-in-out intersect-once">
-            <img src="/img/app-mobile-img.png" alt="app-mobile-img" />
+            <img src="./img/app-mobile-img.png" alt="app-mobile-img" />
           </div>
         </div>
       </div>
@@ -280,7 +280,7 @@ const HomePage = () => {
         </div>
 
         <div className="mb-12">
-          <img src="/img/features-icons.png" alt="features-icons" />
+          <img src="./img/features-icons.png" alt="features-icons" />
         </div>
 
         <div className="grid lg:grid-cols-2 mt-20">
@@ -298,14 +298,14 @@ const HomePage = () => {
           </div>
 
           <div className="flex justify-center items-center">
-            <img src="/img/employee-managment.png" alt="employee-managment" />
+            <img src="./img/employee-managment.png" alt="employee-managment" />
           </div>
         </div>
 
         <hr className="my-16 w-full" />
 
         <div className="flex justify-center items-center my-12 intersect:animate-fade-right animate-duration-700 animate-ease-linear">
-          <img src="/img/flexibility-view.png" alt="flexibility-view" />
+          <img src="./img/flexibility-view.png" alt="flexibility-view" />
         </div>
 
         <hr className="my-16 w-full" />
@@ -343,7 +343,7 @@ const HomePage = () => {
                   </CardContent>
                   <CardFooter className="flex flex-col lg:flex-row gap-2 lg:gap-0 items-center">
                     <Avatar className="h-16 w-16">
-                      <AvatarImage src="/img/client.png" />
+                      <AvatarImage src="./img/client.png" />
                       <AvatarFallback className="bg-[#D9D9D9] font-normal text-base lg:text-xl text-black border border-[#313030]">
                         CN
                       </AvatarFallback>
@@ -377,7 +377,7 @@ const HomePage = () => {
                   </CardContent>
                   <CardFooter className="flex flex-col lg:flex-row gap-2 lg:gap-0 items-center">
                     <Avatar className="h-16 w-16">
-                      <AvatarImage src="/img/client.png" />
+                      <AvatarImage src="./img/client.png" />
                       <AvatarFallback className="bg-[#D9D9D9] font-normal text-base lg:text-xl text-black border border-[#313030]">
                         CN
                       </AvatarFallback>
@@ -411,7 +411,7 @@ const HomePage = () => {
                   </CardContent>
                   <CardFooter className="flex flex-col lg:flex-row gap-2 lg:gap-0 items-center">
                     <Avatar className="h-16 w-16">
-                      <AvatarImage src="/img/client.png" />
+                      <AvatarImage src="./img/client.png" />
                       <AvatarFallback className="bg-[#D9D9D9] font-normal text-base lg:text-xl text-black border border-[#313030]">
                         CN
                       </AvatarFallback>
@@ -446,7 +446,7 @@ const HomePage = () => {
         </div>
 
         <div className="flex justify-center items-center my-12 intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once">
-          <img src="/img/globe.png" alt="globe" />
+          <img src="./img/globe.png" alt="globe" />
         </div>
 
         <hr className="my-16 w-full" />
@@ -470,27 +470,27 @@ const HomePage = () => {
         >
           <CarouselContent className="-ml-1">
             <CarouselItem className="basis-1/6 pl-2">
-              <img src="/img/talabat-logo.png" alt="talabat-logo" />
+              <img src="./img/talabat-logo.png" alt="talabat-logo" />
             </CarouselItem>
 
             <CarouselItem className="basis-1/6 pl-2">
-              <img src="/img/iq-logo.png" alt="iq-logo" />
+              <img src="./img/iq-logo.png" alt="iq-logo" />
             </CarouselItem>
 
             <CarouselItem className="basis-1/6 pl-2">
-              <img src="/img/tabibi-logo.png" alt="tabibi-logo" />
+              <img src="./img/tabibi-logo.png" alt="tabibi-logo" />
             </CarouselItem>
 
             <CarouselItem className="basis-1/6 pl-2">
-              <img src="/img/caizo-logo.png" alt="caizo-logo" />
+              <img src="./img/caizo-logo.png" alt="caizo-logo" />
             </CarouselItem>
 
             <CarouselItem className="basis-1/6 pl-2">
-              <img src="/img/derma-logo.png" alt="derma-logo" />
+              <img src="./img/derma-logo.png" alt="derma-logo" />
             </CarouselItem>
 
             <CarouselItem className="basis-1/6 pl-2">
-              <img src="/img/handler-logo.png" alt="handler-logo" />
+              <img src="./img/handler-logo.png" alt="handler-logo" />
             </CarouselItem>
           </CarouselContent>
 

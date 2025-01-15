@@ -30,7 +30,7 @@ const FeaturesPage = () => {
             <CardHeader>
               <CardTitle>
                 <img
-                  src="/img/department-breakdwon.png"
+                  src="./img/department-breakdwon.png"
                   alt="department-breakdwon"
                 />
               </CardTitle>
@@ -47,7 +47,7 @@ const FeaturesPage = () => {
             </CardContent>
             {/* <CardFooter>
               <a href="#">
-                <img src="/img/learn-more-btn.png" alt="learn-more-btn" />
+                <img src="./img/learn-more-btn.png" alt="learn-more-btn" />
               </a>
             </CardFooter> */}
           </Card>
@@ -55,7 +55,7 @@ const FeaturesPage = () => {
           <Card className="custom-features-card-style">
             <CardHeader>
               <CardTitle>
-                <img src="/img/overtime-anlysis.png" alt="overtime-anlysis" />
+                <img src="./img/overtime-anlysis.png" alt="overtime-anlysis" />
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -69,7 +69,7 @@ const FeaturesPage = () => {
             </CardContent>
             {/* <CardFooter>
               <a href="#">
-                <img src="/img/learn-more-btn.png" alt="learn-more-btn" />
+                <img src="./img/learn-more-btn.png" alt="learn-more-btn" />
               </a>
             </CardFooter> */}
           </Card>
@@ -77,7 +77,7 @@ const FeaturesPage = () => {
           <Card className="custom-features-card-style">
             <CardHeader>
               <CardTitle>
-                <img src="/img/att-history.png" alt="att-history" />
+                <img src="./img/att-history.png" alt="att-history" />
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -92,7 +92,7 @@ const FeaturesPage = () => {
             </CardContent>
             {/* <CardFooter>
               <a href="#">
-                <img src="/img/learn-more-btn.png" alt="learn-more-btn" />
+                <img src="./img/learn-more-btn.png" alt="learn-more-btn" />
               </a>
             </CardFooter> */}
           </Card>
@@ -100,7 +100,7 @@ const FeaturesPage = () => {
 
         <div className="lg:flex mb-40">
           <div className="flex items-center justify-center lg:justify-start w-full 2xl:w-1/2 me-16">
-            <img src="/img/employees-module.png" alt="employees-module" />
+            <img src="./img/employees-module.png" alt="employees-module" />
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -121,7 +121,7 @@ const FeaturesPage = () => {
               </CardContent>
               {/* <CardFooter>
                 <a href="#">
-                  <img src="/img/learn-more-btn.png" alt="learn-more-btn" />
+                  <img src="./img/learn-more-btn.png" alt="learn-more-btn" />
                 </a>
               </CardFooter> */}
             </Card>
@@ -143,7 +143,7 @@ const FeaturesPage = () => {
               </CardContent>
               {/* <CardFooter>
                 <a href="#">
-                  <img src="/img/learn-more-btn.png" alt="learn-more-btn" />
+                  <img src="./img/learn-more-btn.png" alt="learn-more-btn" />
                 </a>
               </CardFooter> */}
             </Card>
@@ -165,7 +165,7 @@ const FeaturesPage = () => {
               </CardContent>
               {/* <CardFooter>
                 <a href="#">
-                  <img src="/img/learn-more-btn.png" alt="learn-more-btn" />
+                  <img src="./img/learn-more-btn.png" alt="learn-more-btn" />
                 </a>
               </CardFooter> */}
             </Card>
@@ -187,7 +187,7 @@ const FeaturesPage = () => {
               </CardContent>
               {/* <CardFooter>
                 <a href="#">
-                  <img src="/img/learn-more-btn.png" alt="learn-more-btn" />
+                  <img src="./img/learn-more-btn.png" alt="learn-more-btn" />
                 </a>
               </CardFooter> */}
             </Card>
@@ -207,7 +207,7 @@ const FeaturesPage = () => {
         </div>
 
         <div className="flex justify-center items-center mb-40">
-          <img src="/img/att-module.png" alt="att-module" />
+          <img src="./img/att-module.png" alt="att-module" />
         </div>
 
         <div className="text-center mb-12">
@@ -223,7 +223,7 @@ const FeaturesPage = () => {
         </div>
 
         <div className="flex justify-center items-center mb-40">
-          <img src="/img/finaces-module.png" alt="finaces-module" />
+          <img src="./img/finaces-module.png" alt="finaces-module" />
         </div>
 
         {/* Start of Revolutionize component  */}

@@ -16,7 +16,7 @@ const Revolutionize = () => {
           Let’s Revolutionize Your
           <span className="text-customBlueWaveyColor mx-2">HR Together!</span>
           <img
-            src="/img/rocket-icon.png"
+            src="./img/rocket-icon.png"
             alt="rocket-icon"
             className="h-10 mx-2 animate-pulse"
           />

@@ -21,13 +21,13 @@ const FaqAccordion = ({ question, answer }: FaqAccordionProps) => {
 
         {isOpen ? (
           <img
-            src="/img/arrow-down-icon.png"
+            src="./img/arrow-down-icon.png"
             alt="arrow-down-icon"
             className="h-10"
           />
         ) : (
           <img
-            src="/img/side-arrow-icon.png"
+            src="./img/side-arrow-icon.png"
             alt="side-arrow-icon"
             className="h-16"
           />

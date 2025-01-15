@@ -6,7 +6,7 @@ const AboutUsPage = () => {
     <Layout>
       <div className="flex justify-between items-center pt-24 gap-10">
         <img
-          src="/img/our-company-img-left.png"
+          src="./img/our-company-img-left.png"
           alt="our-company-img-left"
           className="hidden lg:block"
         />
@@ -26,7 +26,7 @@ const AboutUsPage = () => {
         </div>
 
         <img
-          src="/img/our-company-img-rigth.png"
+          src="./img/our-company-img-rigth.png"
           alt="our-company-img-rigth"
           className="hidden lg:block"
         />
@@ -38,11 +38,11 @@ const AboutUsPage = () => {
         </div>
 
         <div className="flex justify-center items-center mb-40">
-          <img src="/img/our-values.png" alt="our-values" />
+          <img src="./img/our-values.png" alt="our-values" />
         </div>
 
         <div className="flex justify-center items-center mb-40">
-          <img src="/img/our-mission-vision.png" alt="our-mission-vision" />
+          <img src="./img/our-mission-vision.png" alt="our-mission-vision" />
         </div>
 
         {/* <div className="text-center mb-20">
@@ -60,7 +60,7 @@ const AboutUsPage = () => {
         <div className="grid grid-cols-2 lg:grid-cols-4 mb-40 gap-16">
           <div className="flex flex-col justify-center items-center text-center">
             <div className="custom-team-card-style">
-              <img src="/img/employee-img.png" alt="employee-img" />
+              <img src="./img/employee-img.png" alt="employee-img" />
             </div>
             <h3 className="text-2xl text-[#191919] font-medium my-3">
               Mohamed Ali
@@ -72,7 +72,7 @@ const AboutUsPage = () => {
 
           <div className="flex flex-col justify-center items-center text-center">
             <div className="custom-team-card-style">
-              <img src="/img/employee-img.png" alt="employee-img" />
+              <img src="./img/employee-img.png" alt="employee-img" />
             </div>
             <h3 className="text-2xl text-[#191919] font-medium my-3">
               Mohamed Ali
@@ -84,7 +84,7 @@ const AboutUsPage = () => {
 
           <div className="flex flex-col justify-center items-center text-center">
             <div className="custom-team-card-style">
-              <img src="/img/employee-img.png" alt="employee-img" />
+              <img src="./img/employee-img.png" alt="employee-img" />
             </div>
             <h3 className="text-2xl text-[#191919] font-medium my-3">
               Mohamed Ali
@@ -96,7 +96,7 @@ const AboutUsPage = () => {
 
           <div className="flex flex-col justify-center items-center text-center">
             <div className="custom-team-card-style">
-              <img src="/img/employee-img.png" alt="employee-img" />
+              <img src="./img/employee-img.png" alt="employee-img" />
             </div>
             <h3 className="text-2xl text-[#191919] font-medium my-3">
               Mohamed Ali
@@ -108,7 +108,7 @@ const AboutUsPage = () => {
 
           <div className="flex flex-col justify-center items-center text-center">
             <div className="custom-team-card-style">
-              <img src="/img/employee-img.png" alt="employee-img" />
+              <img src="./img/employee-img.png" alt="employee-img" />
             </div>
             <h3 className="text-2xl text-[#191919] font-medium my-3">
               Mohamed Ali
@@ -120,7 +120,7 @@ const AboutUsPage = () => {
 
           <div className="flex flex-col justify-center items-center text-center">
             <div className="custom-team-card-style">
-              <img src="/img/employee-img.png" alt="employee-img" />
+              <img src="./img/employee-img.png" alt="employee-img" />
             </div>
             <h3 className="text-2xl text-[#191919] font-medium my-3">
               Mohamed Ali
@@ -132,7 +132,7 @@ const AboutUsPage = () => {
 
           <div className="flex flex-col justify-center items-center text-center">
             <div className="custom-team-card-style">
-              <img src="/img/employee-img.png" alt="employee-img" />
+              <img src="./img/employee-img.png" alt="employee-img" />
             </div>
             <h3 className="text-2xl text-[#191919] font-medium my-3">
               Mohamed Ali
@@ -144,7 +144,7 @@ const AboutUsPage = () => {
 
           <div className="flex flex-col justify-center items-center text-center">
             <div className="custom-team-card-style">
-              <img src="/img/employee-img.png" alt="employee-img" />
+              <img src="./img/employee-img.png" alt="employee-img" />
             </div>
             <h3 className="text-2xl text-[#191919] font-medium my-3">
               Mohamed Ali
@@ -171,7 +171,7 @@ const AboutUsPage = () => {
         </div>
 
         <div className="flex justify-center items-center mb-20">
-          <img src="/img/join.png" alt="join" />
+          <img src="./img/join.png" alt="join" />
         </div>
 
         <Button className="custom-mawared-btn-style font-medium text-xl mb-40">

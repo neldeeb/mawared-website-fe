@@ -71,7 +71,7 @@ const Layout = ({ children }: Props) => {
           className="custom-sticky-chat-btn-style animate-bounce"
           title="Chat with us"
         >
-          <img src="/img/chat-icon.png" alt="chat-icon" />
+          <img src="./img/chat-icon.png" alt="chat-icon" />
         </button>
       )}
       {/* End of sticky chat btn */}
@@ -83,7 +83,7 @@ const Layout = ({ children }: Props) => {
         className="custom-sticky-scroll-to-page-btn-style"
         title="Go to top"
       >
-        <img src="/img/click-icon.png" alt="click-icon" />
+        <img src="./img/click-icon.png" alt="click-icon" />
       </button>
       {/* End of sticky scroll to top btn */}
     </div>
