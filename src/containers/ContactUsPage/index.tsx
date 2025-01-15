@@ -140,9 +140,9 @@ const ContactUsPage = () => {
 
   return (
     <Layout>
-      <div className="flex flex-col justify-center items-center p-24">
+      <div className="flex flex-col justify-center items-center p-11 lg:p-24">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-[#303030] flex items-center justify-center">
+          <h2 className="text-2xl lg:text-4xl font-bold text-[#303030] flex items-center flex-col lg:flex-row gap-2 lg:gap-0 justify-center">
             Let's
             <span className="text-customBlueWaveyColor mx-2">Connect</span> And
             Collaborate!
@@ -153,7 +153,7 @@ const ContactUsPage = () => {
             />
           </h2>
 
-          <p className="text-[#303030] font-medium text-2xl mt-3">
+          <p className="text-[#303030] font-medium text-xl lg:text-2xl mt-3">
             Reach out to us for inquiries, support, or to explore how we can
             help your business thrive.
           </p>
@@ -169,7 +169,7 @@ const ContactUsPage = () => {
 
             <form className="p-12 bg-[#F3F5F9]">
               <div className="space-y-14">
-                <div className="flex items-center">
+                <div className="flex flex-col lg:flex-row gap-3 lg:gap-0 items-start lg:items-center">
                   <label
                     htmlFor="name"
                     className="block text-base font-normal text-[#191919] me-14"
@@ -189,7 +189,7 @@ const ContactUsPage = () => {
                   />
                 </div>
 
-                <div className="flex items-center">
+                <div className="flex flex-col lg:flex-row gap-3 lg:gap-0 items-start lg:items-center">
                   <label
                     htmlFor="email"
                     className="block text-base font-normal text-[#191919] me-16"
@@ -209,7 +209,7 @@ const ContactUsPage = () => {
                   />
                 </div>
 
-                <div className="flex items-center">
+                <div className="flex flex-col lg:flex-row gap-3 lg:gap-0 items-start lg:items-center">
                   <label
                     htmlFor="phone"
                     className="block text-base font-normal text-[#191919] me-14"
@@ -228,7 +228,7 @@ const ContactUsPage = () => {
                   />
                 </div>
 
-                <div className="flex items-center">
+                <div className="flex flex-col lg:flex-row gap-3 lg:gap-0 items-start lg:items-center">
                   <label
                     htmlFor="message"
                     className="block text-base font-normal text-[#191919] me-9"
@@ -254,7 +254,7 @@ const ContactUsPage = () => {
                 </div>
               )}
 
-              <div className="flex gap-4 mt-16">
+              <div className="flex flex-col lg:flex-row gap-4 mt-16">
                 <Button
                   type="button"
                   onClick={handleReset}

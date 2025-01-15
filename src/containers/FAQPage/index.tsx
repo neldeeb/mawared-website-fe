@@ -17,9 +17,9 @@ const FAQPage = () => {
 
   return (
     <Layout>
-      <div className="p-24">
+      <div className="p-11 lg:p-24">
         <div className="flex flex-col justify-center items-center text-center">
-          <h1 className="text-4xl font-bold text-[#303030]">
+          <h1 className="text-2xl lg:text-4xl font-bold text-[#303030]">
             Frequently Asked
             <span className="text-customBlueWaveyColor mx-2">Questions</span>
             (FAQ)
@@ -30,7 +30,7 @@ const FAQPage = () => {
               <button
                 key={tab?.id}
                 onClick={() => setActiveTab(tab?.id)}
-                className={`py-4 px-9 text-lg ${
+                className={`py-4 px-9 text-base lg:text-lg ${
                   activeTab === tab?.id
                     ? "custom-linear-bg-blue-wavy-color-style text-white rounded-xl"
                     : "bg-white text-[#313030]"

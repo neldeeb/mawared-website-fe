@@ -29,7 +29,7 @@ const HomePage = () => {
 
   return (
     <Layout>
-      <div className="flex flex-col justify-center items-center p-24">
+      <div className="flex flex-col justify-center items-center p-11 lg:p-24">
         <div className="text-center mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
           <h2 className="text-3xl lg:text-5xl font-semibold text-[#303030]">
             Human Resources.
@@ -270,7 +270,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center p-24">
+      <div className="flex flex-col justify-center items-center p-11 lg:p-24">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             Powerful

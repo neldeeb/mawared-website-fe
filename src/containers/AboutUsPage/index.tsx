@@ -12,10 +12,10 @@ const AboutUsPage = () => {
         />
 
         <div className="text-center mx-10 md:mx-0">
-          <h2 className="text-5xl font-semibold text-[#191919] mb-16">
+          <h2 className="text-3xl lg:text-5xl font-semibold text-[#191919] mb-16">
             Our Company
           </h2>
-          <p className="text-xl font-normal">
+          <p className="text-lg lg:text-xl font-normal">
             Mawared HR is a trusted provider of innovative
             <span className="font-bold mx-2">HR solutions,</span> helping
             businesses automate processes, improve accuracy, and engage their
@@ -32,9 +32,11 @@ const AboutUsPage = () => {
         />
       </div>
 
-      <div className="flex flex-col justify-center items-center p-24">
+      <div className="flex flex-col justify-center items-center p-11 lg:p-24">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-semibold text-[#191919]">Our Values</h2>
+          <h2 className="text-2xl lg:text-4xl font-semibold text-[#191919]">
+            Our Values
+          </h2>
         </div>
 
         <div className="flex justify-center items-center mb-40">

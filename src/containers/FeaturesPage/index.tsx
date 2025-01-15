@@ -11,14 +11,14 @@ import {
 const FeaturesPage = () => {
   return (
     <Layout>
-      <div className="flex flex-col justify-center items-center p-24">
+      <div className="flex flex-col justify-center items-center p-11 lg:p-24">
         <div className="text-center mb-12">
-          <h2 className="text-5xl font-bold text-[#303030]">
+          <h2 className="text-3xl lg:text-5xl font-bold text-[#303030]">
             <span className="text-customBlueWaveyColor mx-2">Dashboard</span>
             Features in Mawared HR System
           </h2>
 
-          <p className="text-[#303030] font-medium text-2xl mt-8">
+          <p className="text-[#303030] font-medium text-xl lg:text-2xl mt-8">
             Unlock the full potential of your business with Mawared HR’s
             innovative solutions. Our platform offers a range of benefits
             designed to enhance HR efficiency and reliability
@@ -36,7 +36,7 @@ const FeaturesPage = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <h3 className="font-bold text-2xl text-black mb-4">
+              <h3 className="font-bold text-xl lg:text-2xl text-black mb-4">
                 Department Breakdown
               </h3>
               <p className="font-normal text-base text-black">
@@ -59,7 +59,7 @@ const FeaturesPage = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <h3 className="font-bold text-2xl text-black mb-4">
+              <h3 className="font-bold text-xl lg:text-2xl text-black mb-4">
                 Overtime Analysis
               </h3>
               <p className="font-normal text-base text-black">
@@ -81,7 +81,7 @@ const FeaturesPage = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <h3 className="font-bold text-2xl text-black mb-4">
+              <h3 className="font-bold text-xl lg:text-2xl text-black mb-4">
                 Attendance History
               </h3>
               <p className="font-normal text-base text-black">
@@ -107,14 +107,16 @@ const FeaturesPage = () => {
             <Card className="border-0 bg-transparent shadow-none">
               <CardHeader>
                 <CardTitle>
-                  <h3 className="font-bold text-5xl text-[#313030]">01</h3>
+                  <h3 className="font-bold text-3xl lg:text-5xl text-[#313030]">
+                    01
+                  </h3>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <h3 className="font-bold text-2xl text-[#313030] mb-4">
+                <h3 className="font-bold text-xl lg:text-2xl text-[#313030] mb-4">
                   Work Groups
                 </h3>
-                <p className="font-normal text-xl text-[#313030]">
+                <p className="font-normal text-base lg:text-xl text-[#313030]">
                   Organize employees into structured work groups to streamline
                   tasks and improve collaboration.
                 </p>
@@ -129,14 +131,16 @@ const FeaturesPage = () => {
             <Card className="border-0 bg-transparent shadow-none">
               <CardHeader>
                 <CardTitle>
-                  <h3 className="font-bold text-5xl text-[#313030]">02</h3>
+                  <h3 className="font-bold text-3xl lg:text-5xl text-[#313030]">
+                    02
+                  </h3>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <h3 className="font-bold text-2xl text-[#313030] mb-4">
+                <h3 className="font-bold text-xl lg:text-2xl text-[#313030] mb-4">
                   Work Teams
                 </h3>
-                <p className="font-normal text-xl text-[#313030]">
+                <p className="font-normal text-base lg:text-xl text-[#313030]">
                   Build dynamic work teams for projects and daily operations,
                   ensuring seamless coordination.
                 </p>
@@ -151,14 +155,16 @@ const FeaturesPage = () => {
             <Card className="border-0 bg-transparent shadow-none">
               <CardHeader>
                 <CardTitle>
-                  <h3 className="font-bold text-5xl text-[#313030]">03</h3>
+                  <h3 className="font-bold text-3xl lg:text-5xl text-[#313030]">
+                    03
+                  </h3>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <h3 className="font-bold text-2xl text-[#313030] mb-4">
+                <h3 className="font-bold text-xl lg:text-2xl text-[#313030] mb-4">
                   Employee Actions
                 </h3>
-                <p className="font-normal text-xl text-[#313030]">
+                <p className="font-normal text-base lg:text-xl text-[#313030]">
                   Track, approve, and manage employee actions like promotions,
                   transfers, and leaves effortlessly.
                 </p>
@@ -173,14 +179,16 @@ const FeaturesPage = () => {
             <Card className="border-0 bg-transparent shadow-none">
               <CardHeader>
                 <CardTitle>
-                  <h3 className="font-bold text-5xl text-[#313030]">04</h3>
+                  <h3 className="font-bold text-3xl lg:text-5xl text-[#313030]">
+                    04
+                  </h3>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <h3 className="font-bold text-2xl text-[#313030] mb-4">
+                <h3 className="font-bold text-xl lg:text-2xl text-[#313030] mb-4">
                   Employee Documents
                 </h3>
-                <p className="font-normal text-xl text-[#313030]">
+                <p className="font-normal text-base lg:text-xl text-[#313030]">
                   Store, access, and manage employee documents securely in one
                   centralized repository.
                 </p>
@@ -195,12 +203,12 @@ const FeaturesPage = () => {
         </div>
 
         <div className="text-center mb-12">
-          <h2 className="text-5xl font-bold text-[#303030]">
+          <h2 className="text-3xl lg:text-5xl font-bold text-[#303030]">
             <span className="text-customBlueWaveyColor mx-2">Attendance</span>
             Module
           </h2>
 
-          <p className="text-[#303030] font-medium text-2xl mt-8">
+          <p className="text-[#303030] font-medium text-xl lg:text-2xl mt-8">
             Manage and track employee attendance with ease using flexible
             schedules, accurate records, and insightful reporting tools.
           </p>
@@ -211,12 +219,12 @@ const FeaturesPage = () => {
         </div>
 
         <div className="text-center mb-12">
-          <h2 className="text-5xl font-bold text-[#303030]">
+          <h2 className="text-3xl lg:text-5xl font-bold text-[#303030]">
             <span className="text-customBlueWaveyColor mx-2">Financials</span>
             Module
           </h2>
 
-          <p className="text-[#303030] font-medium text-2xl mt-8">
+          <p className="text-[#303030] font-medium text-xl lg:text-2xl mt-8">
             Manage payroll, bonuses, deductions, expenses, and cost centers with
             ease, ensuring accuracy and efficiency in all financial processes.
           </p>

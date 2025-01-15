@@ -17,7 +17,9 @@ const FaqAccordion = ({ question, answer }: FaqAccordionProps) => {
         className="w-full py-3 px-9 text-left flex justify-between items-center"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="font-medium text-xl text-[#313030]">{question}</span>
+        <span className="font-medium text-base lg:text-xl text-[#313030]">
+          {question}
+        </span>
 
         {isOpen ? (
           <img
@@ -35,7 +37,7 @@ const FaqAccordion = ({ question, answer }: FaqAccordionProps) => {
       </button>
 
       {isOpen && (
-        <div className="px-16 pb-6 font-normal text-[#313030b6] text-lg">
+        <div className="px-16 pb-6 font-normal text-[#313030b6] text-base lg:text-lg">
           {answer}
         </div>
       )}
