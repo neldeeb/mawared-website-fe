@@ -3,10 +3,11 @@ import Revolutionize from "@/components/Revolutionize";
 import {
   Card,
   CardContent,
-  // CardFooter,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { attTypeFeatures } from "@/data/featuresData";
 
 const FeaturesPage = () => {
   return (
@@ -214,8 +215,28 @@ const FeaturesPage = () => {
           </p>
         </div>
 
-        <div className="flex justify-center items-center mb-40">
-          <img src="./img/att-module.png" alt="att-module" />
+        <div className="grid grid-cols-1 lg:grid-cols-2 grid-flow-row auto-rows-max gap-6 mb-40 lg:px-40">
+          {/* start of att type features component */}
+          {attTypeFeatures?.map((attFeature, index) => (
+            <Card className="custom-features-card-style h-fit" key={index}>
+              <CardHeader className="lg:px-20 pt-11">
+                <CardTitle>
+                  <h3 className="font-bold text-xl lg:text-3xl text-[#313030]">
+                    {attFeature?.title}
+                  </h3>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="lg:px-20">
+                <p className="font-normal text-lg lg:text-xl text-[#313030] mb-2">
+                  {attFeature?.description}
+                </p>
+              </CardContent>
+              <CardFooter className="justify-center">
+                <img src={attFeature?.imgUrl} alt="att-module-feature" />
+              </CardFooter>
+            </Card>
+          ))}
+          {/* end of att type features component */}
         </div>
 
         <div className="text-center mb-12">
@@ -230,8 +251,182 @@ const FeaturesPage = () => {
           </p>
         </div>
 
-        <div className="flex justify-center items-center mb-40">
-          <img src="./img/finaces-module.png" alt="finaces-module" />
+        <div className="flex flex-col justify-center gap-6 items-center mb-40 lg:px-40">
+          <Card className="custom-features-card-style grid grid-cols-1 lg:grid-cols-2 gap-6 p-10">
+            <div className="flex flex-col gap-6 justify-center items-start">
+              <CardHeader className="pb-0">
+                <CardTitle>
+                  <img
+                    src="./img/payroll--icon.png"
+                    alt="finance-module-feature"
+                  />
+                </CardTitle>
+              </CardHeader>
+
+              <CardContent>
+                <h3 className="font-semibold text-lg lg:text-xl text-[#313030] mb-3">
+                  Payroll
+                </h3>
+
+                <p className="font-normal text-base text-[#3130307b] mb-2">
+                  Simplify payroll management with automated calculations for
+                  salaries, taxes, and deductions. Generate payslips instantly
+                  and ensure employees are paid accurately and on time, every
+                  time.
+                </p>
+              </CardContent>
+            </div>
+
+            <CardFooter className="justify-center p-0">
+              <img src="./img/payroll-img.png" alt="finance-module-feature" />
+            </CardFooter>
+          </Card>
+
+          <div className="flex flex-col justify-center gap-6 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div>
+                <Card className="custom-features-card-style grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6 p-3">
+                  <div className="flex flex-col gap-6 justify-center items-start">
+                    <CardHeader className="pb-0">
+                      <CardTitle>
+                        <img
+                          src="./img/loans-icon.png"
+                          alt="finance-module-feature"
+                        />
+                      </CardTitle>
+                    </CardHeader>
+
+                    <CardContent>
+                      <h3 className="font-semibold text-lg lg:text-xl text-[#313030] mb-3">
+                        Loans
+                      </h3>
+
+                      <p className="font-normal text-base text-[#3130307b] mb-2">
+                        Offer and manage employee loans seamlessly, from request
+                        approvals to repayment schedules. Track balances and
+                        payment histories to maintain clarity and trust.
+                      </p>
+                    </CardContent>
+                  </div>
+
+                  <CardFooter className="justify-center p-0">
+                    <img
+                      src="./img/loans-img.png"
+                      alt="finance-module-feature"
+                    />
+                  </CardFooter>
+                </Card>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
+                  <Card className="custom-features-card-style p-3">
+                    <div className="flex flex-col gap-6 justify-center items-start">
+                      <CardHeader className="pb-0">
+                        <CardTitle>
+                          <img
+                            src="./img/bonus-icon.png"
+                            alt="finance-module-feature"
+                          />
+                        </CardTitle>
+                      </CardHeader>
+
+                      <CardContent>
+                        <h3 className="font-semibold text-lg lg:text-xl text-[#313030] mb-3">
+                          Bonuses
+                        </h3>
+
+                        <p className="font-normal text-base text-[#3130307b] mb-2">
+                          Easily configure and manage bonus payments based on
+                          employee performance, company goals, or special
+                          occasions. Maintain clear records of all bonus
+                          distributions for transparency and compliance.
+                        </p>
+                      </CardContent>
+                    </div>
+                  </Card>
+
+                  <Card className="custom-features-card-style p-3">
+                    <div className="flex flex-col gap-6 items-start">
+                      <CardHeader className="pb-0">
+                        <CardTitle>
+                          <img
+                            src="./img/deductions-icon.png"
+                            alt="finance-module-feature"
+                          />
+                        </CardTitle>
+                      </CardHeader>
+
+                      <CardContent>
+                        <h3 className="font-semibold text-lg lg:text-xl text-[#313030] mb-3">
+                          Deductions
+                        </h3>
+
+                        <p className="font-normal text-base text-[#3130307b] mb-2">
+                          Automate the calculation and application of
+                          deductions, such as taxes, penalties, or benefits
+                          contributions. Keep detailed logs to ensure fairness
+                          and consistency across your workforce.
+                        </p>
+                      </CardContent>
+                    </div>
+                  </Card>
+                </div>
+              </div>
+
+              <Card className="custom-features-card-style p-10">
+                <CardContent>
+                  <h3 className="font-semibold text-lg lg:text-xl text-[#313030] mb-3">
+                    Expenses
+                  </h3>
+
+                  <p className="font-normal text-base text-[#3130307b] mb-2">
+                    Track and monitor business expenses in real-time. Categorize
+                    spending, generate reports, and gain insights into cost
+                    trends to improve budgeting and financial planning.
+                  </p>
+                </CardContent>
+
+                <CardFooter className="justify-center p-0">
+                  <img
+                    src="./img/expenses-img.png"
+                    alt="finance-module-feature"
+                  />
+                </CardFooter>
+              </Card>
+            </div>
+          </div>
+
+          <Card className="custom-features-card-style grid grid-cols-1 lg:grid-cols-2 gap-6 p-10">
+            <CardFooter className="justify-center p-0">
+              <img
+                src="./img/cost-center-img.png"
+                alt="finance-module-feature"
+              />
+            </CardFooter>
+
+            <div className="flex flex-col gap-6 justify-center items-start">
+              <CardHeader className="pb-0">
+                <CardTitle>
+                  <img
+                    src="./img/coast-center-icon.png"
+                    alt="finance-module-feature"
+                  />
+                </CardTitle>
+              </CardHeader>
+
+              <CardContent>
+                <h3 className="font-semibold text-lg lg:text-xl text-[#313030] mb-3">
+                  Cost center
+                </h3>
+
+                <p className="font-normal text-base text-[#3130307b] mb-2">
+                  Allocate costs to specific departments, projects, or
+                  initiatives. Analyze financial performance with detailed
+                  reports to support better decision-making and resource
+                  allocation.
+                </p>
+              </CardContent>
+            </div>
+          </Card>
         </div>
 
         {/* Start of Revolutionize component  */}
