@@ -19,7 +19,7 @@ import {
 // import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Autoplay from "embla-carousel-autoplay";
 import { useNavigate } from "react-router-dom";
-import { homeTabsContent } from "@/data/homeData";
+import { homeTabsContent, homePageContent } from "@/data/homeData";
 
 // tabs constant
 const homeTabs = [
@@ -71,14 +71,14 @@ const HomePage = () => {
       <div className="flex flex-col justify-center items-center p-11 lg:p-24">
         <div className="text-center mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
           <h2 className="text-3xl lg:text-5xl font-semibold text-[#303030]">
-            Human Resources.
+            {homePageContent?.introMainTitle}
             <span className="text-customBlueWaveyColor mx-2 font-bold">
-              Reimagined.
+              {homePageContent?.introSubTitle}
             </span>
           </h2>
 
           <p className="text-[#303030] font-medium text-xl lg:text-2xl mt-8">
-            The Ultimate Cloud-Based HRMS Platform For Your HR Operations.
+            {homePageContent?.introDescription}
           </p>
         </div>
 
@@ -86,11 +86,11 @@ const HomePage = () => {
           className="custom-mawared-btn-style font-medium text-xl mb-12 hover:opacity-90 transition-opacity intersect:animate-fade-right animate-duration-700 animate-ease-linear intersect-once"
           onClick={() => handleNavigateToPage(`/features`)}
         >
-          See Mawared HR in Action
+          {homePageContent?.introBtnLabel}
         </Button>
 
         <img
-          src="./img/laptop-view.png"
+          src={homePageContent?.introImgUrl}
           alt="laptop-view"
           className="intersect:animate-fade-right animate-duration-700 animate-ease-linear intersect-once"
         />
@@ -98,15 +98,18 @@ const HomePage = () => {
         <hr className="my-16 w-full" />
 
         <h3 className="font-medium text-3xl text-[#313030] text-center">
-          Trusted by over <span className="font-extrabold mx-2">400+</span>
-          Businesses. Empowering Workforces Every Day.
+          {homePageContent?.joinEmpowerdSectionTitleFirstPart}
+          <span className="font-extrabold mx-2">
+            {homePageContent?.joinEmpowerdSectionNumber}
+          </span>
+          {homePageContent?.joinEmpowerdSectionTitleSecPart}
         </h3>
 
         <Button
           className="custom-mawared-btn-style font-medium text-xl my-12 hover:opacity-90 transition-opacity intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once"
           onClick={() => handleNavigateToPage(`/contact`)}
         >
-          Join the Empowered
+          {homePageContent?.joinEmpowerdSectionBtnLabel}
         </Button>
 
         <Carousel
@@ -117,29 +120,11 @@ const HomePage = () => {
           ]}
         >
           <CarouselContent className="-ml-1">
-            <CarouselItem className="basis-1/6 pl-2">
-              <img src="./img/talabat-logo.png" alt="talabat-logo" />
-            </CarouselItem>
-
-            <CarouselItem className="basis-1/6 pl-2">
-              <img src="./img/iq-logo.png" alt="iq-logo" />
-            </CarouselItem>
-
-            <CarouselItem className="basis-1/6 pl-2">
-              <img src="./img/tabibi-logo.png" alt="tabibi-logo" />
-            </CarouselItem>
-
-            <CarouselItem className="basis-1/6 pl-2">
-              <img src="./img/caizo-logo.png" alt="caizo-logo" />
-            </CarouselItem>
-
-            <CarouselItem className="basis-1/6 pl-2">
-              <img src="./img/derma-logo.png" alt="derma-logo" />
-            </CarouselItem>
-
-            <CarouselItem className="basis-1/6 pl-2">
-              <img src="./img/handler-logo.png" alt="handler-logo" />
-            </CarouselItem>
+            {homePageContent?.companyLogsUrls?.map((el) => (
+              <CarouselItem className="basis-1/6 pl-2">
+                <img src={el} alt="logo" />
+              </CarouselItem>
+            ))}
           </CarouselContent>
 
           <CarouselPrevious className="border border-[#313030]" />
@@ -151,21 +136,23 @@ const HomePage = () => {
 
         <div className="text-center mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
-            Features That Make HR
+            {homePageContent?.featuresSectionTitleFirstPart}
             <span className="text-customBlueWaveyColor mx-2">
-              Easier and Faster
+              {homePageContent?.featuresSectionTitleSecPart}
             </span>
           </h2>
 
           <p className="text-[#303030] font-medium text-xl lg:text-2xl mt-8">
-            Combining Next-Gen tools with intuitive design to improve workforce
-            management and simplify HR processes.
+            {homePageContent?.featuresSectionDescription}
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="flex flex-col justify-center items-center intersect:animate-fade-left animate-duration-700 animate-ease-linear intersect-once">
-            <img src="./img/iphone-view.png" alt="iphone-view" />
+            <img
+              src={homePageContent?.featuresSectionImgUrl}
+              alt="iphone-view"
+            />
           </div>
 
           <div className="grid grid-cols-2 intersect:animate-fade-right animate-duration-700 animate-ease-linear intersect-once">
@@ -224,7 +211,7 @@ const HomePage = () => {
               className="custom-mawared-btn-style font-medium text-base lg:text-xl mb-12 w-1/2 hover:opacity-90 transition-opacity"
               onClick={() => handleNavigateToPage(`/features`)}
             >
-              Explore All Features
+              {homePageContent?.featuresSectionBtnLabel}
             </Button>
           </div>
         </div>
