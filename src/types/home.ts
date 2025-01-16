@@ -15,4 +15,25 @@ export interface HomePageContentProps {
   featuresSectionDescription: string;
   featuresSectionImgUrl: string;
   featuresSectionBtnLabel: string;
+  joinSectionTitleFirstPart: string;
+  joinSectionTitleSecPart: string;
+  joinSectionDescription: string;
+  joinSectionImgUrl: string;
+  globeSectionTitleFirstPart: string;
+  globeSectionTitleSecPart: string;
+  globeSectionImgUrl: string;
+  trustedSectionTitleFirstPart: string;
+  trustedSectionTitleSecPart: string;
+  trustedSectionTitleThirdPart: string;
+}
+
+// define home features icons interface
+export interface HomeFeaturesFirstGridIconsProps {
+  title: string;
+  imgUrl: string;
+}
+
+export interface HomeFeaturesSecGridIconsProps {
+  title: string;
+  imgUrl: string;
 }

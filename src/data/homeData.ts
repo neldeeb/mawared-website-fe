@@ -1,4 +1,8 @@
-import { HomePageContentProps } from "@/types/home";
+import {
+  HomePageContentProps,
+  HomeFeaturesFirstGridIconsProps,
+  HomeFeaturesSecGridIconsProps,
+} from "@/types/home";
 
 // home page content data object
 export const homePageContent: HomePageContentProps = {
@@ -27,6 +31,16 @@ export const homePageContent: HomePageContentProps = {
     "Combining Next-Gen tools with intuitive design to improve workforce management and simplify HR processes.",
   featuresSectionImgUrl: "./img/iphone-view.png",
   featuresSectionBtnLabel: "Explore All Features",
+  joinSectionTitleFirstPart: "What You Get When You",
+  joinSectionTitleSecPart: "Join Mawared HR",
+  joinSectionDescription: "Experience the measurable impact of using Mawared HR Digital Solutions",
+  joinSectionImgUrl: "./img/reasons-img.png",
+  globeSectionTitleFirstPart: "Empowering Businesses Across",
+  globeSectionTitleSecPart: "The Globe",
+  globeSectionImgUrl: "./img/globe.png",
+  trustedSectionTitleFirstPart: "Trusted by",
+  trustedSectionTitleSecPart: "Industry Leaders",
+  trustedSectionTitleThirdPart: "Worldwide",
 };
 
 // home tabs data object
@@ -80,3 +94,35 @@ export const homeTabsContent = {
     },
   ],
 };
+
+// home features icons first grid data object
+export const homeFeaturesFirstGridIcons: HomeFeaturesFirstGridIconsProps[] = [
+  {
+    title: "Smart Attendance Tracking",
+    imgUrl: "./img/smart-att-icon.png",
+  },
+  {
+    title: "Efficient Employee Requests",
+    imgUrl: "./img/efficient-emp-icon.png",
+  },
+  {
+    title: "Customizable and Flexible Work Scheduling",
+    imgUrl: "./img/flex-icon.png",
+  },
+];
+
+// home features icons sec grid data object
+export const homeFeaturesSecGridIcons: HomeFeaturesSecGridIconsProps[] = [
+  {
+    title: "Automated Payroll Processing",
+    imgUrl: "./img/payroll-icon.png",
+  },
+  {
+    title: "Real-Time Insights",
+    imgUrl: "./img/realtime-icon.png",
+  },
+  {
+    title: "Document Management Made Simple",
+    imgUrl: "./img/real-time-icon.png",
+  },
+];

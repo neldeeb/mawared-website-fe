@@ -19,7 +19,12 @@ import {
 // import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Autoplay from "embla-carousel-autoplay";
 import { useNavigate } from "react-router-dom";
-import { homeTabsContent, homePageContent } from "@/data/homeData";
+import {
+  homeTabsContent,
+  homePageContent,
+  homeFeaturesFirstGridIcons,
+  homeFeaturesSecGridIcons,
+} from "@/data/homeData";
 
 // tabs constant
 const homeTabs = [
@@ -120,8 +125,8 @@ const HomePage = () => {
           ]}
         >
           <CarouselContent className="-ml-1">
-            {homePageContent?.companyLogsUrls?.map((el) => (
-              <CarouselItem className="basis-1/6 pl-2">
+            {homePageContent?.companyLogsUrls?.map((el, index) => (
+              <CarouselItem key={index} className="basis-1/6 pl-2">
                 <img src={el} alt="logo" />
               </CarouselItem>
             ))}
@@ -157,52 +162,31 @@ const HomePage = () => {
 
           <div className="grid grid-cols-2 intersect:animate-fade-right animate-duration-700 animate-ease-linear intersect-once">
             <div className="flex flex-col justify-center items-center">
-              <div className="flex flex-col gap-2 justify-center items-center mb-12">
-                <img src="./img/smart-att-icon.png" alt="smart-att-icon" />
-                <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
-                  Smart Attendance Tracking
-                </p>
-              </div>
-
-              <div className="flex flex-col gap-2 justify-center items-center mb-12">
-                <img
-                  src="./img/efficient-emp-icon.png"
-                  alt="efficient-emp-icon"
-                />
-                <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
-                  Efficient Employee Requests
-                </p>
-              </div>
-
-              <div className="flex flex-col gap-2 justify-center items-center mb-12">
-                <img src="./img/flex-icon.png" alt="flex-icon" />
-                <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
-                  Customizable and Flexible Work Scheduling
-                </p>
-              </div>
+              {homeFeaturesFirstGridIcons?.map((el, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col gap-2 justify-center items-center mb-12"
+                >
+                  <img src={el?.imgUrl} alt="att-icon" />
+                  <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
+                    {el?.title}
+                  </p>
+                </div>
+              ))}
             </div>
 
             <div className="flex flex-col justify-center items-center">
-              <div className="flex flex-col gap-2 justify-center items-center mb-12">
-                <img src="./img/payroll-icon.png" alt="payroll-icon" />
-                <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
-                  Automated Payroll Processing
-                </p>
-              </div>
-
-              <div className="flex flex-col gap-2 justify-center items-center mb-12">
-                <img src="./img/realtime-icon.png" alt="realtime-icon" />
-                <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
-                  Real-Time Insights
-                </p>
-              </div>
-
-              <div className="flex flex-col gap-2 justify-center items-center mb-12">
-                <img src="./img/real-time-icon.png" alt="real-time-icon" />
-                <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
-                  Document Management Made Simple
-                </p>
-              </div>
+              {homeFeaturesSecGridIcons?.map((el, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col gap-2 justify-center items-center mb-12"
+                >
+                  <img src={el?.imgUrl} alt="att-icon" />
+                  <p className="text-[#313030] font-semibold text-base lg:text-xl text-center">
+                    {el?.title}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -220,20 +204,19 @@ const HomePage = () => {
 
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
-            What You Get When You
+            {homePageContent?.joinSectionTitleFirstPart}
             <span className="text-customBlueWaveyColor mx-2">
-              Join Mawared HR
+              {homePageContent?.joinSectionTitleSecPart}
             </span>
           </h2>
 
           <p className="text-[#303030] font-medium text-xl lg:text-2xl mt-8">
-            Experience the measurable impact of using Mawared HR Digital
-            Solutions
+            {homePageContent?.joinSectionDescription}
           </p>
         </div>
 
         <div className="mb-12 intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once">
-          <img src="./img/reasons-img.png" alt="reasons-img" />
+          <img src={homePageContent?.joinSectionImgUrl} alt="reasons-img" />
         </div>
       </div>
 
@@ -485,24 +468,26 @@ const HomePage = () => {
 
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
-            Empowering Businesses Across
-            <span className="text-customBlueWaveyColor mx-2">The Globe</span>
+            {homePageContent?.globeSectionTitleFirstPart}
+            <span className="text-customBlueWaveyColor mx-2">
+              {homePageContent?.globeSectionTitleSecPart}
+            </span>
           </h2>
         </div>
 
         <div className="flex justify-center items-center my-12 intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once">
-          <img src="./img/globe.png" alt="globe" />
+          <img src={homePageContent?.globeSectionImgUrl} alt="globe" />
         </div>
 
         <hr className="my-16 w-full" />
 
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
-            Trusted by
+            {homePageContent?.trustedSectionTitleFirstPart}
             <span className="text-customBlueWaveyColor mx-2">
-              Industry Leaders
+              {homePageContent?.trustedSectionTitleSecPart}
             </span>
-            Worldwide
+            {homePageContent?.trustedSectionTitleThirdPart}
           </h2>
         </div>
 
@@ -514,29 +499,11 @@ const HomePage = () => {
           ]}
         >
           <CarouselContent className="-ml-1">
-            <CarouselItem className="basis-1/6 pl-2">
-              <img src="./img/talabat-logo.png" alt="talabat-logo" />
-            </CarouselItem>
-
-            <CarouselItem className="basis-1/6 pl-2">
-              <img src="./img/iq-logo.png" alt="iq-logo" />
-            </CarouselItem>
-
-            <CarouselItem className="basis-1/6 pl-2">
-              <img src="./img/tabibi-logo.png" alt="tabibi-logo" />
-            </CarouselItem>
-
-            <CarouselItem className="basis-1/6 pl-2">
-              <img src="./img/caizo-logo.png" alt="caizo-logo" />
-            </CarouselItem>
-
-            <CarouselItem className="basis-1/6 pl-2">
-              <img src="./img/derma-logo.png" alt="derma-logo" />
-            </CarouselItem>
-
-            <CarouselItem className="basis-1/6 pl-2">
-              <img src="./img/handler-logo.png" alt="handler-logo" />
-            </CarouselItem>
+            {homePageContent?.companyLogsUrls?.map((el, index) => (
+              <CarouselItem key={index} className="basis-1/6 pl-2">
+                <img src={el} alt="logo" />
+              </CarouselItem>
+            ))}
           </CarouselContent>
 
           <CarouselPrevious className="border border-[#313030]" />
