@@ -78,7 +78,7 @@ const Footer = () => {
 
           <div className="flex items-center gap-6 text-white">
             <img src="./img/call-icon.png" alt="call-icon" />
-            (+971) 050 460 2733
+            (+971) 50 460 2733
           </div>
         </div>
       </div>

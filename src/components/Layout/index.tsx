@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
-import { useNavigate, useLocation } from "react-router-dom";
 import { Observer } from "tailwindcss-intersect";
 
 // define layout children props type
@@ -9,20 +8,18 @@ type Props = {
   children?: React.ReactNode;
 };
 
+// define whatsapp interface props
+interface WhatsAppProps {
+  phoneNumber: string;
+  message: string;
+}
+
 const Layout = ({ children }: Props) => {
   // useStates
   const [visible, setVisible] = useState(false);
 
-  const navigate = useNavigate();
-  const currentRoute = useLocation();
-
   // start the observer intersect for animation
   Observer.start();
-
-  // handle navigate to page function
-  const handleNavigateToPage = () => {
-    navigate(`/contact`);
-  };
 
   // when i navigate to any page by default opens at the top
   useEffect(() => {
@@ -49,6 +46,28 @@ const Layout = ({ children }: Props) => {
   window.addEventListener("scroll", toggleVisible);
   // End of handle to top sticky page content btn function
 
+  // Start of handle whats app link function component
+  const WhatsAppLink = ({ phoneNumber, message }: WhatsAppProps) => {
+    // Encode the message to include in the URL
+    const encodedMessage = encodeURIComponent(message || "");
+    const whatsappURL = `https://wa.me/${phoneNumber}${
+      message ? `?text=${encodedMessage}` : ""
+    }`;
+
+    return (
+      <a
+        className="custom-sticky-chat-btn-style"
+        href={whatsappURL}
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Chat with us"
+      >
+        <img src="./img/whatsapp-icon.png" alt="chat-icon" />
+      </a>
+    );
+  };
+  // End of handle whats app link function component
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Start of navbar component */}
@@ -64,17 +83,12 @@ const Layout = ({ children }: Props) => {
       <Footer />
       {/* End of footer component */}
 
-      {/* start of sticky chat btn */}
-      {currentRoute?.pathname === "/contact" ? null : (
-        <button
-          onClick={handleNavigateToPage}
-          className="custom-sticky-chat-btn-style animate-bounce"
-          title="Chat with us"
-        >
-          <img src="./img/chat-icon.png" alt="chat-icon" />
-        </button>
-      )}
-      {/* End of sticky chat btn */}
+      {/* start of sticky whats app btn */}
+      <WhatsAppLink
+        phoneNumber="+971504602733"
+        message="Hello Mawared, I have a question!"
+      />
+      {/* End of sticky whats app btn */}
 
       {/* start of sticky scroll to top btn */}
       <button
