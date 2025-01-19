@@ -126,8 +126,11 @@ const HomePage = () => {
         >
           <CarouselContent className="-ml-1">
             {homePageContent?.companyLogsUrls?.map((el, index) => (
-              <CarouselItem key={index} className="basis-1/6 pl-2">
-                <img src={el} alt="logo" />
+              <CarouselItem
+                key={index}
+                className="basis-1/3 lg:basis-1/6 pl-2 flex justify-center items-center gap-10"
+              >
+                <img src={el} alt="logo" height={150} width={150} />
               </CarouselItem>
             ))}
           </CarouselContent>
@@ -491,25 +494,13 @@ const HomePage = () => {
           </h2>
         </div>
 
-        <Carousel
-          plugins={[
-            Autoplay({
-              delay: 2000,
-            }),
-          ]}
-        >
-          <CarouselContent className="-ml-1">
-            {homePageContent?.companyLogsUrls?.map((el, index) => (
-              <CarouselItem key={index} className="basis-1/6 pl-2">
-                <img src={el} alt="logo" />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-
-          <CarouselPrevious className="border border-[#313030]" />
-
-          <CarouselNext className="border border-[#313030]" />
-        </Carousel>
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-10">
+          {homePageContent?.companyLogsUrls?.map((el, index) => (
+            <div className="flex justify-center items-center">
+              <img key={index} src={el} alt="logo" height={75} width={170} />
+            </div>
+          ))}
+        </div>
 
         <hr className="my-16 w-full" />
 
