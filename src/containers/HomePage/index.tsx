@@ -89,7 +89,7 @@ const HomePage = () => {
 
         <Button
           className="custom-mawared-btn-style font-medium text-xl mb-12 hover:opacity-90 transition-opacity intersect:animate-fade-right animate-duration-700 animate-ease-linear intersect-once"
-          onClick={() => handleNavigateToPage(`/features`)}
+          onClick={() => handleNavigateToPage(`/contact`)}
         >
           {homePageContent?.introBtnLabel}
         </Button>
@@ -196,7 +196,7 @@ const HomePage = () => {
           <div className="col-start-2 lg:flex justify-center items-center hidden intersect:animate-fade-up animate-duration-700 animate-ease-linear intersect-once">
             <Button
               className="custom-mawared-btn-style font-medium text-base lg:text-xl mb-12 w-1/2 hover:opacity-90 transition-opacity"
-              onClick={() => handleNavigateToPage(`/features`)}
+              onClick={() => handleNavigateToPage(`/contact`)}
             >
               {homePageContent?.featuresSectionBtnLabel}
             </Button>
