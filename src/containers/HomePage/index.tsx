@@ -469,7 +469,7 @@ const HomePage = () => {
 
         <hr className="my-16 w-full" /> */}
 
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
             {homePageContent?.globeSectionTitleFirstPart}
             <span className="text-customBlueWaveyColor mx-2">
@@ -482,7 +482,7 @@ const HomePage = () => {
           <img src={homePageContent?.globeSectionImgUrl} alt="globe" />
         </div>
 
-        <hr className="my-16 w-full" />
+        <hr className="my-16 w-full" /> */}
 
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
