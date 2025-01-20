@@ -284,16 +284,6 @@ const ContactUsPage = () => {
                   >
                     Phone
                   </label>
-                  {/* <input
-                    type="tel"
-                    id="phone"
-                    value={formData.phone}
-                    onChange={(e) =>
-                      setFormData({ ...formData, phone: e.target.value })
-                    }
-                    className="w-full px-4 py-3 border border-[#31303066] rounded-[8px] focus:ring-[#23AAEB] focus:border-[#23AAEB] bg-[#F3F5F9]"
-                    placeholder="(000) 000-0000"
-                  /> */}
 
                   <PhoneInput
                     defaultCountry="US"
