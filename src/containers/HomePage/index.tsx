@@ -186,9 +186,9 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="hidden lg:block custom-linear-bg-blue-wavy-color-style py-16 px-60 mb-24 h-96">
-        <div className="grid grid-cols-2 relative">
-          <div className="text-center mb-12 intersect:animate-fade-right animate-duration-700 animate-ease-in-out intersect-once">
+      <div className="custom-linear-bg-blue-wavy-color-style p-11 lg:py-0 lg:px-24">
+        <div className="grid lg:grid-cols-2 gap-6">
+          <div className="flex flex-col justify-center text-center intersect:animate-fade-right animate-duration-700 animate-ease-in-out intersect-once">
             <h2 className="text-4xl font-semibold text-white">
               Your HR Office in Your Pocket
             </h2>
@@ -239,7 +239,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="absolute right-0 -bottom-[115px] intersect:animate-fade-right animate-duration-700 animate-ease-in-out intersect-once">
+          <div className="flex flex-col justify-center items-center lg:items-end intersect:animate-fade-right animate-duration-700 animate-ease-in-out intersect-once">
             <img src="./img/app-mobile-img.png" alt="app-mobile-img" />
           </div>
         </div>
