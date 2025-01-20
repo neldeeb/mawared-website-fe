@@ -19,8 +19,8 @@ const PlanCard = ({ name, price, description, features }: PricingPlan) => {
           style={{
             backgroundImage:
               name?.toLowerCase() === "plus"
-                ? `url(/img/middle-price-bg.png)`
-                : `url(/img/price-bg.png)`,
+                ? `url(./img/middle-price-bg.png)`
+                : `url(./img/price-bg.png)`,
           }}
           className="rounded-3xl p-6 bg-no-repeat bg-cover bg-center mb-8"
         >

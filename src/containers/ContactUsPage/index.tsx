@@ -153,22 +153,88 @@ const ContactUsPage = () => {
             />
           </h2>
 
-          <p className="text-[#303030] font-medium text-xs lg:text-2xl mt-3">
+          <p className="text-[#303030] font-medium text-lg lg:text-2xl mt-3">
             Reach out to us for inquiries, support, or to explore how we can
             help your business thrive.
           </p>
         </div>
 
-        <div className="w-full custom-contact-card-style overflow-hidden my-6">
+        <div className="xl:w-5/6 custom-contact-card-style overflow-hidden my-6">
           <div className="grid grid-cols-1 lg:grid-cols-2">
-            <img
-              src="./img/contact-img.png"
-              alt="contact-img"
-              className="h-full"
-            />
+            <div
+              style={{
+                backgroundImage: `url(./img/contact-us-bg.png)`,
+              }}
+              className="bg-[#303030] bg-no-repeat bg-cover p-6 lg:p-16"
+            >
+              <h3 className="font-semibold text-white text-xl lg:text-2xl">
+                Get a free experience
+              </h3>
+
+              <hr className="my-7 w-4/5" />
+
+              <div className="flex mt-11">
+                <div>
+                  <img src="./img/call-white-icon.png" alt="call-white-icon" />
+                </div>
+
+                <div className="flex flex-col gap-4 mx-3">
+                  <p className="font-normal text-xs lg:text-base text-white">
+                    (+971) 50 460 2733
+                  </p>
+                  <p className="font-normal text-xs lg:text-base text-white">
+                    (+20) 03 5849945
+                  </p>
+                  <p className="font-normal text-xs lg:text-base text-white">
+                    (+20) 10 25285760
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex my-11 items-center">
+                <div>
+                  <img src="./img/email-whit-icon.png" alt="email-whit-icon" />
+                </div>
+
+                <div className="flex flex-col gap-4 mx-3">
+                  <p className="font-normal text-xs lg:text-base text-white">
+                    info@mawaredhr.com
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col">
+                <div className="mb-3">
+                  <img
+                    src="./img/white-location-icon.png"
+                    alt="white-location-icon"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-4 mx-7">
+                  <p className="font-normal text-xs lg:text-base text-white">
+                    • Al Kunoz Business Center Building C, 3rd floor,
+                    <span className="ms-2 font-bold">Dubai, UAE.</span>
+                  </p>
+                  <p className="font-normal text-xs lg:text-base text-white">
+                    • 257 Maynard Summit Way, Cary,
+                    <span className="ms-2 font-bold">NC 27511, USA.</span>
+                  </p>
+                  <p className="font-normal text-xs lg:text-base text-white">
+                    • 22 Goal Gamal St. Off Gamaet ElDewal El Arabeya St.,
+                    Mohandeseen,
+                    <span className="ms-2 font-bold">Giza, Egypt.</span>
+                  </p>
+                  <p className="font-normal text-xs lg:text-base text-white">
+                    • 24 Aziz Koheil st from Abdel Hamid AlDeeb St., Tharwat,
+                    <span className="ms-2 font-bold">Alexandria, Egypt.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
 
             <form className="p-12 bg-[#F3F5F9]">
-              <div className="space-y-14">
+              <div className="space-y-8">
                 <div className="flex flex-col lg:flex-row gap-3 lg:gap-0 items-start lg:items-center">
                   <label
                     htmlFor="name"
@@ -241,7 +307,7 @@ const ContactUsPage = () => {
                     onChange={(e) =>
                       setFormData({ ...formData, message: e.target.value })
                     }
-                    rows={14}
+                    rows={7}
                     className="w-full px-4 py-3 border border-[#31303066] rounded-[8px] focus:ring-[#23AAEB] focus:border-[#23AAEB] bg-[#F3F5F9] resize-none"
                     placeholder="Type your message"
                   />
