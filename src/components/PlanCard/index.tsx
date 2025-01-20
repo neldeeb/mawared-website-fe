@@ -32,7 +32,7 @@ const PlanCard = ({ name, price, description, features }: PricingPlan) => {
           <p className="text-white text-lg">per user per month</p>
         </div>
 
-        <p className="text-xl font-medium text-[#303030]">{description}</p>
+        <p className="text-xs lg:text-xl font-medium text-[#303030]">{description}</p>
       </div>
 
       <hr />
@@ -51,7 +51,7 @@ const PlanCard = ({ name, price, description, features }: PricingPlan) => {
       <hr />
 
       <Button
-        className="custom-price-btn-style font-semibold text-lg mt-8 uppercase hover:opacity-90 transition-opacity"
+        className="custom-price-btn-style h-9 lg:h-12 font-semibold text-lg mt-8 uppercase hover:opacity-90 transition-opacity"
         onClick={handleNavigateToPage}
       >
         Get started

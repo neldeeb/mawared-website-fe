@@ -8,15 +8,14 @@ import {
 
 // home page content data object
 export const homePageContent: HomePageContentProps = {
-  introMainTitle: "Human Resources.",
-  introSubTitle: "Reimagined.",
+  introMainTitle: "Human Resources",
+  introSubTitle: "Reimagined",
   introDescription:
-    "The Ultimate Cloud-Based HRMS Platform For Your HR Operations.",
+    "Combining Next-Gen tools with intuitive design to improve workforce management and simplify HR processes.",
   introBtnLabel: "See Mawared HR in Action",
   introImgUrl: "./img/laptop-view.png",
   joinEmpowerdSectionTitleFirstPart: "Trusted by over",
-  joinEmpowerdSectionTitleSecPart:
-    "Businesses. Empowering Workforces Every Day.",
+  joinEmpowerdSectionTitleSecPart: "Businesses.",
   joinEmpowerdSectionNumber: "400+",
   joinEmpowerdSectionBtnLabel: "Join the Empowered",
   companyLogsUrls: [
@@ -61,6 +60,7 @@ export const homePageContent: HomePageContentProps = {
   joinSectionDescription:
     "Experience the measurable impact of using Mawared HR Digital Solutions",
   joinSectionImgUrl: "./img/reasons-img.png",
+  joinSectionMobileImgUrl: "./img/reasons-mobile.png",
   globeSectionTitleFirstPart: "Empowering Businesses Across",
   globeSectionTitleSecPart: "The Globe",
   globeSectionImgUrl: "./img/globe.png",

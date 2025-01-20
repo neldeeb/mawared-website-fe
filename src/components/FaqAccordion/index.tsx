@@ -17,7 +17,7 @@ const FaqAccordion = ({ question, answer }: FaqAccordionProps) => {
         className="w-full py-3 px-9 text-left flex justify-between items-center"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="font-medium text-base lg:text-xl text-[#313030]">
+        <span className="font-medium text-xs lg:text-xl text-[#313030]">
           {question}
         </span>
 

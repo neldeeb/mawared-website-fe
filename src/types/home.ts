@@ -19,6 +19,7 @@ export interface HomePageContentProps {
   joinSectionTitleSecPart: string;
   joinSectionDescription: string;
   joinSectionImgUrl: string;
+  joinSectionMobileImgUrl: string;
   globeSectionTitleFirstPart: string;
   globeSectionTitleSecPart: string;
   globeSectionImgUrl: string;

@@ -14,8 +14,9 @@ const FeaturesPage = () => {
     <Layout>
       <div className="flex flex-col justify-center items-center p-11 lg:p-24">
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-5xl font-bold text-[#303030]">
+          <h2 className="text-2xl lg:text-5xl font-bold text-[#303030]">
             <span className="text-customBlueWaveyColor mx-2">Dashboard</span>
+            <br className="flex lg:hidden" />
             Features in Mawared HR System
           </h2>
 
@@ -108,7 +109,7 @@ const FeaturesPage = () => {
             <Card className="border-0 bg-transparent shadow-none">
               <CardHeader>
                 <CardTitle>
-                  <h3 className="font-bold text-3xl lg:text-5xl text-[#313030]">
+                  <h3 className="font-bold text-2xl lg:text-5xl text-[#313030]">
                     01
                   </h3>
                 </CardTitle>
@@ -132,7 +133,7 @@ const FeaturesPage = () => {
             <Card className="border-0 bg-transparent shadow-none">
               <CardHeader>
                 <CardTitle>
-                  <h3 className="font-bold text-3xl lg:text-5xl text-[#313030]">
+                  <h3 className="font-bold text-2xl lg:text-5xl text-[#313030]">
                     02
                   </h3>
                 </CardTitle>
@@ -156,7 +157,7 @@ const FeaturesPage = () => {
             <Card className="border-0 bg-transparent shadow-none">
               <CardHeader>
                 <CardTitle>
-                  <h3 className="font-bold text-3xl lg:text-5xl text-[#313030]">
+                  <h3 className="font-bold text-2xl lg:text-5xl text-[#313030]">
                     03
                   </h3>
                 </CardTitle>
@@ -180,7 +181,7 @@ const FeaturesPage = () => {
             <Card className="border-0 bg-transparent shadow-none">
               <CardHeader>
                 <CardTitle>
-                  <h3 className="font-bold text-3xl lg:text-5xl text-[#313030]">
+                  <h3 className="font-bold text-2xl lg:text-5xl text-[#313030]">
                     04
                   </h3>
                 </CardTitle>
@@ -204,8 +205,9 @@ const FeaturesPage = () => {
         </div>
 
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-5xl font-bold text-[#303030]">
+          <h2 className="text-2xl lg:text-5xl font-bold text-[#303030]">
             <span className="text-customBlueWaveyColor mx-2">Attendance</span>
+            <br className="flex lg:hidden" />
             Module
           </h2>
 
@@ -240,8 +242,9 @@ const FeaturesPage = () => {
         </div>
 
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-5xl font-bold text-[#303030]">
+          <h2 className="text-2xl lg:text-5xl font-bold text-[#303030]">
             <span className="text-customBlueWaveyColor mx-2">Financials</span>
+            <br className="flex lg:hidden" />
             Module
           </h2>
 

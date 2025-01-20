@@ -153,7 +153,7 @@ const ContactUsPage = () => {
             />
           </h2>
 
-          <p className="text-[#303030] font-medium text-xl lg:text-2xl mt-3">
+          <p className="text-[#303030] font-medium text-xs lg:text-2xl mt-3">
             Reach out to us for inquiries, support, or to explore how we can
             help your business thrive.
           </p>

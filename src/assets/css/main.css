@@ -75,7 +75,6 @@
   }
 
   .custom-nav-btn-style {
-    height: 43px;
     padding: 12px 24px;
     border-radius: 12px;
     color: white;
@@ -125,7 +124,6 @@
   }
 
   .custom-mawared-btn-style {
-    height: 54px;
     padding: 12px 36px;
     border-radius: 12px;
     background: linear-gradient(92.75deg, #1997e1 2.86%, #2cb1ff 97.77%);

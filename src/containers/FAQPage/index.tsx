@@ -21,6 +21,7 @@ const FAQPage = () => {
         <div className="flex flex-col justify-center items-center text-center">
           <h1 className="text-2xl lg:text-4xl font-bold text-[#303030]">
             Frequently Asked
+            <br className="flex lg:hidden" />
             <span className="text-customBlueWaveyColor mx-2">Questions</span>
             (FAQ)
           </h1>
