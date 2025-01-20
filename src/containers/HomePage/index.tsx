@@ -23,6 +23,7 @@ import {
   homePageContent,
   homeFeaturesFirstGridIcons,
   homeFeaturesSecGridIcons,
+  flexabilityContent,
 } from "@/data/homeData";
 
 const HomePage = () => {
@@ -290,8 +291,81 @@ const HomePage = () => {
 
         <hr className="my-16 w-full" />
 
-        <div className="flex justify-center items-center my-12 intersect:animate-fade-right animate-duration-700 animate-ease-linear">
-          <img src="./img/flexibility-view.png" alt="flexibility-view" />
+        <div className="my-12 intersect:animate-fade-right animate-duration-700 animate-ease-linear">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
+              {homePageContent?.flexabilityFirstSectionTitle}
+              <span className="text-customBlueWaveyColor mx-2">
+                {homePageContent?.flexabilitySecondSectionTitle}
+              </span>
+            </h2>
+
+            <p className="text-[#5A5959] font-normal text-base lg:text-xl mt-8">
+              {homePageContent?.flexabilityDescription}
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-6">
+            <div className="hidden lg:flex flex-col justify-center items-center">
+              {flexabilityContent?.map((el) => (
+                <div className="flex items-center justify-end gap-6 mb-6">
+                  <div className="text-right">
+                    <h2 className="font-semibold text-xl text-[#313030]">
+                      <span className="text-customBlueWaveyColor me-2">
+                        {el?.firstTitle}
+                      </span>
+                      {el?.secondTitle}
+                    </h2>
+
+                    <p className="text-[#313030] font-medium text-sm mt-1">
+                      {el?.description}
+                    </p>
+                  </div>
+
+                  <img src={el?.iconUrl} alt="flexibility-icon" />
+                </div>
+              ))}
+            </div>
+
+            <div className="flex flex-col justify-center items-center">
+              <img
+                src={homePageContent?.flexabilityImgUrl}
+                alt="flexibility-view"
+              />
+            </div>
+
+            <div className="flex flex-col justify-center items-center">
+              <div className="flex flex-col lg:justify-center lg:items-center">
+                {flexabilityContent?.map((el) => (
+                  <div className="flex items-center gap-6 mb-6">
+                    <img src={el?.iconUrl} alt="flexibility-icon" />
+
+                    <div>
+                      <h2 className="font-semibold text-xl text-[#313030]">
+                        <span className="text-customBlueWaveyColor me-2">
+                          {el?.firstTitle}
+                        </span>
+                        {el?.secondTitle}
+                      </h2>
+
+                      <p className="text-[#313030] font-medium text-sm mt-1">
+                        {el?.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="flex justify-center items-center">
+            <Button
+              className="custom-mawared-btn-style font-medium text-xl mt-12 hover:opacity-90 transition-opacity"
+              onClick={() => handleNavigateToPage(`/contact`)}
+            >
+              Book a free demo
+            </Button>
+          </div>
         </div>
 
         <hr className="my-16 w-full" />

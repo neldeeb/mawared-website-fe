@@ -3,6 +3,7 @@ import {
   HomeFeaturesModulesProps,
   HomeFeaturesFirstGridIconsProps,
   HomeFeaturesSecGridIconsProps,
+  flexabilityContentProps,
 } from "@/types/home";
 
 // home page content data object
@@ -66,6 +67,11 @@ export const homePageContent: HomePageContentProps = {
   trustedSectionTitleFirstPart: "Trusted by",
   trustedSectionTitleSecPart: "Industry Leaders",
   trustedSectionTitleThirdPart: "Worldwide",
+  flexabilityFirstSectionTitle: "Flexibility",
+  flexabilitySecondSectionTitle: "at Your Fingertips",
+  flexabilityDescription:
+    "Effortlessly manage your entire workforce from one centralized system. Track employee profiles, roles, performance, and attendance with ease. Automate routine tasks.",
+  flexabilityImgUrl: "./img/flexibility-img.png",
 };
 
 // home feautres modules data array
@@ -149,5 +155,33 @@ export const homeFeaturesSecGridIcons: HomeFeaturesSecGridIconsProps[] = [
   {
     title: "Document Management Made Simple",
     imgUrl: "./img/real-time-icon.png",
+  },
+];
+
+// home flexabilty array data object
+export const flexabilityContent: flexabilityContentProps[] = [
+  {
+    firstTitle: "Real-time",
+    secondTitle: "monitoring",
+    description: "Stay updated with live attendance data.",
+    iconUrl: "./img/flex-check-iocn.png",
+  },
+  {
+    firstTitle: "Adapt",
+    secondTitle: "to modern workstyles",
+    description: "Seamlessly support remote and on-site work.",
+    iconUrl: "./img/flex-check-iocn.png",
+  },
+  {
+    firstTitle: "Accurate",
+    secondTitle: "tracking",
+    description: "No matter where employees are.",
+    iconUrl: "./img/flex-check-iocn.png",
+  },
+  {
+    firstTitle: "Boost",
+    secondTitle: "productivity",
+    description: "Give employees the freedom to manage their work.",
+    iconUrl: "./img/flex-check-iocn.png",
   },
 ];

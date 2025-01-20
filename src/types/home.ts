@@ -25,6 +25,10 @@ export interface HomePageContentProps {
   trustedSectionTitleFirstPart: string;
   trustedSectionTitleSecPart: string;
   trustedSectionTitleThirdPart: string;
+  flexabilityFirstSectionTitle: string;
+  flexabilitySecondSectionTitle: string;
+  flexabilityDescription: string;
+  flexabilityImgUrl: string;
 }
 
 // define home features modules interface
@@ -45,4 +49,12 @@ export interface HomeFeaturesFirstGridIconsProps {
 export interface HomeFeaturesSecGridIconsProps {
   title: string;
   imgUrl: string;
+}
+
+// define home flexability Content Props interface
+export interface flexabilityContentProps {
+  firstTitle: string;
+  secondTitle: string;
+  description: string;
+  iconUrl: string;
 }
