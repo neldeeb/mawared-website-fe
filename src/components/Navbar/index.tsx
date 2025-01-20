@@ -24,7 +24,7 @@ const Navbar = () => {
     <div className="bg-[#FFFFFFA6] flex items-center justify-between custom-nav-shadow-box-style gap-10 px-24 h-20 fixed w-full z-50">
       <img src="./img/mawared-logo.png" alt="logo" />
 
-      <div className="items-center justify-between gap-10 hidden lg:flex">
+      <div className="items-center justify-between gap-10 hidden xl:flex">
         <Link to="/">
           <div
             className={
@@ -82,7 +82,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="hidden lg:flex items-center justify-center gap-10">
+      <div className="hidden xl:flex items-center justify-center gap-10">
         <a
           href="https://app.mawared-hr.com/login"
           target="_blank"
@@ -101,7 +101,7 @@ const Navbar = () => {
       </div>
 
       {/* start of mobile navbar */}
-      <div className="flex lg:hidden">
+      <div className="flex xl:hidden">
         <Drawer>
           <DrawerTrigger>
             <Menu color="#1997e1" size={38} />
