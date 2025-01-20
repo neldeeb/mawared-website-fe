@@ -13,7 +13,7 @@ const AppRoutes = () => {
       <Router basename="/mawared-website-fe/">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/features" element={<FeaturesPage />} />
+          {/* <Route path="/features" element={<FeaturesPage />} /> */}
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/plans" element={<PlansPage />} />
           <Route path="/about" element={<AboutUsPage />} />
