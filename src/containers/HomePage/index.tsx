@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Layout from "@/components/Layout";
 import Revolutionize from "@/components/Revolutionize";
 import { Button } from "@/components/ui/button";
@@ -20,51 +19,14 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { useNavigate } from "react-router-dom";
 import {
-  homeTabsContent,
+  homeFeaturesModules,
   homePageContent,
   homeFeaturesFirstGridIcons,
   homeFeaturesSecGridIcons,
 } from "@/data/homeData";
 
-// tabs constant
-const homeTabs = [
-  {
-    id: "employeeManagement",
-    label: "Employee Managements",
-    icon: "./img/emp-manage-icon.png",
-  },
-  {
-    id: "attManagement",
-    label: "Attendance Management",
-    icon: "./img/att-mamnge-icon.png",
-  },
-  {
-    id: "payroll",
-    label: "Payroll & Financials",
-    icon: "./img/payroll-manage-icon.png",
-  },
-  {
-    id: "ats",
-    label: "ATS Recruitment",
-    icon: "./img/ats-rect-icon.png",
-  },
-  {
-    id: "assets",
-    label: "Assets Management",
-    icon: "./img/asset-manage-icon.png",
-  },
-  {
-    id: "softwareSettings",
-    label: "Software Settings",
-    icon: "./img/software-icon.png",
-  },
-];
-
 const HomePage = () => {
   const navigate = useNavigate();
-
-  // useStates
-  const [activeTab, setActiveTab] = useState("employeeManagement");
 
   // handle navigate to page function
   const handleNavigateToPage = (route: string) => {
@@ -135,9 +97,9 @@ const HomePage = () => {
             ))}
           </CarouselContent>
 
-          <CarouselPrevious className="border border-[#313030]" />
+          <CarouselPrevious className="border border-white" />
 
-          <CarouselNext className="border border-[#313030]" />
+          <CarouselNext className="border border-white" />
         </Carousel>
 
         <hr className="my-16 w-full" />
@@ -282,56 +244,49 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center p-11 lg:p-24">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
-            Powerful
-            <span className="text-customBlueWaveyColor mx-2">Features</span>
-            that elevate HR Management
-          </h2>
-        </div>
+      <div className="flex flex-col justify-center items-center p-11 lg:p-24 w-full">
+        <Carousel
+          plugins={[
+            Autoplay({
+              delay: 6000,
+            }),
+          ]}
+          className="flex-shrink-0 w-full"
+        >
+          <CarouselContent className="-ml-4">
+            {homeFeaturesModules?.map((el, index) => (
+              <CarouselItem key={index}>
+                <div className="flex flex-col justify-center items-center">
+                  <div className="text-center mb-12">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-[#303030]">
+                      {el?.titleFirstSection}
+                      <span className="text-customBlueWaveyColor mx-2">
+                        {el?.titleSecSection}
+                      </span>
+                    </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-6 gap-10 mb-12">
-          {homeTabs?.map((tab) => (
-            <div
-              key={tab?.id}
-              onClick={() => setActiveTab(tab?.id)}
-              className={`flex flex-col gap-2 justify-center items-center p-8 text-center rounded-2xl cursor-pointer ${
-                activeTab === tab?.id
-                  ? "bg-customBlueWaveyColor"
-                  : "bg-[#292D320D]"
-              }`}
-            >
-              <img src={tab?.icon} alt="tab-icon" />
-              <h2
-                className={`text-lg lg:text-xl font-medium  ${
-                  activeTab === tab?.id ? "text-white" : "text-[#303030]"
-                }`}
-              >
-                {tab?.label}
-              </h2>
-            </div>
-          ))}
-        </div>
+                    <p className="text-[#5A5959] font-normal text-base lg:text-xl mt-8">
+                      {el?.content}
+                    </p>
+                  </div>
 
-        {homeTabsContent[activeTab as keyof typeof homeTabsContent]?.map(
-          (item, index) => (
-            <div className="grid lg:grid-cols-2 mt-20" key={index}>
-              <div className="flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
-                <h3 className="text-3xl font-semibold text-[#303030] mb-8">
-                  {item?.title}
-                </h3>
-                <p className="text-xl font-normal text-[#303030] break-all">
-                  {item?.content}
-                </p>
-              </div>
+                  <Button
+                    className="custom-discover-btn-style font-medium text-sm mb-12 hover:opacity-90 transition-opacity"
+                    onClick={() => handleNavigateToPage(`/contact`)}
+                  >
+                    {el?.btnLabel}
+                  </Button>
 
-              <div className="flex justify-end items-center">
-                <img src={item?.imgUrl} alt="icon-managment" />
-              </div>
-            </div>
-          )
-        )}
+                  <img src={el?.imgUrl} alt="module-img" />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+
+          <CarouselPrevious className="border border-white" />
+
+          <CarouselNext className="border border-white" />
+        </Carousel>
 
         <hr className="my-16 w-full" />
 
@@ -461,9 +416,9 @@ const HomePage = () => {
               </CarouselItem>
             </CarouselContent>
 
-            <CarouselPrevious className="border border-[#313030]" />
+            <CarouselPrevious className="border border-white" />
 
-            <CarouselNext className="border border-[#313030]" />
+            <CarouselNext className="border border-white" />
           </Carousel>
         </div>
 

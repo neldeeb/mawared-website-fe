@@ -1,5 +1,6 @@
 import {
   HomePageContentProps,
+  HomeFeaturesModulesProps,
   HomeFeaturesFirstGridIconsProps,
   HomeFeaturesSecGridIconsProps,
 } from "@/types/home";
@@ -67,57 +68,57 @@ export const homePageContent: HomePageContentProps = {
   trustedSectionTitleThirdPart: "Worldwide",
 };
 
-// home tabs data object
-export const homeTabsContent = {
-  employeeManagement: [
-    {
-      title: "Employee Management",
-      content:
-        "Effortlessly manage your entire workforce from one centralized system. Track employee profiles, roles, performance, and attendance with ease. Automate routine tasks, streamline communication, and ensure accurate, up-to-date records—all designed to boost productivity and reduce administrative workload.",
-      imgUrl: "./img/employee-managment.png",
-    },
-  ],
-  attManagement: [
-    {
-      title: "Employee Management",
-      content:
-        "Effortlessly manage your entire workforce from one centralized system. Track employee profiles, roles, performance, and attendance with ease. Automate routine tasks, streamline communication, and ensure accurate, up-to-date records—all designed to boost productivity and reduce administrative workload.",
-      imgUrl: "./img/employee-managment.png",
-    },
-  ],
-  payroll: [
-    {
-      title: "Employee Management",
-      content:
-        "Effortlessly manage your entire workforce from one centralized system. Track employee profiles, roles, performance, and attendance with ease. Automate routine tasks, streamline communication, and ensure accurate, up-to-date records—all designed to boost productivity and reduce administrative workload.",
-      imgUrl: "./img/employee-managment.png",
-    },
-  ],
-  ats: [
-    {
-      title: "Employee Management",
-      content:
-        "Effortlessly manage your entire workforce from one centralized system. Track employee profiles, roles, performance, and attendance with ease. Automate routine tasks, streamline communication, and ensure accurate, up-to-date records—all designed to boost productivity and reduce administrative workload.",
-      imgUrl: "./img/employee-managment.png",
-    },
-  ],
-  assets: [
-    {
-      title: "Employee Management",
-      content:
-        "Effortlessly manage your entire workforce from one centralized system. Track employee profiles, roles, performance, and attendance with ease. Automate routine tasks, streamline communication, and ensure accurate, up-to-date records—all designed to boost productivity and reduce administrative workload.",
-      imgUrl: "./img/employee-managment.png",
-    },
-  ],
-  softwareSettings: [
-    {
-      title: "Employee Management",
-      content:
-        "Effortlessly manage your entire workforce from one centralized system. Track employee profiles, roles, performance, and attendance with ease. Automate routine tasks, streamline communication, and ensure accurate, up-to-date records—all designed to boost productivity and reduce administrative workload.",
-      imgUrl: "./img/employee-managment.png",
-    },
-  ],
-};
+// home feautres modules data array
+export const homeFeaturesModules: HomeFeaturesModulesProps[] = [
+  {
+    titleFirstSection: "Employee",
+    titleSecSection: "Management",
+    content:
+      "Effortlessly manage your entire workforce from one centralized system. Track employee profiles, roles, performance, and attendance with ease. Automate routine tasks.",
+    imgUrl: "./img/employee-managment.png",
+    btnLabel: "Discover more",
+  },
+  {
+    titleFirstSection: "Employee",
+    titleSecSection: "Management",
+    content:
+      "Effortlessly manage your entire workforce from one centralized system. Track employee profiles, roles, performance, and attendance with ease. Automate routine tasks.",
+    imgUrl: "./img/employee-managment.png",
+    btnLabel: "Discover more",
+  },
+  {
+    titleFirstSection: "Employee",
+    titleSecSection: "Management",
+    content:
+      "Effortlessly manage your entire workforce from one centralized system. Track employee profiles, roles, performance, and attendance with ease. Automate routine tasks.",
+    imgUrl: "./img/employee-managment.png",
+    btnLabel: "Discover more",
+  },
+  {
+    titleFirstSection: "Employee",
+    titleSecSection: "Management",
+    content:
+      "Effortlessly manage your entire workforce from one centralized system. Track employee profiles, roles, performance, and attendance with ease. Automate routine tasks.",
+    imgUrl: "./img/employee-managment.png",
+    btnLabel: "Discover more",
+  },
+  {
+    titleFirstSection: "Employee",
+    titleSecSection: "Management",
+    content:
+      "Effortlessly manage your entire workforce from one centralized system. Track employee profiles, roles, performance, and attendance with ease. Automate routine tasks.",
+    imgUrl: "./img/employee-managment.png",
+    btnLabel: "Discover more",
+  },
+  {
+    titleFirstSection: "Employee",
+    titleSecSection: "Management",
+    content:
+      "Effortlessly manage your entire workforce from one centralized system. Track employee profiles, roles, performance, and attendance with ease. Automate routine tasks.",
+    imgUrl: "./img/employee-managment.png",
+    btnLabel: "Discover more",
+  },
+];
 
 // home features icons first grid data object
 export const homeFeaturesFirstGridIcons: HomeFeaturesFirstGridIconsProps[] = [

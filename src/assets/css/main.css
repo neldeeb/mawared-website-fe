@@ -135,6 +135,15 @@
     text-transform: capitalize;
   }
 
+  .custom-discover-btn-style {
+    padding: 8px 24px;
+    border-radius: 10px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .custom-client-card-style {
     padding: 36px 24px;
     border-radius: 24px;

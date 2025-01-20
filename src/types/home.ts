@@ -27,6 +27,15 @@ export interface HomePageContentProps {
   trustedSectionTitleThirdPart: string;
 }
 
+// define home features modules interface
+export interface HomeFeaturesModulesProps {
+  titleFirstSection: string;
+  titleSecSection: string;
+  content: string;
+  imgUrl: string;
+  btnLabel: string;
+}
+
 // define home features icons interface
 export interface HomeFeaturesFirstGridIconsProps {
   title: string;
