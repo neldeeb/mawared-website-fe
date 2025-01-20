@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AboutUsPage from "@/containers/AboutUsPage";
 import HomePage from "@/containers/HomePage";
-import FeaturesPage from "@/containers/FeaturesPage";
+// import FeaturesPage from "@/containers/FeaturesPage";
 import FAQPage from "@/containers/FAQPage";
 import PlansPage from "@/containers/PlansPage";
 import ContactUsPage from "@/containers/ContactUsPage";
