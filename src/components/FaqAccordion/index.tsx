@@ -25,19 +25,19 @@ const FaqAccordion = ({ question, answer }: FaqAccordionProps) => {
           <img
             src="./img/arrow-down-icon.png"
             alt="arrow-down-icon"
-            className="h-10"
+            className="h-5 lg:h-10"
           />
         ) : (
           <img
             src="./img/side-arrow-icon.png"
             alt="side-arrow-icon"
-            className="h-16"
+            className="h-10 lg:h-16"
           />
         )}
       </button>
 
       {isOpen && (
-        <div className="px-16 pb-6 font-normal text-[#313030b6] text-base lg:text-lg">
+        <div className="px-16 pb-6 font-normal text-[#313030b6] text-xs lg:text-lg">
           {answer}
         </div>
       )}

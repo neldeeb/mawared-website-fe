@@ -20,7 +20,7 @@ const FeaturesPage = () => {
             Features in Mawared HR System
           </h2>
 
-          <p className="text-[#303030] font-medium text-xl lg:text-2xl mt-8">
+          <p className="text-[#303030] font-medium text-sm  lg:text-2xl mt-8">
             Unlock the full potential of your business with Mawared HR’s
             innovative solutions. Our platform offers a range of benefits
             designed to enhance HR efficiency and reliability
@@ -38,10 +38,10 @@ const FeaturesPage = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <h3 className="font-bold text-xl lg:text-2xl text-black mb-4">
+              <h3 className="font-bold text-sm  lg:text-2xl text-black mb-4">
                 Department Breakdown
               </h3>
-              <p className="font-normal text-base text-black">
+              <p className="font-normal text-sm lg:text-base  text-black">
                 Illustrates the percentage distribution of employees across
                 departments. Offers a snapshot of departmental size and
                 structure.
@@ -61,10 +61,10 @@ const FeaturesPage = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <h3 className="font-bold text-xl lg:text-2xl text-black mb-4">
+              <h3 className="font-bold text-sm  lg:text-2xl text-black mb-4">
                 Overtime Analysis
               </h3>
-              <p className="font-normal text-base text-black">
+              <p className="font-normal text-sm lg:text-base  text-black">
                 Highlights overtime hours worked across various departments.
                 Helps in monitoring department-specific workload trends.
               </p>
@@ -83,10 +83,10 @@ const FeaturesPage = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <h3 className="font-bold text-xl lg:text-2xl text-black mb-4">
+              <h3 className="font-bold text-sm  lg:text-2xl text-black mb-4">
                 Attendance History
               </h3>
-              <p className="font-normal text-base text-black">
+              <p className="font-normal text-sm lg:text-base  text-black">
                 Tracks the trends of employee attendance over time, categorized
                 into “On Time,” “Absent,” and “Late.” Enables filtering by date
                 and exporting the data.
@@ -115,10 +115,10 @@ const FeaturesPage = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <h3 className="font-bold text-xl lg:text-2xl text-[#313030] mb-4">
+                <h3 className="font-bold text-sm  lg:text-2xl text-[#313030] mb-4">
                   Work Groups
                 </h3>
-                <p className="font-normal text-base lg:text-xl text-[#313030]">
+                <p className="font-normal text-sm lg:text-base  text-[#313030]">
                   Organize employees into structured work groups to streamline
                   tasks and improve collaboration.
                 </p>
@@ -139,10 +139,10 @@ const FeaturesPage = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <h3 className="font-bold text-xl lg:text-2xl text-[#313030] mb-4">
+                <h3 className="font-bold text-sm  lg:text-2xl text-[#313030] mb-4">
                   Work Teams
                 </h3>
-                <p className="font-normal text-base lg:text-xl text-[#313030]">
+                <p className="font-normal text-sm lg:text-base   text-[#313030]">
                   Build dynamic work teams for projects and daily operations,
                   ensuring seamless coordination.
                 </p>
@@ -163,10 +163,10 @@ const FeaturesPage = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <h3 className="font-bold text-xl lg:text-2xl text-[#313030] mb-4">
+                <h3 className="font-bold text-sm  lg:text-2xl text-[#313030] mb-4">
                   Employee Actions
                 </h3>
-                <p className="font-normal text-base lg:text-xl text-[#313030]">
+                <p className="font-normal text-sm lg:text-base   text-[#313030]">
                   Track, approve, and manage employee actions like promotions,
                   transfers, and leaves effortlessly.
                 </p>
@@ -187,10 +187,10 @@ const FeaturesPage = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <h3 className="font-bold text-xl lg:text-2xl text-[#313030] mb-4">
+                <h3 className="font-bold text-sm  lg:text-2xl text-[#313030] mb-4">
                   Employee Documents
                 </h3>
-                <p className="font-normal text-base lg:text-xl text-[#313030]">
+                <p className="font-normal text-sm lg:text-base  text-[#313030]">
                   Store, access, and manage employee documents securely in one
                   centralized repository.
                 </p>
@@ -211,7 +211,7 @@ const FeaturesPage = () => {
             Module
           </h2>
 
-          <p className="text-[#303030] font-medium text-xl lg:text-2xl mt-8">
+          <p className="text-[#303030] font-medium text-sm  lg:text-2xl mt-8">
             Manage and track employee attendance with ease using flexible
             schedules, accurate records, and insightful reporting tools.
           </p>
@@ -223,13 +223,13 @@ const FeaturesPage = () => {
             <Card className="custom-features-card-style h-fit" key={index}>
               <CardHeader className="lg:px-20 pt-11">
                 <CardTitle>
-                  <h3 className="font-bold text-xl lg:text-3xl text-[#313030]">
+                  <h3 className="font-bold text-sm  lg:text-3xl text-[#313030]">
                     {attFeature?.title}
                   </h3>
                 </CardTitle>
               </CardHeader>
               <CardContent className="lg:px-20">
-                <p className="font-normal text-lg lg:text-xl text-[#313030] mb-2">
+                <p className="font-normal text-sm lg:text-base   text-[#313030] mb-2">
                   {attFeature?.description}
                 </p>
               </CardContent>
@@ -248,7 +248,7 @@ const FeaturesPage = () => {
             Module
           </h2>
 
-          <p className="text-[#303030] font-medium text-xl lg:text-2xl mt-8">
+          <p className="text-[#303030] font-medium text-sm lg:text-2xl mt-8">
             Manage payroll, bonuses, deductions, expenses, and cost centers with
             ease, ensuring accuracy and efficiency in all financial processes.
           </p>
@@ -267,11 +267,11 @@ const FeaturesPage = () => {
               </CardHeader>
 
               <CardContent>
-                <h3 className="font-semibold text-lg lg:text-xl text-[#313030] mb-3">
+                <h3 className="font-semibold text-sm lg:text-base   text-[#313030] mb-3">
                   Payroll
                 </h3>
 
-                <p className="font-normal text-base text-[#3130307b] mb-2">
+                <p className="font-normal text-sm lg:text-base  text-[#3130307b] mb-2">
                   Simplify payroll management with automated calculations for
                   salaries, taxes, and deductions. Generate payslips instantly
                   and ensure employees are paid accurately and on time, every
@@ -300,11 +300,11 @@ const FeaturesPage = () => {
                     </CardHeader>
 
                     <CardContent>
-                      <h3 className="font-semibold text-lg lg:text-xl text-[#313030] mb-3">
+                      <h3 className="font-semibold text-sm lg:text-base   text-[#313030] mb-3">
                         Loans
                       </h3>
 
-                      <p className="font-normal text-base text-[#3130307b] mb-2">
+                      <p className="font-normal text-sm lg:text-base  text-[#3130307b] mb-2">
                         Offer and manage employee loans seamlessly, from request
                         approvals to repayment schedules. Track balances and
                         payment histories to maintain clarity and trust.
@@ -333,11 +333,11 @@ const FeaturesPage = () => {
                       </CardHeader>
 
                       <CardContent>
-                        <h3 className="font-semibold text-lg lg:text-xl text-[#313030] mb-3">
+                        <h3 className="font-semibold text-sm lg:text-base   text-[#313030] mb-3">
                           Bonuses
                         </h3>
 
-                        <p className="font-normal text-base text-[#3130307b] mb-2">
+                        <p className="font-normal text-sm lg:text-base  text-[#3130307b] mb-2">
                           Easily configure and manage bonus payments based on
                           employee performance, company goals, or special
                           occasions. Maintain clear records of all bonus
@@ -359,11 +359,11 @@ const FeaturesPage = () => {
                       </CardHeader>
 
                       <CardContent>
-                        <h3 className="font-semibold text-lg lg:text-xl text-[#313030] mb-3">
+                        <h3 className="font-semibold text-sm lg:text-base   text-[#313030] mb-3">
                           Deductions
                         </h3>
 
-                        <p className="font-normal text-base text-[#3130307b] mb-2">
+                        <p className="font-normal text-sm lg:text-base  text-[#3130307b] mb-2">
                           Automate the calculation and application of
                           deductions, such as taxes, penalties, or benefits
                           contributions. Keep detailed logs to ensure fairness
@@ -377,11 +377,11 @@ const FeaturesPage = () => {
 
               <Card className="custom-features-card-style p-10">
                 <CardContent>
-                  <h3 className="font-semibold text-lg lg:text-xl text-[#313030] mb-3">
+                  <h3 className="font-semibold text-sm lg:text-base   text-[#313030] mb-3">
                     Expenses
                   </h3>
 
-                  <p className="font-normal text-base text-[#3130307b] mb-2">
+                  <p className="font-normal text-sm lg:text-base  text-[#3130307b] mb-2">
                     Track and monitor business expenses in real-time. Categorize
                     spending, generate reports, and gain insights into cost
                     trends to improve budgeting and financial planning.
@@ -417,11 +417,11 @@ const FeaturesPage = () => {
               </CardHeader>
 
               <CardContent>
-                <h3 className="font-semibold text-lg lg:text-xl text-[#313030] mb-3">
+                <h3 className="font-semibold text-sm lg:text-base   text-[#313030] mb-3">
                   Cost center
                 </h3>
 
-                <p className="font-normal text-base text-[#3130307b] mb-2">
+                <p className="font-normal text-sm lg:text-base  text-[#3130307b] mb-2">
                   Allocate costs to specific departments, projects, or
                   initiatives. Analyze financial performance with detailed
                   reports to support better decision-making and resource

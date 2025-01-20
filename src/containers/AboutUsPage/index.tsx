@@ -42,33 +42,33 @@ const AboutUsPage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-24 mb-24">
           <div className="flex flex-col gap-2 justify-center items-center">
             <img src="./img/innovation-icon.png" alt="our-mission-vision" />
-            <h2 className="text-lg lg:text-2xl font-semibold text-[#313030]">
+            <h2 className="text-sm lg:text-2xl font-semibold text-[#313030]">
               Innovation
             </h2>
 
-            <p className="font-medium text-base text-[#313030]">
+            <p className="font-medium text-sm lg:text-base text-center text-[#313030]">
               Continuously improving to meet our clients’ needs
             </p>
           </div>
 
           <div className="flex flex-col gap-2 justify-center items-center">
             <img src="./img/real-icon.png" alt="our-mission-vision" />
-            <h2 className="text-lg lg:text-2xl font-semibold text-[#313030]">
+            <h2 className="text-sm lg:text-2xl font-semibold text-[#313030]">
               Reliability
             </h2>
 
-            <p className="font-medium text-base text-[#313030]">
+            <p className="font-medium text-sm lg:text-base text-center text-[#313030]">
               Ensuring security and uptime for seamless operations.
             </p>
           </div>
 
           <div className="flex flex-col gap-2 justify-center items-center">
             <img src="./img/collab-icon.png" alt="our-mission-vision" />
-            <h2 className="text-lg lg:text-2xl font-semibold text-[#313030]">
+            <h2 className="text-sm lg:text-2xl font-semibold text-[#313030]">
               Collaboration
             </h2>
 
-            <p className="font-medium text-base text-[#313030]">
+            <p className="font-medium text-sm lg:text-base text-center text-[#313030]">
               Partnering with businesses for mutual success.
             </p>
           </div>
@@ -77,12 +77,12 @@ const AboutUsPage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 mb-40">
           <div className="custom-features-card-style flex flex-col gap-6 justify-center items-center p-10">
             <img src="./img/our-mission-icon.png" alt="our-mission-icon" />
-            <h2 className="text-lg lg:text-2xl font-semibold text-[#313030] text-center">
+            <h2 className="text-sm lg:text-2xl font-semibold text-[#313030] text-center">
               Our Mission
               <div>(Smarter HR solutions)</div>
             </h2>
 
-            <p className="font-medium text-base text-[#313030] text-center">
+            <p className="font-medium text-sm lg:text-base text-[#313030] text-center">
               At Mawared HR, our mission is to empower businesses by simplifying
               and automating HR processes. We aim to create innovative solutions
               that enhance efficiency, accuracy, and employee satisfaction.
@@ -91,12 +91,12 @@ const AboutUsPage = () => {
 
           <div className="custom-features-card-style flex flex-col gap-6 justify-center items-center p-10">
             <img src="./img/our-vision-icon.png" alt="our-vision-icon" />
-            <h2 className="text-lg lg:text-2xl font-semibold text-[#313030] text-center">
+            <h2 className="text-sm lg:text-2xl font-semibold text-[#313030] text-center">
               Our Vision
               <div>(For a smarter future)</div>
             </h2>
 
-            <p className="font-medium text-base text-[#313030] text-center">
+            <p className="font-medium text-sm lg:text-base text-[#313030] text-center">
               At Mawared HR, we aim to transform HR management with intuitive,
               data-driven solutions that streamline processes and empower
               businesses to focus on growth and innovation, creating a more
@@ -125,7 +125,7 @@ const AboutUsPage = () => {
             <h3 className="text-2xl text-[#191919] font-medium my-3">
               Mohamed Ali
             </h3>
-            <p className="text-base text-[#191919] font-normal">
+            <p className="text-sm lg:text-base text-[#191919] font-normal">
               Senior Backend
             </p>
           </div>
@@ -137,7 +137,7 @@ const AboutUsPage = () => {
             <h3 className="text-2xl text-[#191919] font-medium my-3">
               Mohamed Ali
             </h3>
-            <p className="text-base text-[#191919] font-normal">
+            <p className="text-sm lg:text-base text-[#191919] font-normal">
               Senior Backend
             </p>
           </div>
@@ -149,7 +149,7 @@ const AboutUsPage = () => {
             <h3 className="text-2xl text-[#191919] font-medium my-3">
               Mohamed Ali
             </h3>
-            <p className="text-base text-[#191919] font-normal">
+            <p className="text-sm lg:text-base text-[#191919] font-normal">
               Senior Backend
             </p>
           </div>
@@ -161,7 +161,7 @@ const AboutUsPage = () => {
             <h3 className="text-2xl text-[#191919] font-medium my-3">
               Mohamed Ali
             </h3>
-            <p className="text-base text-[#191919] font-normal">
+            <p className="text-sm lg:text-base text-[#191919] font-normal">
               Senior Backend
             </p>
           </div>
@@ -173,7 +173,7 @@ const AboutUsPage = () => {
             <h3 className="text-2xl text-[#191919] font-medium my-3">
               Mohamed Ali
             </h3>
-            <p className="text-base text-[#191919] font-normal">
+            <p className="text-sm lg:text-base text-[#191919] font-normal">
               Senior Backend
             </p>
           </div>
@@ -185,7 +185,7 @@ const AboutUsPage = () => {
             <h3 className="text-2xl text-[#191919] font-medium my-3">
               Mohamed Ali
             </h3>
-            <p className="text-base text-[#191919] font-normal">
+            <p className="text-sm lg:text-base text-[#191919] font-normal">
               Senior Backend
             </p>
           </div>
@@ -197,7 +197,7 @@ const AboutUsPage = () => {
             <h3 className="text-2xl text-[#191919] font-medium my-3">
               Mohamed Ali
             </h3>
-            <p className="text-base text-[#191919] font-normal">
+            <p className="text-sm lg:text-base text-[#191919] font-normal">
               Senior Backend
             </p>
           </div>
@@ -209,7 +209,7 @@ const AboutUsPage = () => {
             <h3 className="text-2xl text-[#191919] font-medium my-3">
               Mohamed Ali
             </h3>
-            <p className="text-base text-[#191919] font-normal">
+            <p className="text-sm lg:text-base text-[#191919] font-normal">
               Senior Backend
             </p>
           </div>

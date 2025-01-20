@@ -31,7 +31,7 @@ const FAQPage = () => {
               <button
                 key={tab?.id}
                 onClick={() => setActiveTab(tab?.id)}
-                className={`py-4 px-9 text-base lg:text-lg ${
+                className={`py-4 px-9 text-xs lg:text-lg ${
                   activeTab === tab?.id
                     ? "custom-linear-bg-blue-wavy-color-style text-white rounded-xl"
                     : "bg-white text-[#313030]"
