@@ -32,8 +32,8 @@ const Navbar = () => {
           <div
             className={
               currentRoute?.pathname === "/"
-                ? "font-semibold text-sm xl:text-lg text-customBlueWaveyColor hover:scale-110"
-                : "font-medium text-sm xl:text-lg text-[#313030] hover:scale-110"
+                ? "font-semibold text-sm xl:text-xl text-customBlueWaveyColor hover:scale-110"
+                : "font-medium text-sm xl:text-xl text-[#313030] hover:scale-110"
             }
           >
             Home
@@ -43,8 +43,8 @@ const Navbar = () => {
           <div
             className={
               currentRoute?.pathname === "/features"
-                ? "font-semibold text-sm xl:text-lg text-customBlueWaveyColor hover:scale-110"
-                : "font-medium text-sm xl:text-lg text-[#313030] hover:scale-110"
+                ? "font-semibold text-sm xl:text-xl text-customBlueWaveyColor hover:scale-110"
+                : "font-medium text-sm xl:text-xl text-[#313030] hover:scale-110"
             }
           >
             Features
@@ -54,8 +54,8 @@ const Navbar = () => {
           <div
             className={
               currentRoute?.pathname === "/faq"
-                ? "font-semibold text-sm xl:text-lg text-customBlueWaveyColor hover:scale-110"
-                : "font-medium text-sm xl:text-lg text-[#313030] hover:scale-110"
+                ? "font-semibold text-sm xl:text-xl text-customBlueWaveyColor hover:scale-110"
+                : "font-medium text-sm xl:text-xl text-[#313030] hover:scale-110"
             }
           >
             FAQ
@@ -65,8 +65,8 @@ const Navbar = () => {
           <div
             className={
               currentRoute?.pathname === "/plans"
-                ? "font-semibold text-sm xl:text-lg text-customBlueWaveyColor hover:scale-110"
-                : "font-medium text-sm xl:text-lg text-[#313030] hover:scale-110"
+                ? "font-semibold text-sm xl:text-xl text-customBlueWaveyColor hover:scale-110"
+                : "font-medium text-sm xl:text-xl text-[#313030] hover:scale-110"
             }
           >
             Plans
@@ -76,8 +76,8 @@ const Navbar = () => {
           <div
             className={
               currentRoute?.pathname === "/about"
-                ? "font-semibold text-sm xl:text-lg text-customBlueWaveyColor hover:scale-110"
-                : "font-medium text-sm xl:text-lg text-[#313030] hover:scale-110"
+                ? "font-semibold text-sm xl:text-xl text-customBlueWaveyColor hover:scale-110"
+                : "font-medium text-sm xl:text-xl text-[#313030] hover:scale-110"
             }
           >
             About
@@ -89,14 +89,14 @@ const Navbar = () => {
         <a
           href="https://app.mawared-hr.com/login"
           target="_blank"
-          className="cursor-pointer text-[#23AAEB] font-medium text-sm xl:text-lg flex items-center"
+          className="cursor-pointer text-[#23AAEB] font-medium text-sm xl:text-xl flex items-center"
         >
           Login
           <img src="./img/login-icon.png" alt="login-icon" className="px-1" />
         </a>
 
         <Button
-          className="flex custom-nav-btn-style h-9 xl:h-12 font-medium text-xs xl:text-lg hover:opacity-90 transition-opacity"
+          className="flex custom-nav-btn-style h-9 xl:h-12 font-medium text-xs xl:text-xl hover:opacity-90 transition-opacity"
           onClick={handleNavigateToPage}
         >
           Book a live demo
@@ -186,14 +186,14 @@ const Navbar = () => {
               </a>
 
               <Button
-                className="custom-nav-btn-style font-medium text-sm xl:text-lg w-1/2"
+                className="custom-nav-btn-style font-medium text-sm xl:text-xl w-1/2"
                 onClick={handleNavigateToPage}
               >
                 Book a live demo
               </Button>
 
               <DrawerClose className="w-1/2">
-                <Button className="bg-[#313030] text-white font-medium text-sm xl:text-lg border rounded-xl w-full py-5">
+                <Button className="bg-[#313030] text-white font-medium text-sm xl:text-xl border rounded-xl w-full py-5">
                   Cancel
                 </Button>
               </DrawerClose>
