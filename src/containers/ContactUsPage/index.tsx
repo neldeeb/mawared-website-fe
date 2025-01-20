@@ -5,6 +5,8 @@ import { useMutation } from "@apollo/client";
 import { sendEmailMutation } from "../../graphql/mutations";
 import toast from "react-hot-toast";
 import { ColorRing } from "react-loader-spinner";
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
 
 const ContactUsPage = () => {
   // useStates
@@ -282,7 +284,7 @@ const ContactUsPage = () => {
                   >
                     Phone
                   </label>
-                  <input
+                  {/* <input
                     type="tel"
                     id="phone"
                     value={formData.phone}
@@ -290,6 +292,18 @@ const ContactUsPage = () => {
                       setFormData({ ...formData, phone: e.target.value })
                     }
                     className="w-full px-4 py-3 border border-[#31303066] rounded-[8px] focus:ring-[#23AAEB] focus:border-[#23AAEB] bg-[#F3F5F9]"
+                    placeholder="(000) 000-0000"
+                  /> */}
+
+                  <PhoneInput
+                    defaultCountry="US"
+                    type="tel"
+                    id="phone"
+                    value={formData?.phone}
+                    onChange={(value) =>
+                      setFormData({ ...formData, phone: `${value}` })
+                    }
+                    className="w-full px-4 py-3 border border-[#31303066] rounded-[8px] focus:ring-[#23AAEB] focus:border-[#23AAEB]"
                     placeholder="(000) 000-0000"
                   />
                 </div>

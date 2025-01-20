@@ -211,6 +211,10 @@ textarea:focus {
   outline: none;
 }
 
+input {
+  background: transparent;
+}
+
 /* Start of scroll bar style */
 
 /* width */
