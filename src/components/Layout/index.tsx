@@ -62,7 +62,11 @@ const Layout = ({ children }: Props) => {
         rel="noopener noreferrer"
         title="Chat with us"
       >
-        <img src="./img/whatsapp-icon.png" alt="chat-icon" />
+        <img
+          src="./img/whatsapp-icon.png"
+          alt="chat-icon"
+          className="h-12 w-12 lg:h-auto lg:w-auto"
+        />
       </a>
     );
   };
@@ -97,7 +101,11 @@ const Layout = ({ children }: Props) => {
         className="custom-sticky-scroll-to-page-btn-style"
         title="Go to top"
       >
-        <img src="./img/click-icon.png" alt="click-icon" />
+        <img
+          src="./img/click-icon.png"
+          className="h-12 w-12 lg:h-auto lg:w-auto"
+          alt="click-icon"
+        />
       </button>
       {/* End of sticky scroll to top btn */}
     </div>
