@@ -119,12 +119,13 @@
 
   .custom-contact-card-style {
     border-radius: 43px;
-    background: #f3f5f9;
-    border: 1px solid #31303026;
+    background: #f4f6f9;
+    /* border: 1px solid #31303026; */
   }
 
   .custom-mawared-btn-style {
     padding: 12px 36px;
+    color: white !important;
     border-radius: 12px;
     background: linear-gradient(92.75deg, #1997e1 2.86%, #2cb1ff 97.77%);
     display: flex;
@@ -134,7 +135,8 @@
   }
 
   .custom-discover-btn-style {
-    padding: 8px 24px;
+    padding: 8px 0;
+    color: white !important;
     border-radius: 10px;
     background: #191919;
     display: flex;
@@ -183,12 +185,19 @@
     display: block;
     top: 50vh;
   }
+
+  .custom-home-feature-card-style {
+    background: #08466a0d;
+    border-radius: 18px;
+    padding: 16px;
+  }
 }
 /*--------------------------------------- End of tailwindcss utilities ---------------------------------------*/
 
 /*--------------------------------------- Start of General styles ---------------------------------------*/
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {

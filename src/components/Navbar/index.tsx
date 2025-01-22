@@ -9,23 +9,22 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Menu } from "lucide-react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+// import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  const currentRoute = useLocation();
-  const navigate = useNavigate();
+  // const currentRoute = useLocation();
+  // const navigate = useNavigate();
 
   // handle navigate to page function
-  const handleNavigateToPage = () => {
-    navigate(`/contact`);
-  };
+  // const handleNavigateToPage = () => {
+  //   navigate(`/contact`);
+  // };
 
   return (
     <div className="bg-[#FFFFFFA6] flex items-center justify-between custom-nav-shadow-box-style gap-10 px-24 h-20 fixed w-full z-50">
       <img src="./img/mawared-logo.png" alt="logo" className="h-7 xl:h-auto" />
-
       <div className="items-center justify-between gap-10 hidden lg:flex">
-        <Link to="/">
+        {/* <Link to="/">
           <div
             className={
               currentRoute?.pathname === "/"
@@ -35,7 +34,33 @@ const Navbar = () => {
           >
             Home
           </div>
-        </Link>
+        </Link> */}
+        <a href="#home-intro">
+          <div className="font-medium text-sm xl:text-lg text-[#313030] hover:scale-110">
+            Home
+          </div>
+        </a>
+        <a href="#mawared-modules">
+          <div className="font-medium text-sm xl:text-lg text-[#313030] hover:scale-110">
+            Modules
+          </div>
+        </a>
+
+        <a href="#features">
+          <div className="font-medium text-sm xl:text-lg text-[#313030] hover:scale-110">
+            Features
+          </div>
+        </a>
+        <a href="#services">
+          <div className="font-medium text-sm xl:text-lg text-[#313030] hover:scale-110">
+            Services
+          </div>
+        </a>
+        <a href="#mobile-app">
+          <div className="font-medium text-sm xl:text-lg text-[#313030] hover:scale-110">
+            App
+          </div>
+        </a>
         {/* <Link to="/features">
           <div
             className={
@@ -47,7 +72,7 @@ const Navbar = () => {
             Features
           </div>
         </Link> */}
-        <Link to="/faq">
+        {/* <Link to="/faq">
           <div
             className={
               currentRoute?.pathname === "/faq"
@@ -57,7 +82,7 @@ const Navbar = () => {
           >
             FAQ
           </div>
-        </Link>
+        </Link> */}
         {/* <Link to="/plans">
           <div
             className={
@@ -69,7 +94,7 @@ const Navbar = () => {
             Plans
           </div>
         </Link> */}
-        <Link to="/about">
+        {/* <Link to="/about">
           <div
             className={
               currentRoute?.pathname === "/about"
@@ -79,25 +104,26 @@ const Navbar = () => {
           >
             About
           </div>
-        </Link>
+        </Link> */}
       </div>
 
       <div className="hidden lg:flex items-center justify-center gap-10">
         <a
           href="https://app.mawared-hr.com/login"
           target="_blank"
-          className="cursor-pointer text-[#23AAEB] font-medium text-sm xl:text-xl flex items-center"
+          className="cursor-pointer text-[#23AAEB] font-medium text-sm xl:text-lg flex items-center"
         >
           Login
           <img src="./img/login-icon.png" alt="login-icon" className="px-1" />
         </a>
 
-        <Button
-          className="flex custom-nav-btn-style h-9 xl:h-12 font-medium text-xs xl:text-xl hover:opacity-90 transition-opacity"
-          onClick={handleNavigateToPage}
+        <a
+          href="#contact-us"
+          className="flex custom-nav-btn-style h-9 xl:h-12 font-medium text-xs xl:text-lg hover:opacity-90 transition-opacity"
+          // onClick={handleNavigateToPage}
         >
           Book a live demo
-        </Button>
+        </a>
       </div>
 
       {/* start of mobile navbar */}
@@ -110,7 +136,34 @@ const Navbar = () => {
           <DrawerContent>
             <DrawerHeader className="flex justify-center items-center pt-11 sm:text-center">
               <DrawerDescription>
-                <Link to="/">
+                <a href="#home-intro">
+                  <div className="font-medium text-xl text-[#313030] mb-3">
+                    Home
+                  </div>
+                </a>
+                <a href="#mawared-modules">
+                  <div className="font-medium text-xl text-[#313030] mb-3">
+                    Modules
+                  </div>
+                </a>
+
+                <a href="#features">
+                  <div className="font-medium text-xl text-[#313030] mb-3">
+                    Features
+                  </div>
+                </a>
+                <a href="#services">
+                  <div className="font-medium text-xl text-[#313030] mb-3">
+                    Services
+                  </div>
+                </a>
+                <a href="#mobile-app">
+                  <div className="font-medium text-xl text-[#313030] mb-3">
+                    App
+                  </div>
+                </a>
+
+                {/* <Link to="/">
                   <div
                     className={
                       currentRoute?.pathname === "/"
@@ -120,7 +173,7 @@ const Navbar = () => {
                   >
                     Home
                   </div>
-                </Link>
+                </Link> */}
                 {/* <Link to="/features">
                   <div
                     className={
@@ -132,7 +185,7 @@ const Navbar = () => {
                     Features
                   </div>
                 </Link> */}
-                <Link to="/faq">
+                {/* <Link to="/faq">
                   <div
                     className={
                       currentRoute?.pathname === "/faq"
@@ -142,7 +195,7 @@ const Navbar = () => {
                   >
                     FAQ
                   </div>
-                </Link>
+                </Link> */}
                 {/* <Link to="/plans">
                   <div
                     className={
@@ -154,7 +207,7 @@ const Navbar = () => {
                     Plans
                   </div>
                 </Link> */}
-                <Link to="/about">
+                {/* <Link to="/about">
                   <div
                     className={
                       currentRoute?.pathname === "/about"
@@ -164,7 +217,7 @@ const Navbar = () => {
                   >
                     About
                   </div>
-                </Link>
+                </Link> */}
               </DrawerDescription>
             </DrawerHeader>
 
@@ -182,12 +235,13 @@ const Navbar = () => {
                 />
               </a>
 
-              <Button
+              <a
+                href="#contact-us"
                 className="custom-nav-btn-style font-medium text-sm xl:text-xl w-1/2"
-                onClick={handleNavigateToPage}
+                // onClick={handleNavigateToPage}
               >
                 Book a live demo
-              </Button>
+              </a>
 
               <DrawerClose className="w-1/2">
                 <Button className="bg-[#313030] text-white font-medium text-sm xl:text-xl border rounded-xl w-full py-5">

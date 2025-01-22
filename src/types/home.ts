@@ -10,46 +10,44 @@ export interface HomePageContentProps {
   joinEmpowerdSectionNumber: string;
   joinEmpowerdSectionBtnLabel: string;
   companyLogsUrls: string[];
+  mawaredModulesMainTitle: string;
+  mawaredModulesSubTitle: string;
   featuresSectionTitleFirstPart: string;
   featuresSectionTitleSecPart: string;
   featuresSectionDescription: string;
-  featuresSectionImgUrl: string;
   featuresSectionBtnLabel: string;
-  joinSectionTitleFirstPart: string;
-  joinSectionTitleSecPart: string;
-  joinSectionDescription: string;
-  joinSectionImgUrl: string;
-  joinSectionMobileImgUrl: string;
-  globeSectionTitleFirstPart: string;
-  globeSectionTitleSecPart: string;
-  globeSectionImgUrl: string;
-  trustedSectionTitleFirstPart: string;
-  trustedSectionTitleSecPart: string;
-  trustedSectionTitleThirdPart: string;
   flexabilityFirstSectionTitle: string;
   flexabilitySecondSectionTitle: string;
   flexabilityDescription: string;
   flexabilityImgUrl: string;
+  servicesSectionTitleFirstPart: string;
+  servicesSectionTitleSecPart: string;
+  servicesSectionDescription: string;
+  servicesSectionFirstRowImgUrl: string;
+  servicesSectionSecRowImgUrl: string;
+  trustedSectionTitleFirstPart: string;
+  trustedSectionTitleSecPart: string;
+  trustedSectionTitleThirdPart: string;
+  trustedSectionDescription: string;
+  trustedSectionImgUrl: string;
+  contactUsSectionTitleFirstPart: string;
+  contactUsSectionTitleSecPart: string;
+  contactUsSectionDescription: string;
 }
 
 // define home features modules interface
 export interface HomeFeaturesModulesProps {
   titleFirstSection: string;
-  titleSecSection: string;
   content: string;
   imgUrl: string;
   btnLabel: string;
 }
 
-// define home features icons interface
-export interface HomeFeaturesFirstGridIconsProps {
+// define home features interface
+export interface HomeFeaturesSlideProps {
   title: string;
-  imgUrl: string;
-}
-
-export interface HomeFeaturesSecGridIconsProps {
-  title: string;
-  imgUrl: string;
+  description: string;
+  iconUrl: string;
 }
 
 // define home flexability Content Props interface
