@@ -192,8 +192,11 @@ const HomePage = () => {
 
             <div className="grid lg:grid-cols-3 gap-3 lg:gap-6">
               <div className="hidden lg:flex flex-col justify-center items-center">
-                {flexabilityContent?.slice(0, 4)?.map((el) => (
-                  <div className="flex items-center justify-end gap-6 mb-6">
+                {flexabilityContent?.slice(0, 4)?.map((el, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center justify-end gap-6 mb-6"
+                  >
                     <div className="text-right">
                       <h2 className="font-semibold text-xl text-[#313030]">
                         <br className="flex lg:hidden" />
@@ -222,8 +225,8 @@ const HomePage = () => {
 
               <div className="hidden lg:flex flex-col justify-center items-center">
                 <div className="flex flex-col lg:justify-center lg:items-center">
-                  {flexabilityContent?.slice(4, 8)?.map((el) => (
-                    <div className="flex items-center gap-6 mb-6">
+                  {flexabilityContent?.slice(4, 8)?.map((el, index) => (
+                    <div key={index} className="flex items-center gap-6 mb-6">
                       <img src={el?.iconUrl} alt="flexibility-icon" />
 
                       <div>
@@ -246,8 +249,8 @@ const HomePage = () => {
 
               <div className="flex lg:hidden flex-col justify-center items-center">
                 <div className="flex flex-col lg:justify-center lg:items-center">
-                  {flexabilityContent?.map((el) => (
-                    <div className="flex items-center gap-6 mb-6">
+                  {flexabilityContent?.map((el, index) => (
+                    <div key={index} className="flex items-center gap-6 mb-6">
                       <img src={el?.iconUrl} alt="flexibility-icon" />
 
                       <div>
@@ -513,15 +516,15 @@ const HomePage = () => {
 
         <div className="grid grid-cols-2 lg:grid-cols-6 gap-10">
           {homePageContent?.companyLogsUrls?.map((el, index) => (
-            <div className="flex justify-center items-center">
-              <img key={index} src={el} alt="logo" height={75} width={110} />
+            <div key={index} className="flex justify-center items-center">
+              <img src={el} alt="logo" height={75} width={110} />
             </div>
           ))}
         </div>
       </div>
 
       <div id="contact-us" className="mb-40 md:mb-10">
-        <div className="lg:flex flex-col justify-center items-center p-11 lg:p-24 w-full">
+        <div className="lg:flex flex-col justify-center items-center p-6 lg:p-24 w-full">
           <div className="text-center mb-12">
             <h2 className="text-2xl lg:text-5xl font-bold text-[#303030]">
               {homePageContent?.contactUsSectionTitleFirstPart}
