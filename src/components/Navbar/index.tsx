@@ -237,13 +237,13 @@ const Navbar = () => {
 
               <a
                 href="#contact-us"
-                className="custom-nav-btn-style font-medium text-sm xl:text-xl w-1/2"
+                className="custom-nav-btn-style font-medium text-sm xl:text-xl"
                 // onClick={handleNavigateToPage}
               >
                 Book a live demo
               </a>
 
-              <DrawerClose className="w-1/2">
+              <DrawerClose className="w-3/4">
                 <Button className="bg-[#313030] text-white font-medium text-sm xl:text-xl border rounded-xl w-full py-5">
                   Cancel
                 </Button>
