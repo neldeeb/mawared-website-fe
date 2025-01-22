@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="md:bg-[url('./img/footer-bg.png')] md:bg-no-repeat bg-[#191919] md:bg-transparent md:bg-cover md:bg-center md:pt-[500px] lg:pt-[380px]">
+    <div className="md:bg-[url('/img/footer-bg.png')] md:bg-no-repeat bg-[#191919] md:bg-transparent md:bg-cover md:bg-center md:pt-[500px] lg:pt-[380px]">
       <footer>
         <div className="flex flex-col px-11 lg:px-24">
           {/* Top section */}
