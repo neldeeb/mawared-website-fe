@@ -156,7 +156,7 @@ const HomePage = () => {
 
                     <a
                       href="#contact-us"
-                      className="custom-discover-btn-style h-9 lg:h-12 w-1/4 font-medium text-sm mb-12 hover:opacity-90 transition-opacity"
+                      className="custom-discover-btn-style h-9 lg:h-12 w-1/2 md:w-1/4 font-medium text-sm mb-12 hover:opacity-90 transition-opacity"
                       // onClick={() => handleNavigateToPage(`/contact`)}
                     >
                       {el?.btnLabel}
@@ -307,7 +307,7 @@ const HomePage = () => {
           >
             <CarouselContent className="-ml-4">
               <CarouselItem>
-                <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {homeFeaturesfirstSlide?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -329,7 +329,7 @@ const HomePage = () => {
               </CarouselItem>
 
               <CarouselItem>
-                <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {homeFeaturesSecSlide?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -351,7 +351,7 @@ const HomePage = () => {
               </CarouselItem>
 
               <CarouselItem>
-                <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {homeFeaturesThirdSlide?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -373,7 +373,7 @@ const HomePage = () => {
               </CarouselItem>
 
               <CarouselItem>
-                <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {homeFeaturesFourthSlide?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -520,7 +520,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div id="contact-us">
+      <div id="contact-us" className="mb-40 md:mb-10">
         <div className="lg:flex flex-col justify-center items-center p-11 lg:p-24 w-full">
           <div className="text-center mb-12">
             <h2 className="text-2xl lg:text-5xl font-bold text-[#303030]">

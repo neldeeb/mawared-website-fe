@@ -21,7 +21,7 @@ const Navbar = () => {
   // };
 
   return (
-    <div className="bg-[#FFFFFFA6] flex items-center justify-between custom-nav-shadow-box-style gap-10 px-24 h-20 fixed w-full z-50">
+    <div className="bg-[#FFFFFFA6] flex items-center justify-between custom-nav-shadow-box-style gap-10 p-11 xl:px-24 h-20 fixed w-full z-50">
       <img src="./img/mawared-logo.png" alt="logo" className="h-7 xl:h-auto" />
       <div className="items-center justify-between gap-10 hidden lg:flex">
         {/* <Link to="/">
