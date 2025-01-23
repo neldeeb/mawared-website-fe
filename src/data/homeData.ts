@@ -107,49 +107,49 @@ export const homeFeaturesModules: HomeFeaturesModulesProps[] = [
 export const homeFeaturesfirstSlide: HomeFeaturesSlideProps[] = [
   {
     title: "Biometrics",
-    iconUrl: "./img/biometrics-icon.svg",
+    iconUrl: "./img/biometrics-icon.png",
     description:
       "Employees sign in/out using facial recognition, GPS, with optional restrictions.",
   },
   {
     title: "Smart Attendance Policies",
-    iconUrl: "./img/att-policy-icon.svg",
+    iconUrl: "./img/att-policy-icon.png",
     description:
       "Automated penalty calculations for tardiness, no-shows, missed sign-outs, early sign-outs, and absences.",
   },
   {
     title: "Flexible & Fixed Shift Scheduling",
-    iconUrl: "./img/flexable-shift-icon.svg",
+    iconUrl: "./img/flexable-shift-icon.png",
     description:
       "Schedule rotational or fixed shifts easily, with different cycles, and custom sign-in rules.",
   },
   {
     title: "Breaks",
-    iconUrl: "./img/break-icon.svg",
+    iconUrl: "./img/break-icon.png",
     description:
       "Set breaks with specific timings, session limits, and work-hour inclusion options.",
   },
   {
     title: "Employee Requests",
-    iconUrl: "./img/emp-request-icon.svg",
+    iconUrl: "./img/emp-request-icon.png",
     description:
       "Employees can request leaves, remote work, shift changes, and more via mobile, track approvals, and exchange comments with direct managers.",
   },
   {
     title: "Request Rules",
-    iconUrl: "./img/request-rules-icon.svg",
+    iconUrl: "./img/request-rules-icon.png",
     description:
       "Define rules to auto-approve, reject, or deny specific request types for selected employees.",
   },
   {
     title: "Request Approval Layers",
-    iconUrl: "./img/approval-layers-icon.svg",
+    iconUrl: "./img/approval-layers-icon.png",
     description:
       "Set multi-level approval chains, routing requests through managers sequentially until final approval.",
   },
   {
     title: "Overtime Calculation",
-    iconUrl: "./img/overtime-icon.svg",
+    iconUrl: "./img/overtime-icon.png",
     description:
       "Automatically calculate overtime based on hour rates, intervals, and completed work hours, with customizable limits and rounding options.",
   },
@@ -159,47 +159,47 @@ export const homeFeaturesfirstSlide: HomeFeaturesSlideProps[] = [
 export const homeFeaturesSecSlide: HomeFeaturesSlideProps[] = [
   {
     title: "Leave Adjustment",
-    iconUrl: "./img/leave-adjust-icon.svg",
+    iconUrl: "./img/leave-adjust-icon.png",
     description: "Adjust employee leave balances by adding or removing days.",
   },
   {
     title: "Reports",
-    iconUrl: "./img/report-icon.svg",
+    iconUrl: "./img/report-icon.png",
     description:
       "View comprehensive and detailed reports in an interactive chart format.",
   },
   {
     title: "Office Account Attendance",
-    iconUrl: "./img/office-account-icon.svg",
+    iconUrl: "./img/office-account-icon.png",
     description:
       "Employees without smartphones can sign in/out via office accounts, using facial recognition and location too.",
   },
   {
     title: "Change or Add Shifts",
-    iconUrl: "./img/change-shift-icon.svg",
+    iconUrl: "./img/change-shift-icon.png",
     description:
       "Add multiple shifts or change shifts between employees with ease.",
   },
   {
     title: "Check-Ins",
-    iconUrl: "./img/checkin-cion.svg",
+    iconUrl: "./img/checkin-cion.png",
     description:
       "Employees can check in/out at locations between shifts, with optional forms and facial recognition. Details are logged in attendance history with time and location breakdowns.",
   },
   {
     title: "Facial Recognition Report",
-    iconUrl: "./img/facial-icon.svg",
+    iconUrl: "./img/facial-icon.png",
     description:
       "View a report of employee sign-ins/outs with photos, locations, and authenticity status.",
   },
   {
     title: "Sign-in on Behalf",
-    iconUrl: "./img/sign-in-behalf-icon.svg",
+    iconUrl: "./img/sign-in-behalf-icon.png",
     description: "Managers can perform sigs-ins/outs on behalf of employees.",
   },
   {
     title: "Assignments",
-    iconUrl: "./img/assigment-icon.svg",
+    iconUrl: "./img/assigment-icon.png",
     description:
       "Assign temporary shifts or sign-in rules for specific days, reverting to original settings afterward.",
   },
@@ -209,48 +209,48 @@ export const homeFeaturesSecSlide: HomeFeaturesSlideProps[] = [
 export const homeFeaturesThirdSlide: HomeFeaturesSlideProps[] = [
   {
     title: "Payroll Setup",
-    iconUrl: "./img/payroll-setup-icon.svg",
+    iconUrl: "./img/payroll-setup-icon.png",
     description:
       "Configure salaries for employees or groups with rules for calculation, overtime rates, allowances, and deductibles.",
   },
   {
     title: "Payroll Tracking",
-    iconUrl: "./img/payroll-tracking-icon.svg",
+    iconUrl: "./img/payroll-tracking-icon.png",
     description:
       "Track payroll updates daily, weekly, or monthly projection view for expected payouts.",
   },
   {
     title: "Loans",
-    iconUrl: "./img/loans-icon.svg",
+    iconUrl: "./img/loans-icon.png",
     description:
       "Create or approve employee loan requests, set amounts and installments, and the system automatically schedules deductions in payroll and updates pay slips.",
   },
   {
     title: "Bonuses",
-    iconUrl: "./img/bonus-icon.svg",
+    iconUrl: "./img/bonus-icon.png",
     description: "Assign bonuses or import and apply them in bulk.",
   },
   {
     title: "Deductions",
-    iconUrl: "./img/deductions-icon.svg",
+    iconUrl: "./img/deductions-icon.png",
     description:
       "Apply deductions manually, in bulk, or set custom policies for quick application.",
   },
   {
     title: "Claims",
-    iconUrl: "./img/claims-icon.svg",
+    iconUrl: "./img/claims-icon.png",
     description:
       "Employees can request claims with descriptions and documents. Approved claims are added to payroll automatically.",
   },
   {
     title: "Petty Cash",
-    iconUrl: "./img/pety-cash-icon.svg",
+    iconUrl: "./img/pety-cash-icon.png",
     description:
       "Allocate petty cash to employees, who can log expenses and payments against the given amount in the system.",
   },
   {
     title: "Expense Categories",
-    iconUrl: "./img/expense-icon.svg",
+    iconUrl: "./img/expense-icon.png",
     description: "Create and manage expense categories for the company.",
   },
 ];
@@ -259,49 +259,49 @@ export const homeFeaturesThirdSlide: HomeFeaturesSlideProps[] = [
 export const homeFeaturesFourthSlide: HomeFeaturesSlideProps[] = [
   {
     title: "Company Expenses",
-    iconUrl: "./img/company-expense-icon.svg",
+    iconUrl: "./img/company-expense-icon.png",
     description:
       "Log company expenses with a monthly view, detailing dates, purposes, and employee-incurred costs.",
   },
   {
     title: "Employee Documents",
-    iconUrl: "./img/emp-deoc-icon.svg",
+    iconUrl: "./img/emp-deoc-icon.png",
     description:
       "Upload employee documents like IDs, passports, and contracts, with customizable requirements by company, department, position, or employee level.",
   },
   {
     title: "Announcements",
-    iconUrl: "./img/ann-icon.svg",
+    iconUrl: "./img/ann-icon.png",
     description:
       "Create announcements and send them to all or selected employees via their app.",
   },
   {
     title: "Biometrics",
-    iconUrl: "./img/biometrics-icon.svg",
+    iconUrl: "./img/biometrics-icon.png",
     description:
       "Employees sign in/out using facial recognition, GPS, with optional restrictions.",
   },
   {
     title: "Smart Attendance Policies",
-    iconUrl: "./img/att-policy-icon.svg",
+    iconUrl: "./img/att-policy-icon.png",
     description:
       "Automated penalty calculations for tardiness, no-shows, missed sign-outs, early sign-outs, and absences.",
   },
   {
     title: "Flexible & Fixed Shift Scheduling",
-    iconUrl: "./img/flexable-shift-icon.svg",
+    iconUrl: "./img/flexable-shift-icon.png",
     description:
       "Schedule rotational or fixed shifts easily, with different cycles, and custom sign-in rules.",
   },
   {
     title: "Breaks",
-    iconUrl: "./img/break-icon.svg",
+    iconUrl: "./img/break-icon.png",
     description:
       "Set breaks with specific timings, session limits, and work-hour inclusion options.",
   },
   {
     title: "Employee Requests",
-    iconUrl: "./img/emp-request-icon.svg",
+    iconUrl: "./img/emp-request-icon.png",
     description:
       "Employees can request leaves, remote work, shift changes, and more via mobile, track approvals, and exchange comments with direct managers.",
   },
@@ -371,46 +371,46 @@ export const flexabilityContent: flexabilityContentProps[] = [
 export const homeServices: HomeFeaturesSlideProps[] = [
   {
     title: "Biometrics",
-    iconUrl: "./img/biometric-service-icon.svg",
+    iconUrl: "./img/biometric-service-icon.png",
     description:
       "Sign in/out using facial recognition and GPS from your phone.",
   },
   {
     title: "Requests",
-    iconUrl: "./img/request-service-icon.svg",
+    iconUrl: "./img/request-service-icon.png",
     description: "Submit, view and track requests. All directly from the app.",
   },
   {
     title: "Payroll Access",
-    iconUrl: "./img/payroll-service-icon.svg",
+    iconUrl: "./img/payroll-service-icon.png",
     description:
       "Employees can check their detailed pay-slips at the end of each month.",
   },
   {
     title: "Attendance history",
-    iconUrl: "./img/att-history-service-icon.svg",
+    iconUrl: "./img/att-history-service-icon.png",
     description: "Track detailed attendance records with timing and locations.",
   },
   {
     title: "Dashboard & real-time statistics",
-    iconUrl: "./img/dashboard-service-icon.svg",
+    iconUrl: "./img/dashboard-service-icon.png",
     description: "Access a dashboard with real-time statistics.",
   },
   {
     title: "Break management",
-    iconUrl: "./img/break-service-icon.svg",
+    iconUrl: "./img/break-service-icon.png",
     description:
       "Manage and track break times, durations, and sessions directly from the app.",
   },
   {
     title: "Penalty tracking",
-    iconUrl: "./img/penalty-tracking-service-icon.svg",
+    iconUrl: "./img/penalty-tracking-service-icon.png",
     description:
       "Track and check for penalties with Type, reason, value and more across the month.",
   },
   {
     title: "Push Notifications",
-    iconUrl: "./img/push-not-service-icon.svg",
+    iconUrl: "./img/push-not-service-icon.png",
     description:
       "Receive real-time updates for sign-ins, penalties, requests, and more.",
   },

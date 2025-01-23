@@ -105,7 +105,7 @@ const HomePage = () => {
           />
         </div>
 
-        <div id="join-empowred">
+        <div id="join-empowred" className="mb-20 xl:mb-28">
           <h3 className="font-semibold text-base lg:text-3xl text-[#313030] text-center mb-4">
             {homePageContent?.joinEmpowerdSectionTitleFirstPart}
 
@@ -151,7 +151,7 @@ const HomePage = () => {
           <div className="flex justify-center items-center">
             <a
               href="#contact-us"
-              className="custom-mawared-btn-style h-9 lg:h-12 mt-4 mb-20 xl:mb-24 font-medium text-sm lg:text-xl hover:opacity-90 transition-opacity intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once"
+              className="custom-mawared-btn-style h-9 lg:h-12 mt-4 font-medium text-sm lg:text-xl hover:opacity-90 transition-opacity intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once"
               // onClick={() => handleNavigateToPage(`/contact`)}
             >
               {homePageContent?.joinEmpowerdSectionBtnLabel}
@@ -159,7 +159,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div ref={containerRef} id="mawared-modules">
+        <div ref={containerRef} id="mawared-modules" className="mb-20 xl:mb-28">
           <div className="text-center mb-6 xl:mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
             <h2 className="text-2xl lg:text-5xl font-bold text-[#303030]">
               {homePageContent?.mawaredModulesMainTitle}
@@ -178,7 +178,7 @@ const HomePage = () => {
                 playOnInit: isVisible,
               }),
             ]}
-            className="flex-shrink-0 w-full mb-6 xl:mb-12"
+            className="flex-shrink-0 w-full"
           >
             <CarouselContent>
               {homeFeaturesModules?.map((el, index) => (
@@ -219,8 +219,8 @@ const HomePage = () => {
           </Carousel>
         </div>
 
-        <div id="mobile-app">
-          <div className="mb-20 intersect:animate-fade-right animate-duration-700 animate-ease-linear">
+        <div id="mobile-app" className="mb-20 xl:mb-28">
+          <div className="intersect:animate-fade-right animate-duration-700 animate-ease-linear">
             <div className="text-center mb-6 xl:mb-12">
               <h2 className="text-xl lg:text-4xl font-bold text-[#303030]">
                 {homePageContent?.flexabilityFirstSectionTitle}
@@ -230,7 +230,7 @@ const HomePage = () => {
                 </span>
               </h2>
 
-              <p className="text-[#5A5959] font-normal text-sm lg:text-xl mt-2">
+              <p className="text-[#5A5959] font-normal text-sm lg:text-xl mt-2 lg:mt-6">
                 {homePageContent?.flexabilityDescription}
               </p>
             </div>
@@ -323,7 +323,7 @@ const HomePage = () => {
             <div className="flex justify-center items-center">
               <a
                 href="#contact-us"
-                className="custom-mawared-btn-style h-9 lg:h-12 font-medium text-sm lg:text-xl mt-12 hover:opacity-90 transition-opacity"
+                className="custom-mawared-btn-style h-9 lg:h-12 font-medium text-sm lg:text-xl mt-4 hover:opacity-90 transition-opacity"
                 // onClick={() => handleNavigateToPage(`/contact`)}
               >
                 Book a free demo
@@ -332,7 +332,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div id="features">
+        <div id="features" className="mb-20 xl:mb-28">
           <div className="text-center mb-6 xl:mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
             <h2 className="text-2xl lg:text-4xl font-bold text-[#303030]">
               <span className="text-customBlueWaveyColor mx-2">
@@ -343,22 +343,23 @@ const HomePage = () => {
               {homePageContent?.featuresSectionTitleSecPart}
             </h2>
 
-            <p className="text-[#303030] font-medium text-sm lg:text-2xl mt-8">
+            <p className="text-[#303030] font-medium text-sm lg:text-2xl mt-2 lg:mt-6">
               {homePageContent?.featuresSectionDescription}
             </p>
           </div>
 
           <Carousel
-            plugins={[
-              Autoplay({
-                delay: 6000,
-              }),
-            ]}
+            opts={{ loop: true }}
+            // plugins={[
+            //   Autoplay({
+            //     delay: 6000,
+            //   }),
+            // ]}
             className="flex-shrink-0 w-full"
           >
             <CarouselContent className="-ml-4">
               <CarouselItem>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
                   {homeFeaturesfirstSlide?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -380,7 +381,7 @@ const HomePage = () => {
               </CarouselItem>
 
               <CarouselItem>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
                   {homeFeaturesSecSlide?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -402,7 +403,7 @@ const HomePage = () => {
               </CarouselItem>
 
               <CarouselItem>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
                   {homeFeaturesThirdSlide?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -424,7 +425,7 @@ const HomePage = () => {
               </CarouselItem>
 
               <CarouselItem>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
                   {homeFeaturesFourthSlide?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -451,10 +452,10 @@ const HomePage = () => {
             <CarouselNext className="border border-white" />
           </Carousel>
 
-          <div className="flex justify-center items-center intersect:animate-fade-up animate-duration-700 animate-ease-linear intersect-once mb-20">
+          <div className="flex justify-center items-center intersect:animate-fade-up animate-duration-700 animate-ease-linear intersect-once">
             <a
               href="#contact-us"
-              className="custom-mawared-btn-style h-9 lg:h-12 font-medium text-sm lg:text-lg my-12 hover:opacity-90 transition-opacity"
+              className="custom-mawared-btn-style h-9 lg:h-12 font-medium text-sm lg:text-lg mt-12 hover:opacity-90 transition-opacity"
               // onClick={() => handleNavigateToPage(`/contact`)}
             >
               {homePageContent?.featuresSectionBtnLabel}
@@ -462,7 +463,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div id="services">
+        <div id="services" className="mb-20 xl:mb-28">
           <div className="text-center mb-16">
             <h2 className="text-2xl lg:text-4xl font-bold text-[#303030]">
               {homePageContent?.servicesSectionTitleFirstPart}
@@ -472,12 +473,12 @@ const HomePage = () => {
               </span>
             </h2>
 
-            <p className="text-[#303030] font-medium text-sm lg:text-2xl mt-8">
+            <p className="text-[#303030] font-medium text-sm lg:text-2xl mt-2 lg:mt-6">
               {homePageContent?.servicesSectionDescription}
             </p>
           </div>
 
-          <div className="mb-6 xl:mb-12 intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once">
+          <div className="intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once">
             <div className="flex flex-col xl:flex-row gap-10 justify-center items-center">
               <img
                 src={homePageContent?.servicesSectionFirstRowImgUrl}
@@ -490,7 +491,7 @@ const HomePage = () => {
                     <img src={el?.iconUrl} alt="service-icon" />
 
                     <div className="mx-4">
-                      <h2 className="font-medium text-sm lg:text-lg text-[#313030]">
+                      <h2 className="font-semibold text-sm lg:text-lg text-[#313030]">
                         {el?.title}
                       </h2>
                       <p className="font-normal text-sm lg:text-sm text-[#313030]">
@@ -539,7 +540,7 @@ const HomePage = () => {
       <div
         id="partners"
         style={{
-          backgroundImage: `url(./img/partner-section-bg.png)`,
+          backgroundImage: `url(./img/partner-section-bg.svg)`,
         }}
         className="bg-no-repeat bg-cover p-20 md:p-60 xl:p-80"
       >

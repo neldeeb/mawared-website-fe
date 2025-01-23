@@ -63,7 +63,7 @@ const Layout = ({ children }: Props) => {
         title="Chat with us"
       >
         <img
-          src="./img/whatsapp-icon.png"
+          src="./img/whatsapp-icon.svg"
           alt="chat-icon"
           className="h-12 w-12 lg:h-auto lg:w-auto"
         />
