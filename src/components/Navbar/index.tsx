@@ -21,8 +21,12 @@ const Navbar = () => {
   // };
 
   return (
-    <div className="bg-[#FFFFFFA6] flex items-center justify-between custom-nav-shadow-box-style gap-10 p-11 xl:px-24 h-20 fixed w-full z-50">
-      <img src="./img/mawared-logo.png" alt="logo" className="h-7 xl:h-auto" />
+    <div className="bg-[#FFFFFFA6] flex items-center justify-between custom-nav-shadow-box-style gap-10 px-5 xl:px-24 h-16 xl:h-20 fixed w-full z-50">
+      <img
+        src="./img/mawared-logo.png"
+        alt="logo"
+        className="h-7 xl:h-auto hidden lg:flex"
+      />
       <div className="items-center justify-center gap-14 hidden lg:flex">
         {/* <Link to="/">
           <div
@@ -51,9 +55,10 @@ const Navbar = () => {
             Features
           </div>
         </a>
+
         <a href="#services">
           <div className="font-medium text-sm xl:text-lg text-[#313030] hover:scale-110">
-            Mobile App
+            Mobile app
           </div>
         </a>
         {/* <Link to="/features">
@@ -114,7 +119,7 @@ const Navbar = () => {
 
         <a
           href="#contact-us"
-          className="flex custom-nav-btn-style h-9 xl:h-12 font-medium text-xs xl:text-lg hover:opacity-90 transition-opacity"
+          className="flex custom-nav-btn-style h-[43px] px-6 py-3 font-medium text-lg hover:opacity-90 transition-opacity"
           // onClick={handleNavigateToPage}
         >
           Book a live demo
@@ -122,11 +127,28 @@ const Navbar = () => {
       </div>
 
       {/* start of mobile navbar */}
-      <div className="flex lg:hidden">
-        <Drawer>
-          <DrawerTrigger>
-            <Menu color="#191919" size={28} />
-          </DrawerTrigger>
+
+      <Drawer>
+        <div className="flex justify-between items-center lg:hidden w-full">
+          <div className="flex gap-3 items-center">
+            <DrawerTrigger>
+              <Menu color="#191919" size={24} />
+            </DrawerTrigger>
+
+            <img
+              src="./img/mawared-logo.png"
+              alt="logo"
+              className="h-6 xl:h-auto"
+            />
+          </div>
+
+          <a
+            href="#contact-us"
+            className="custom-nav-btn-style h-7 px-4 font-medium text-xs xl:text-xl"
+            // onClick={handleNavigateToPage}
+          >
+            Book A demo
+          </a>
 
           <DrawerContent>
             <DrawerHeader className="flex justify-center items-center pt-11 sm:text-center">
@@ -147,14 +169,10 @@ const Navbar = () => {
                     Features
                   </div>
                 </a>
+
                 <a href="#services">
                   <div className="font-medium text-xl text-[#313030] mb-3">
-                    Services
-                  </div>
-                </a>
-                <a href="#mobile-app">
-                  <div className="font-medium text-xl text-[#313030] mb-3">
-                    App
+                    Mobile app
                   </div>
                 </a>
 
@@ -230,14 +248,6 @@ const Navbar = () => {
                 />
               </a>
 
-              <a
-                href="#contact-us"
-                className="custom-nav-btn-style font-medium text-sm xl:text-xl"
-                // onClick={handleNavigateToPage}
-              >
-                Book a live demo
-              </a>
-
               <DrawerClose className="w-3/4">
                 <Button className="bg-[#313030] text-white font-medium text-sm xl:text-xl border rounded-xl w-full py-5">
                   Cancel
@@ -245,8 +255,9 @@ const Navbar = () => {
               </DrawerClose>
             </DrawerFooter>
           </DrawerContent>
-        </Drawer>
-      </div>
+        </div>
+      </Drawer>
+
       {/* end of mobile navbar */}
     </div>
   );
