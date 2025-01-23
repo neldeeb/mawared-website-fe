@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from "react";
 import Layout from "@/components/Layout";
 // import Revolutionize from "@/components/Revolutionize";
 // import { Button } from "@/components/ui/button";
@@ -17,6 +18,7 @@ import {
 // } from "@/components/ui/card";
 // import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Autoplay from "embla-carousel-autoplay";
+import AutoScroll from "embla-carousel-auto-scroll";
 // import { useNavigate } from "react-router-dom";
 import {
   homeFeaturesModules,
@@ -37,6 +39,34 @@ const HomePage = () => {
   // const handleNavigateToPage = (route: string) => {
   //   navigate(route);
   // };
+
+  const [isVisible, setIsVisible] = useState(false);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true); // Set visible when in view
+        } else {
+          setIsVisible(false); // Optional: Reset when out of view
+        }
+      },
+      {
+        threshold: 0.5, // Trigger when 50% of the element is visible
+      }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => {
+      if (containerRef.current) {
+        observer.unobserve(containerRef.current);
+      }
+    };
+  }, []);
 
   return (
     <Layout>
@@ -93,9 +123,10 @@ const HomePage = () => {
           </h3>
 
           <Carousel
+            opts={{ loop: true }}
             plugins={[
-              Autoplay({
-                delay: 2000,
+              AutoScroll({
+                speed: 2,
               }),
             ]}
           >
@@ -128,11 +159,11 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div id="mawared-modules">
+        <div ref={containerRef} id="mawared-modules">
           <div className="text-center mb-6 xl:mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
             <h2 className="text-2xl lg:text-5xl font-bold text-[#303030]">
               {homePageContent?.mawaredModulesMainTitle}
-              <br className="flex lg:hidden" />
+              {/* <br className="flex lg:hidden" /> */}
               <span className="text-customBlueWaveyColor mx-2">
                 {homePageContent?.mawaredModulesSubTitle}
               </span>
@@ -140,12 +171,14 @@ const HomePage = () => {
           </div>
 
           <Carousel
+            opts={{ loop: true }}
             plugins={[
               Autoplay({
                 delay: 6000,
+                playOnInit: isVisible,
               }),
             ]}
-            className="flex-shrink-0 w-full"
+            className="flex-shrink-0 w-full mb-6 xl:mb-12"
           >
             <CarouselContent>
               {homeFeaturesModules?.map((el, index) => (
@@ -156,20 +189,25 @@ const HomePage = () => {
                         {el?.titleFirstSection}
                       </h2>
 
-                      <p className="text-[#5A5959] font-normal  text-xs lg:text-xl mt-8">
+                      <p className="text-[#5A5959] font-normal text-xs lg:text-xl mt-4">
                         {el?.content}
                       </p>
                     </div>
 
-                    <a
+                    {/* <a
                       href="#contact-us"
                       className="custom-discover-btn-style h-9 lg:h-12 w-1/2 md:w-1/4 font-medium text-sm mb-6 xl:mb-12 hover:opacity-90 transition-opacity"
                       // onClick={() => handleNavigateToPage(`/contact`)}
                     >
                       {el?.btnLabel}
-                    </a>
+                    </a> */}
 
-                    <img src={el?.imgUrl} alt="module-img" />
+                    <img
+                      src={el?.imgUrl}
+                      alt="module-img"
+                      height={1500}
+                      width={1500}
+                    />
                   </div>
                 </CarouselItem>
               ))}
@@ -182,11 +220,11 @@ const HomePage = () => {
         </div>
 
         <div id="mobile-app">
-          <div className="my-40 intersect:animate-fade-right animate-duration-700 animate-ease-linear">
+          <div className="mb-20 intersect:animate-fade-right animate-duration-700 animate-ease-linear">
             <div className="text-center mb-6 xl:mb-12">
               <h2 className="text-2xl lg:text-4xl font-bold text-[#303030]">
                 {homePageContent?.flexabilityFirstSectionTitle}
-                <br className="flex lg:hidden" />
+                {/* <br className="flex lg:hidden" /> */}
                 <span className="text-customBlueWaveyColor mx-2">
                   {homePageContent?.flexabilitySecondSectionTitle}
                 </span>
@@ -206,7 +244,7 @@ const HomePage = () => {
                   >
                     <div className="text-right">
                       <h2 className="font-semibold text-xl text-[#313030]">
-                        <br className="flex lg:hidden" />
+                        {/* <br className="flex lg:hidden" /> */}
                         <span className="text-customBlueWaveyColor me-2">
                           {el?.firstTitle}
                         </span>
@@ -238,7 +276,7 @@ const HomePage = () => {
 
                       <div>
                         <h2 className="font-semibold text-xs lg:text-xl text-[#313030]">
-                          <br className="flex lg:hidden" />
+                          {/* <br className="flex lg:hidden" /> */}
                           <span className="text-customBlueWaveyColor me-2">
                             {el?.firstTitle}
                           </span>
@@ -262,7 +300,7 @@ const HomePage = () => {
 
                       <div>
                         <h2 className="font-semibold text-xs lg:text-xl text-[#313030]">
-                          <br className="flex lg:hidden" />
+                          {/* <br className="flex lg:hidden" /> */}
                           <span className="text-customBlueWaveyColor me-2">
                             {el?.firstTitle}
                           </span>
@@ -298,7 +336,7 @@ const HomePage = () => {
                 {homePageContent?.featuresSectionTitleFirstPart}
               </span>
 
-              <br className="flex lg:hidden" />
+              {/* <br className="flex lg:hidden" /> */}
               {homePageContent?.featuresSectionTitleSecPart}
             </h2>
 
@@ -425,7 +463,7 @@ const HomePage = () => {
           <div className="text-center mb-16">
             <h2 className="text-2xl lg:text-4xl font-bold text-[#303030]">
               {homePageContent?.servicesSectionTitleFirstPart}
-              <br className="flex lg:hidden" />
+              {/* <br className="flex lg:hidden" /> */}
               <span className="text-customBlueWaveyColor mx-2">
                 {homePageContent?.servicesSectionTitleSecPart}
               </span>
@@ -505,7 +543,7 @@ const HomePage = () => {
         <div className="text-center mb-8">
           <h2 className="text-2xl lg:text-4xl font-bold text-[#303030] mb-6">
             {homePageContent?.trustedSectionTitleFirstPart}
-            <br className="flex lg:hidden" />
+            {/* <br className="flex lg:hidden" /> */}
             <span className="text-customBlueWaveyColor mx-2">
               {homePageContent?.trustedSectionTitleSecPart}
             </span>
@@ -535,7 +573,7 @@ const HomePage = () => {
           <div className="text-center mb-6 xl:mb-12">
             <h2 className="text-2xl lg:text-5xl font-bold text-[#303030]">
               {homePageContent?.contactUsSectionTitleFirstPart}
-              <br className="flex lg:hidden" />
+              {/* <br className="flex lg:hidden" /> */}
               <span className="text-customBlueWaveyColor mx-2">
                 {homePageContent?.contactUsSectionTitleSecPart}
               </span>
