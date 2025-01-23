@@ -57,4 +57,5 @@ export interface flexabilityContentProps {
   secondTitle: string;
   description: string;
   iconUrl: string;
+  gapSpace: string;
 }

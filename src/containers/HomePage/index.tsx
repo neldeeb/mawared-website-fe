@@ -83,7 +83,7 @@ const HomePage = () => {
               {homePageContent?.introSubTitle}
             </h2>
 
-            <p className="text-[#303030] font-medium text-xs lg:text-2xl mt-8">
+            <p className="text-[#303030] font-medium text-sm lg:text-2xl mt-8">
               {homePageContent?.introDescription}
             </p>
           </div>
@@ -91,7 +91,7 @@ const HomePage = () => {
           <div className="flex justify-center items-center">
             <a
               href="#contact-us"
-              className="custom-mawared-btn-style h-9 lg:h-12 font-medium text-xs lg:text-xl mb-6 xl:mb-12 hover:opacity-90 transition-opacity intersect:animate-fade-right animate-duration-700 animate-ease-linear intersect-once"
+              className="custom-mawared-btn-style h-9 lg:h-12 font-medium text-sm lg:text-xl mb-6 xl:mb-12 hover:opacity-90 transition-opacity intersect:animate-fade-right animate-duration-700 animate-ease-linear intersect-once"
               // onClick={() => handleNavigateToPage(`/contact`)}
             >
               {homePageContent?.introBtnLabel}
@@ -151,7 +151,7 @@ const HomePage = () => {
           <div className="flex justify-center items-center">
             <a
               href="#contact-us"
-              className="custom-mawared-btn-style h-9 lg:h-12 mt-4 mb-20 xl:mb-24 font-medium text-xs lg:text-xl hover:opacity-90 transition-opacity intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once"
+              className="custom-mawared-btn-style h-9 lg:h-12 mt-4 mb-20 xl:mb-24 font-medium text-sm lg:text-xl hover:opacity-90 transition-opacity intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once"
               // onClick={() => handleNavigateToPage(`/contact`)}
             >
               {homePageContent?.joinEmpowerdSectionBtnLabel}
@@ -185,11 +185,11 @@ const HomePage = () => {
                 <CarouselItem key={index}>
                   <div className="flex flex-col justify-center items-center">
                     <div className="text-center mb-6 xl:mb-12">
-                      <h2 className="text-sm lg:text-4xl font-bold text-[#303030]">
+                      <h2 className="text-base lg:text-4xl font-bold text-[#303030]">
                         {el?.titleFirstSection}
                       </h2>
 
-                      <p className="text-[#5A5959] font-normal text-xs lg:text-xl mt-4">
+                      <p className="text-[#5A5959] font-normal text-sm lg:text-xl mt-4">
                         {el?.content}
                       </p>
                     </div>
@@ -222,7 +222,7 @@ const HomePage = () => {
         <div id="mobile-app">
           <div className="mb-20 intersect:animate-fade-right animate-duration-700 animate-ease-linear">
             <div className="text-center mb-6 xl:mb-12">
-              <h2 className="text-2xl lg:text-4xl font-bold text-[#303030]">
+              <h2 className="text-xl lg:text-4xl font-bold text-[#303030]">
                 {homePageContent?.flexabilityFirstSectionTitle}
                 {/* <br className="flex lg:hidden" /> */}
                 <span className="text-customBlueWaveyColor mx-2">
@@ -230,7 +230,7 @@ const HomePage = () => {
                 </span>
               </h2>
 
-              <p className="text-[#5A5959] font-normal text-xs lg:text-xl mt-8">
+              <p className="text-[#5A5959] font-normal text-sm lg:text-xl mt-2">
                 {homePageContent?.flexabilityDescription}
               </p>
             </div>
@@ -240,7 +240,7 @@ const HomePage = () => {
                 {flexabilityContent?.slice(0, 4)?.map((el, index) => (
                   <div
                     key={index}
-                    className="flex items-center justify-end gap-6 mb-6"
+                    className={`flex items-center justify-end gap-6 ${el?.gapSpace} mb-6`}
                   >
                     <div className="text-right">
                       <h2 className="font-semibold text-xl text-[#313030]">
@@ -268,14 +268,17 @@ const HomePage = () => {
                 />
               </div>
 
-              <div className="hidden lg:flex flex-col justify-center items-center">
+              <div className="hidden lg:flex flex-col justify-center">
                 <div className="flex flex-col lg:justify-center lg:items-center">
                   {flexabilityContent?.slice(4, 8)?.map((el, index) => (
-                    <div key={index} className="flex items-center gap-6 mb-6">
+                    <div
+                      key={index}
+                      className={`flex items-center gap-6 ${el?.gapSpace} mb-6`}
+                    >
                       <img src={el?.iconUrl} alt="flexibility-icon" />
 
                       <div>
-                        <h2 className="font-semibold text-xs lg:text-xl text-[#313030]">
+                        <h2 className="font-bold text-base lg:text-xl text-[#313030]">
                           {/* <br className="flex lg:hidden" /> */}
                           <span className="text-customBlueWaveyColor me-2">
                             {el?.firstTitle}
@@ -295,11 +298,11 @@ const HomePage = () => {
               <div className="flex lg:hidden flex-col justify-center items-center">
                 <div className="flex flex-col lg:justify-center lg:items-center">
                   {flexabilityContent?.map((el, index) => (
-                    <div key={index} className="flex items-center gap-6 mb-6">
+                    <div key={index} className="flex items-center gap-6 mb-5">
                       <img src={el?.iconUrl} alt="flexibility-icon" />
 
                       <div>
-                        <h2 className="font-semibold text-xs lg:text-xl text-[#313030]">
+                        <h2 className="font-bold text-base lg:text-xl text-[#313030]">
                           {/* <br className="flex lg:hidden" /> */}
                           <span className="text-customBlueWaveyColor me-2">
                             {el?.firstTitle}
@@ -307,7 +310,7 @@ const HomePage = () => {
                           {el?.secondTitle}
                         </h2>
 
-                        <p className="text-[#313030] font-medium text-sm mt-1">
+                        <p className="text-[#313030] font-medium text-xs mt-1">
                           {el?.description}
                         </p>
                       </div>
@@ -320,7 +323,7 @@ const HomePage = () => {
             <div className="flex justify-center items-center">
               <a
                 href="#contact-us"
-                className="custom-mawared-btn-style h-9 lg:h-12 font-medium text-xs lg:text-xl mt-12 hover:opacity-90 transition-opacity"
+                className="custom-mawared-btn-style h-9 lg:h-12 font-medium text-sm lg:text-xl mt-12 hover:opacity-90 transition-opacity"
                 // onClick={() => handleNavigateToPage(`/contact`)}
               >
                 Book a free demo
@@ -340,7 +343,7 @@ const HomePage = () => {
               {homePageContent?.featuresSectionTitleSecPart}
             </h2>
 
-            <p className="text-[#303030] font-medium text-xs lg:text-2xl mt-8">
+            <p className="text-[#303030] font-medium text-sm lg:text-2xl mt-8">
               {homePageContent?.featuresSectionDescription}
             </p>
           </div>
@@ -368,7 +371,7 @@ const HomePage = () => {
                         {el?.title}
                       </h2>
 
-                      <p className="font-medium text-xs lg:text-sm text-[#313030] py-2">
+                      <p className="font-medium text-sm lg:text-sm text-[#313030] py-2">
                         {el?.description}
                       </p>
                     </div>
@@ -390,7 +393,7 @@ const HomePage = () => {
                         {el?.title}
                       </h2>
 
-                      <p className="font-medium text-xs lg:text-sm text-[#313030] py-2">
+                      <p className="font-medium text-sm lg:text-sm text-[#313030] py-2">
                         {el?.description}
                       </p>
                     </div>
@@ -412,7 +415,7 @@ const HomePage = () => {
                         {el?.title}
                       </h2>
 
-                      <p className="font-medium text-xs lg:text-sm text-[#313030] py-2">
+                      <p className="font-medium text-sm lg:text-sm text-[#313030] py-2">
                         {el?.description}
                       </p>
                     </div>
@@ -434,7 +437,7 @@ const HomePage = () => {
                         {el?.title}
                       </h2>
 
-                      <p className="font-medium text-xs lg:text-sm text-[#313030] py-2">
+                      <p className="font-medium text-sm lg:text-sm text-[#313030] py-2">
                         {el?.description}
                       </p>
                     </div>
@@ -451,7 +454,7 @@ const HomePage = () => {
           <div className="flex justify-center items-center intersect:animate-fade-up animate-duration-700 animate-ease-linear intersect-once mb-20">
             <a
               href="#contact-us"
-              className="custom-mawared-btn-style h-9 lg:h-12 font-medium text-xs lg:text-lg my-12 hover:opacity-90 transition-opacity"
+              className="custom-mawared-btn-style h-9 lg:h-12 font-medium text-sm lg:text-lg my-12 hover:opacity-90 transition-opacity"
               // onClick={() => handleNavigateToPage(`/contact`)}
             >
               {homePageContent?.featuresSectionBtnLabel}
@@ -469,7 +472,7 @@ const HomePage = () => {
               </span>
             </h2>
 
-            <p className="text-[#303030] font-medium text-xs lg:text-2xl mt-8">
+            <p className="text-[#303030] font-medium text-sm lg:text-2xl mt-8">
               {homePageContent?.servicesSectionDescription}
             </p>
           </div>
@@ -490,7 +493,7 @@ const HomePage = () => {
                       <h2 className="font-medium text-sm lg:text-lg text-[#313030]">
                         {el?.title}
                       </h2>
-                      <p className="font-normal text-xs lg:text-sm text-[#313030]">
+                      <p className="font-normal text-sm lg:text-sm text-[#313030]">
                         {el?.description}
                       </p>
                     </div>
@@ -515,7 +518,7 @@ const HomePage = () => {
                       <h2 className="font-medium text-sm lg:text-lg text-[#313030]">
                         {el?.title}
                       </h2>
-                      <p className="font-normal text-xs lg:text-sm text-[#313030]">
+                      <p className="font-normal text-sm lg:text-sm text-[#313030]">
                         {el?.description}
                       </p>
                     </div>
@@ -609,12 +612,12 @@ const HomePage = () => {
               <CarouselItem className="lg:basis-1/3 px-8">
                 <Card className="custom-client-card-style">
                   <CardHeader>
-                    <CardTitle className="font-normal text-xs lg:text-xl text-black">
+                    <CardTitle className="font-normal text-sm lg:text-xl text-black">
                       Product teams
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="my-6">
-                    <p className="font-normal text-xs lg:text-xl text-black">
+                    <p className="font-normal text-sm lg:text-xl text-black">
                       The web and mobile apps are intuitive and seamless.
                       Managing HR tasks is effortless, whether I’m at my desk or
                       on the go
@@ -623,16 +626,16 @@ const HomePage = () => {
                   <CardFooter className="flex flex-col lg:flex-row gap-2 lg:gap-0 items-center">
                     <Avatar className="h-16 w-16">
                       <AvatarImage src="./img/client.png" />
-                      <AvatarFallback className="bg-[#D9D9D9] font-normal text-xs lg:text-xl text-black border border-[#313030]">
+                      <AvatarFallback className="bg-[#D9D9D9] font-normal text-sm lg:text-xl text-black border border-[#313030]">
                         CN
                       </AvatarFallback>
                     </Avatar>
 
                     <div className="flex flex-col gap-1 mx-3">
-                      <h4 className="font-semibold text-xs lg:text-xl text-black">
+                      <h4 className="font-semibold text-sm lg:text-xl text-black">
                         Client name
                       </h4>
-                      <p className="font-normal text-xs lg:text-base text-black">
+                      <p className="font-normal text-sm lg:text-base text-black">
                         Team lead
                       </p>
                     </div>
@@ -643,12 +646,12 @@ const HomePage = () => {
               <CarouselItem className="lg:basis-1/3 px-8">
                 <Card className="custom-client-card-style">
                   <CardHeader>
-                    <CardTitle className="font-normal text-xs lg:text-xl text-black">
+                    <CardTitle className="font-normal text-sm lg:text-xl text-black">
                       Product teams
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="my-6">
-                    <p className="font-normal text-xs lg:text-xl text-black">
+                    <p className="font-normal text-sm lg:text-xl text-black">
                       The web and mobile apps are intuitive and seamless.
                       Managing HR tasks is effortless, whether I’m at my desk or
                       on the go
@@ -657,16 +660,16 @@ const HomePage = () => {
                   <CardFooter className="flex flex-col lg:flex-row gap-2 lg:gap-0 items-center">
                     <Avatar className="h-16 w-16">
                       <AvatarImage src="./img/client.png" />
-                      <AvatarFallback className="bg-[#D9D9D9] font-normal text-xs lg:text-xl text-black border border-[#313030]">
+                      <AvatarFallback className="bg-[#D9D9D9] font-normal text-sm lg:text-xl text-black border border-[#313030]">
                         CN
                       </AvatarFallback>
                     </Avatar>
 
                     <div className="flex flex-col gap-1 mx-3">
-                      <h4 className="font-semibold text-xs lg:text-xl text-black">
+                      <h4 className="font-semibold text-sm lg:text-xl text-black">
                         Client name
                       </h4>
-                      <p className="font-normal text-xs lg:text-base text-black">
+                      <p className="font-normal text-sm lg:text-base text-black">
                         Team lead
                       </p>
                     </div>
@@ -677,12 +680,12 @@ const HomePage = () => {
               <CarouselItem className="lg:basis-1/3 px-8">
                 <Card className="custom-client-card-style">
                   <CardHeader>
-                    <CardTitle className="font-normal text-xs lg:text-xl text-black">
+                    <CardTitle className="font-normal text-sm lg:text-xl text-black">
                       Product teams
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="my-6">
-                    <p className="font-normal text-xs lg:text-xl text-black">
+                    <p className="font-normal text-sm lg:text-xl text-black">
                       The web and mobile apps are intuitive and seamless.
                       Managing HR tasks is effortless, whether I’m at my desk or
                       on the go
@@ -691,16 +694,16 @@ const HomePage = () => {
                   <CardFooter className="flex flex-col lg:flex-row gap-2 lg:gap-0 items-center">
                     <Avatar className="h-16 w-16">
                       <AvatarImage src="./img/client.png" />
-                      <AvatarFallback className="bg-[#D9D9D9] font-normal text-xs lg:text-xl text-black border border-[#313030]">
+                      <AvatarFallback className="bg-[#D9D9D9] font-normal text-sm lg:text-xl text-black border border-[#313030]">
                         CN
                       </AvatarFallback>
                     </Avatar>
 
                     <div className="flex flex-col gap-1 mx-3">
-                      <h4 className="font-semibold text-xs lg:text-xl text-black">
+                      <h4 className="font-semibold text-sm lg:text-xl text-black">
                         Client name
                       </h4>
-                      <p className="font-normal text-xs text-black">
+                      <p className="font-normal text-sm text-black">
                         Team lead
                       </p>
                     </div>
