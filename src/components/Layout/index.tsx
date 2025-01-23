@@ -95,7 +95,7 @@ const Layout = ({ children }: Props) => {
       {/* End of sticky whats app btn */}
 
       {/* start of sticky scroll to top btn */}
-      <button
+      {/* <button
         onClick={scrollToTop}
         style={{ display: visible ? "inline" : "none" }}
         className="custom-sticky-scroll-to-page-btn-style"
@@ -106,7 +106,7 @@ const Layout = ({ children }: Props) => {
           className="h-12 w-12 lg:h-auto lg:w-auto"
           alt="click-icon"
         />
-      </button>
+      </button> */}
       {/* End of sticky scroll to top btn */}
     </div>
   );

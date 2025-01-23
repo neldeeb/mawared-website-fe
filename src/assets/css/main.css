@@ -182,7 +182,8 @@
 
   .custom-sticky-chat-btn-style {
     display: block;
-    top: 50vh;
+    /* top: 50vh; */
+    bottom: 20px;
   }
 
   .custom-home-feature-card-style {
