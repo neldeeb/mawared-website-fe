@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <div className="bg-[#FFFFFFA6] flex items-center justify-between custom-nav-shadow-box-style gap-10 p-11 xl:px-24 h-20 fixed w-full z-50">
       <img src="./img/mawared-logo.png" alt="logo" className="h-7 xl:h-auto" />
-      <div className="items-center justify-between gap-10 hidden lg:flex">
+      <div className="items-center justify-center gap-14 hidden lg:flex">
         {/* <Link to="/">
           <div
             className={
@@ -53,12 +53,7 @@ const Navbar = () => {
         </a>
         <a href="#services">
           <div className="font-medium text-sm xl:text-lg text-[#313030] hover:scale-110">
-            Services
-          </div>
-        </a>
-        <a href="#mobile-app">
-          <div className="font-medium text-sm xl:text-lg text-[#313030] hover:scale-110">
-            App
+            Mobile App
           </div>
         </a>
         {/* <Link to="/features">
