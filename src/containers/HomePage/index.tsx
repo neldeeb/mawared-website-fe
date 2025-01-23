@@ -40,15 +40,15 @@ const HomePage = () => {
 
   return (
     <Layout>
-      <div className="flex flex-col justify-center items-center p-11 lg:p-24">
+      <div className="flex flex-col justify-center items-center px-5 xl:px-24 mt-6 xl:mt-20">
         <div id="home-intro">
-          <div className="text-center mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
+          <div className="text-center mb-6 xl:mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
             <h2 className="text-2xl lg:text-5xl font-semibold text-[#303030]">
               <span className="text-customBlueWaveyColor mx-2 font-bold">
                 {homePageContent?.introMainTitle}
               </span>
 
-              <br className="flex lg:hidden" />
+              {/* <br className="flex lg:hidden" /> */}
 
               {homePageContent?.introSubTitle}
             </h2>
@@ -61,7 +61,7 @@ const HomePage = () => {
           <div className="flex justify-center items-center">
             <a
               href="#contact-us"
-              className="custom-mawared-btn-style h-9 lg:h-12 font-medium text-xs lg:text-xl mb-12 hover:opacity-90 transition-opacity intersect:animate-fade-right animate-duration-700 animate-ease-linear intersect-once"
+              className="custom-mawared-btn-style h-9 lg:h-12 font-medium text-xs lg:text-xl mb-6 xl:mb-12 hover:opacity-90 transition-opacity intersect:animate-fade-right animate-duration-700 animate-ease-linear intersect-once"
               // onClick={() => handleNavigateToPage(`/contact`)}
             >
               {homePageContent?.introBtnLabel}
@@ -71,20 +71,25 @@ const HomePage = () => {
           <img
             src={homePageContent?.introImgUrl}
             alt="laptop-view"
-            className="intersect:animate-fade-right animate-duration-700 animate-ease-linear intersect-once mb-40"
+            className="intersect:animate-fade-right animate-duration-700 animate-ease-linear intersect-once mb-20"
           />
         </div>
 
         <div id="join-empowred">
-          <h3 className="font-medium text-2xl lg:text-3xl text-[#313030] text-center mb-8">
+          <h3 className="font-semibold text-base lg:text-3xl text-[#313030] text-center mb-4">
             {homePageContent?.joinEmpowerdSectionTitleFirstPart}
 
-            <br className="flex lg:hidden" />
+            {/* <br className="flex lg:hidden" /> */}
 
             <span className="font-extrabold mx-2">
               {homePageContent?.joinEmpowerdSectionNumber}
             </span>
+
             {homePageContent?.joinEmpowerdSectionTitleSecPart}
+
+            <span className="hidden lg:inline-block mx-2">
+              {homePageContent?.joinEmpowerdSectionTitleThirdPart}
+            </span>
           </h3>
 
           <Carousel
@@ -95,14 +100,16 @@ const HomePage = () => {
             ]}
           >
             <CarouselContent className="-ml-1">
-              {homePageContent?.companyLogsUrls?.map((el, index) => (
-                <CarouselItem
-                  key={index}
-                  className="basis-1/3 lg:basis-1/6 pl-2 flex justify-center items-center gap-10"
-                >
-                  <img src={el} alt="logo" height={90} width={90} />
-                </CarouselItem>
-              ))}
+              {homePageContent?.companyLogsUrls
+                ?.slice(0, 7)
+                ?.map((el, index) => (
+                  <CarouselItem
+                    key={index}
+                    className="basis-1/3 pl-2 flex justify-center items-center gap-10"
+                  >
+                    <img src={el} alt="logo" height={160} width={160} />
+                  </CarouselItem>
+                ))}
             </CarouselContent>
 
             <CarouselPrevious className="border border-white" />
@@ -113,7 +120,7 @@ const HomePage = () => {
           <div className="flex justify-center items-center">
             <a
               href="#contact-us"
-              className="custom-mawared-btn-style h-9 lg:h-12 mt-8 mb-40 font-medium text-xs lg:text-xl hover:opacity-90 transition-opacity intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once"
+              className="custom-mawared-btn-style h-9 lg:h-12 mt-4 mb-20 xl:mb-24 font-medium text-xs lg:text-xl hover:opacity-90 transition-opacity intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once"
               // onClick={() => handleNavigateToPage(`/contact`)}
             >
               {homePageContent?.joinEmpowerdSectionBtnLabel}
@@ -122,7 +129,7 @@ const HomePage = () => {
         </div>
 
         <div id="mawared-modules">
-          <div className="text-center mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
+          <div className="text-center mb-6 xl:mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
             <h2 className="text-2xl lg:text-5xl font-bold text-[#303030]">
               {homePageContent?.mawaredModulesMainTitle}
               <br className="flex lg:hidden" />
@@ -144,7 +151,7 @@ const HomePage = () => {
               {homeFeaturesModules?.map((el, index) => (
                 <CarouselItem key={index}>
                   <div className="flex flex-col justify-center items-center">
-                    <div className="text-center mb-12">
+                    <div className="text-center mb-6 xl:mb-12">
                       <h2 className="text-sm lg:text-4xl font-bold text-[#303030]">
                         {el?.titleFirstSection}
                       </h2>
@@ -156,7 +163,7 @@ const HomePage = () => {
 
                     <a
                       href="#contact-us"
-                      className="custom-discover-btn-style h-9 lg:h-12 w-1/2 md:w-1/4 font-medium text-sm mb-12 hover:opacity-90 transition-opacity"
+                      className="custom-discover-btn-style h-9 lg:h-12 w-1/2 md:w-1/4 font-medium text-sm mb-6 xl:mb-12 hover:opacity-90 transition-opacity"
                       // onClick={() => handleNavigateToPage(`/contact`)}
                     >
                       {el?.btnLabel}
@@ -176,7 +183,7 @@ const HomePage = () => {
 
         <div id="mobile-app">
           <div className="my-40 intersect:animate-fade-right animate-duration-700 animate-ease-linear">
-            <div className="text-center mb-12">
+            <div className="text-center mb-6 xl:mb-12">
               <h2 className="text-2xl lg:text-4xl font-bold text-[#303030]">
                 {homePageContent?.flexabilityFirstSectionTitle}
                 <br className="flex lg:hidden" />
@@ -285,7 +292,7 @@ const HomePage = () => {
         </div>
 
         <div id="features">
-          <div className="text-center mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
+          <div className="text-center mb-6 xl:mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
             <h2 className="text-2xl lg:text-4xl font-bold text-[#303030]">
               <span className="text-customBlueWaveyColor mx-2">
                 {homePageContent?.featuresSectionTitleFirstPart}
@@ -403,7 +410,7 @@ const HomePage = () => {
             <CarouselNext className="border border-white" />
           </Carousel>
 
-          <div className="flex justify-center items-center intersect:animate-fade-up animate-duration-700 animate-ease-linear intersect-once mb-40">
+          <div className="flex justify-center items-center intersect:animate-fade-up animate-duration-700 animate-ease-linear intersect-once mb-20">
             <a
               href="#contact-us"
               className="custom-mawared-btn-style h-9 lg:h-12 font-medium text-xs lg:text-lg my-12 hover:opacity-90 transition-opacity"
@@ -429,7 +436,7 @@ const HomePage = () => {
             </p>
           </div>
 
-          <div className="mb-12 intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once">
+          <div className="mb-6 xl:mb-12 intersect:animate-fade animate-once animate-duration-1000 animate-ease-linear intersect-once">
             <div className="flex flex-col xl:flex-row gap-10 justify-center items-center">
               <img
                 src={homePageContent?.servicesSectionFirstRowImgUrl}
@@ -523,9 +530,9 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div id="contact-us" className="mb-40 md:mb-10">
-        <div className="lg:flex flex-col justify-center items-center p-6 lg:p-24 w-full">
-          <div className="text-center mb-12">
+      <div id="contact-us" className="mb-20 md:mb-10">
+        <div className="lg:flex flex-col justify-center items-center px-5 xl:px-24 w-full">
+          <div className="text-center mb-6 xl:mb-12">
             <h2 className="text-2xl lg:text-5xl font-bold text-[#303030]">
               {homePageContent?.contactUsSectionTitleFirstPart}
               <br className="flex lg:hidden" />

@@ -16,7 +16,7 @@ interface WhatsAppProps {
 
 const Layout = ({ children }: Props) => {
   // useStates
-  const [visible, setVisible] = useState(false);
+  // const [visible, setVisible] = useState(false);
 
   // start the observer intersect for animation
   Observer.start();
@@ -27,23 +27,23 @@ const Layout = ({ children }: Props) => {
   }, []);
 
   // start of handle to top sticky page content btn function
-  const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 300) {
-      setVisible(true);
-    } else if (scrolled <= 300) {
-      setVisible(false);
-    }
-  };
+  // const toggleVisible = () => {
+  //   const scrolled = document.documentElement.scrollTop;
+  //   if (scrolled > 300) {
+  //     setVisible(true);
+  //   } else if (scrolled <= 300) {
+  //     setVisible(false);
+  //   }
+  // };
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+  // const scrollToTop = () => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // };
 
-  window.addEventListener("scroll", toggleVisible);
+  // window.addEventListener("scroll", toggleVisible);
   // End of handle to top sticky page content btn function
 
   // Start of handle whats app link function component
@@ -80,7 +80,7 @@ const Layout = ({ children }: Props) => {
 
       {/* Start of children of layout */}
 
-      <main className="flex-grow pt-24">{children}</main>
+      <main className="flex-grow pt-16 lg:pt-24">{children}</main>
       {/* End of children of layout */}
 
       {/* Start of footer component */}

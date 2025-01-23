@@ -127,7 +127,6 @@ const Navbar = () => {
       </div>
 
       {/* start of mobile navbar */}
-
       <Drawer>
         <div className="flex justify-between items-center lg:hidden w-full">
           <div className="flex gap-3 items-center">
@@ -257,7 +256,6 @@ const Navbar = () => {
           </DrawerContent>
         </div>
       </Drawer>
-
       {/* end of mobile navbar */}
     </div>
   );

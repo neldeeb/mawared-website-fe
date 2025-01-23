@@ -7,6 +7,7 @@ export interface HomePageContentProps {
   introImgUrl: string;
   joinEmpowerdSectionTitleFirstPart: string;
   joinEmpowerdSectionTitleSecPart: string;
+  joinEmpowerdSectionTitleThirdPart: string;
   joinEmpowerdSectionNumber: string;
   joinEmpowerdSectionBtnLabel: string;
   companyLogsUrls: string[];
