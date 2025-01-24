@@ -45,7 +45,7 @@ const PartnerSection: React.FC = () => {
                   className="transform-origin-center"
                 />
               </svg>
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-11 lg:p-4">
                 <span className="text-center text-[#313030] sm:text-xl lg:text-base font-medium mb-2">
                   {stat?.label}
                 </span>
