@@ -158,7 +158,7 @@ const ContactForm = () => {
                 onChange={(e) =>
                   setFormData({ ...formData, name: e.target.value })
                 }
-                className="w-full px-4 py-3 border border-[#31303066] rounded-[8px] focus:ring-[#23AAEB] focus:border-[#23AAEB] bg-[#F3F5F9]"
+                className="w-full text-sm lg:text-base px-4 py-3 border border-[#31303066] rounded-[8px] focus:ring-[#23AAEB] focus:border-[#23AAEB] bg-[#F3F5F9]"
                 placeholder="Type your full name"
               />
             </div>
@@ -179,7 +179,7 @@ const ContactForm = () => {
                 onChange={(value) =>
                   setFormData({ ...formData, phone: `${value}` })
                 }
-                className="w-full px-4 py-3 border border-[#31303066] rounded-[8px] focus:ring-[#23AAEB] focus:border-[#23AAEB]"
+                className="w-full text-sm lg:text-base px-4 py-3 border border-[#31303066] rounded-[8px] focus:ring-[#23AAEB] focus:border-[#23AAEB]"
                 placeholder="(000) 000-0000"
               />
             </div>
@@ -199,7 +199,7 @@ const ContactForm = () => {
                 onChange={(e) =>
                   setFormData({ ...formData, company_name: e.target.value })
                 }
-                className="w-full px-4 py-3 border border-[#31303066] rounded-[8px] focus:ring-[#23AAEB] focus:border-[#23AAEB] bg-[#F3F5F9]"
+                className="w-full text-sm lg:text-base px-4 py-3 border border-[#31303066] rounded-[8px] focus:ring-[#23AAEB] focus:border-[#23AAEB] bg-[#F3F5F9]"
                 placeholder="Type your company name"
               />
             </div>
@@ -221,7 +221,7 @@ const ContactForm = () => {
                 onChange={(e) =>
                   setFormData({ ...formData, job_title: e.target.value })
                 }
-                className="w-full px-4 py-3 border border-[#31303066] rounded-[8px] focus:ring-[#23AAEB] focus:border-[#23AAEB] bg-[#F3F5F9]"
+                className="w-full text-sm lg:text-base px-4 py-3 border border-[#31303066] rounded-[8px] focus:ring-[#23AAEB] focus:border-[#23AAEB] bg-[#F3F5F9]"
                 placeholder="Type your job title"
               />
             </div>
@@ -241,7 +241,7 @@ const ContactForm = () => {
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
                 }
-                className="w-full px-4 py-3 border border-[#31303066] rounded-[8px] focus:ring-[#23AAEB] focus:border-[#23AAEB] bg-[#F3F5F9]"
+                className="w-full text-sm lg:text-base px-4 py-3 border border-[#31303066] rounded-[8px] focus:ring-[#23AAEB] focus:border-[#23AAEB] bg-[#F3F5F9]"
                 placeholder="Type your email"
               />
             </div>
@@ -264,7 +264,7 @@ const ContactForm = () => {
                     number_of_employees: e.target.value,
                   })
                 }
-                className="w-full px-4 py-3 border border-[#31303066] rounded-[8px] focus:ring-[#23AAEB] focus:border-[#23AAEB] bg-[#F3F5F9]"
+                className="w-full text-sm lg:text-base px-4 py-3 border border-[#31303066] rounded-[8px] focus:ring-[#23AAEB] focus:border-[#23AAEB] bg-[#F3F5F9]"
                 placeholder="Type number of employees"
               />
             </div>
@@ -285,7 +285,7 @@ const ContactForm = () => {
               setFormData({ ...formData, message: e.target.value })
             }
             rows={3}
-            className="w-full px-4 py-3 border border-[#31303066] rounded-[8px] focus:ring-[#23AAEB] focus:border-[#23AAEB] bg-[#F3F5F9] resize-none"
+            className="w-full text-sm lg:text-base px-4 py-3 border border-[#31303066] rounded-[8px] focus:ring-[#23AAEB] focus:border-[#23AAEB] bg-[#F3F5F9] resize-none"
             placeholder="Type your message"
           />
         </div>
@@ -299,7 +299,7 @@ const ContactForm = () => {
         <div className="flex flex-col justify-center items-center lg:flex-row gap-4 mt-8">
           <Button
             type="submit"
-            className="w-1/2 custom-linear-bg-blue-wavy-color-style py-2 px-6 text-white font-medium text-base h-12"
+            className="w-10/12 custom-linear-bg-blue-wavy-color-style py-2 px-6 text-white font-medium text-base h-12"
             onClick={handleSubmit}
           >
             {isSendEmailLoading ? (

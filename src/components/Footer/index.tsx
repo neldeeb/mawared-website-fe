@@ -11,7 +11,7 @@ const Footer = () => {
               className="h-8 lg:h-10"
             />
 
-            <div className="flex flex-col lg:flex-row items-center gap-4">
+            <div className="flex flex-col md:flex-row items-center gap-4">
               <a
                 href="https://play.google.com/store/apps/details?id=com.qu_attendance"
                 target="_blank"
@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
 
           {/* Contact info */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-5 text-sm font-normal py-12">
+          <div className="hidden lg:grid grid-cols-1 lg:grid-cols-4 gap-5 text-sm font-normal py-12">
             <div className="flex items-center gap-6 text-white opacity-70">
               <img src="./img/location-icon.png" alt="location-icon" />
               257 Maynard Summit Way, Cary, NC 27511, USA.
@@ -71,7 +71,7 @@ const Footer = () => {
               24 Aziz Koheil st from Abdel Hamid AlDeeb St., Tharwat,
               Alexandria, 21599, Egypt.
             </div>
-            
+
             <div className="flex items-center gap-6 text-white opacity-70">
               <img src="./img/email-icon.png" alt="email-icon" />
               info@mawaredhr.com
@@ -90,6 +90,58 @@ const Footer = () => {
             <div className="flex items-center gap-6 text-white opacity-70">
               <img src="./img/call-icon.png" alt="call-icon" />
               (+20) 3 584 9945
+            </div>
+          </div>
+
+          <div className="lg:hidden grid grid-cols-1 md:grid-cols-2 gap-5 text-sm font-normal py-12">
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center gap-6 text-white opacity-70">
+                <img src="./img/location-icon.png" alt="location-icon" />
+                257 Maynard Summit Way, Cary, NC 27511, USA.
+              </div>
+
+              <div className="flex items-center gap-6 text-white opacity-70">
+                <img src="./img/email-icon.png" alt="email-icon" />
+                info@mawaredhr.com
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center gap-6 text-white opacity-70">
+                <img src="./img/location-icon.png" alt="location-icon" />
+                Al Kunoz Business Center Building C, 3rd floor, Dubai, UAE.
+              </div>
+
+              <div className="flex items-center gap-6 text-white opacity-70">
+                <img src="./img/call-icon.png" alt="call-icon" />
+                (+971) 50 460 2733
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center gap-6 text-white opacity-70">
+                <img src="./img/location-icon.png" alt="location-icon" />
+                22 Goal Gamal St. Off Gamaet ElDewal El Arabeya St.,
+                Mohandeseen, Giza, Egypt.
+              </div>
+
+              <div className="flex items-center gap-6 text-white opacity-70">
+                <img src="./img/call-icon.png" alt="call-icon" />
+                (+20) 102 528 5760
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center gap-6 text-white opacity-70">
+                <img src="./img/location-icon.png" alt="location-icon" />
+                24 Aziz Koheil st from Abdel Hamid AlDeeb St., Tharwat,
+                Alexandria, 21599, Egypt.
+              </div>
+
+              <div className="flex items-center gap-6 text-white opacity-70">
+                <img src="./img/call-icon.png" alt="call-icon" />
+                (+20) 3 584 9945
+              </div>
             </div>
           </div>
         </div>
