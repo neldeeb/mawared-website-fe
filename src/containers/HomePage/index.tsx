@@ -552,8 +552,8 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div id="contact-us" className="mb-20 md:mb-10">
-        <div className="lg:flex flex-col justify-center items-center px-5 xl:px-24 w-full">
+      <div id="contact-us" className="mb-20 xl:mb-28">
+        <div className="lg:flex flex-col justify-center items-center px-10 w-full">
           <div className="text-center mb-6 xl:mb-12">
             <h2 className="text-2xl lg:text-5xl font-bold text-[#303030]">
               {homePageContent?.contactUsSectionTitleFirstPart}

@@ -137,12 +137,12 @@ const ContactForm = () => {
 
   return (
     <div
-      className="xl:w-5/6 custom-contact-card-style overflow-hidden my-6"
+      className="mx-auto custom-contact-card-style overflow-hidden mt-1 mb-20 md:mb-0"
       style={{ boxShadow: "0px 0px 20px 0px #0000001A" }}
     >
       <form className="p-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="space-y-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
+          <div className="space-y-3">
             <div className="flex flex-col gap-3">
               <label
                 htmlFor="name"
@@ -205,7 +205,7 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-3">
             <div className="flex flex-col gap-3">
               <label
                 htmlFor="job_title"
@@ -271,7 +271,7 @@ const ContactForm = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-3 mt-8">
+        <div className="flex flex-col gap-3 mt-3">
           <label
             htmlFor="message"
             className="block text-base font-normal text-[#191919]"
@@ -284,7 +284,7 @@ const ContactForm = () => {
             onChange={(e) =>
               setFormData({ ...formData, message: e.target.value })
             }
-            rows={7}
+            rows={3}
             className="w-full px-4 py-3 border border-[#31303066] rounded-[8px] focus:ring-[#23AAEB] focus:border-[#23AAEB] bg-[#F3F5F9] resize-none"
             placeholder="Type your message"
           />
@@ -296,7 +296,7 @@ const ContactForm = () => {
           </div>
         )}
 
-        <div className="flex flex-col justify-center items-center lg:flex-row gap-4 mt-16">
+        <div className="flex flex-col justify-center items-center lg:flex-row gap-4 mt-8">
           <Button
             type="submit"
             className="w-1/2 custom-linear-bg-blue-wavy-color-style py-2 px-6 text-white font-medium text-base h-12"
