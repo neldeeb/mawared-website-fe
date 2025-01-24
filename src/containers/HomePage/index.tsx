@@ -72,7 +72,7 @@ const HomePage = () => {
 
   return (
     <Layout>
-      <div className="flex flex-col justify-center items-center px-5 xl:px-24 mt-6 xl:mt-20">
+      <div className="flex flex-col justify-center items-center px-5 md:px-24 mt-6 md:mt-20">
         <div id="home-intro">
           <div className="text-center mb-6 xl:mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
             <h2 className="text-2xl lg:text-5xl font-semibold text-[#303030]">
@@ -161,7 +161,11 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div ref={containerRef} id="mawared-modules" className="mb-20 xl:mb-28">
+        <div
+          ref={containerRef}
+          id="mawared-modules"
+          className="mb-20 xl:mb-28 w-3/4 md:w-full"
+        >
           <div className="text-center mb-6 xl:mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
             <h2 className="text-2xl lg:text-5xl font-bold text-[#303030]">
               {homePageContent?.mawaredModulesMainTitle}
@@ -187,7 +191,7 @@ const HomePage = () => {
                 <CarouselItem key={index}>
                   <div className="flex flex-col justify-center items-center">
                     <div className="text-center mb-6 xl:mb-12">
-                      <h2 className="text-base lg:text-4xl font-bold text-[#303030]">
+                      <h2 className="text-xl lg:text-4xl font-bold text-[#303030]">
                         {el?.titleFirstSection}
                       </h2>
 
@@ -209,6 +213,13 @@ const HomePage = () => {
                       alt="module-img"
                       height={1500}
                       width={1500}
+                      className="hidden md:block"
+                    />
+
+                    <img
+                      src={el?.mobileImgUrl}
+                      alt="module-img"
+                      className="block md:hidden"
                     />
                   </div>
                 </CarouselItem>
@@ -334,7 +345,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div id="features" className="mb-20 xl:mb-28">
+        <div id="features" className="mb-20 xl:mb-28 w-3/4 md:w-full">
           <div className="text-center mb-6 xl:mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
             <h2 className="text-2xl lg:text-4xl font-bold text-[#303030]">
               <span className="text-customBlueWaveyColor mx-2">
@@ -357,11 +368,203 @@ const HomePage = () => {
             //     delay: 6000,
             //   }),
             // ]}
-            className="flex-shrink-0 w-full"
+            className="lg:hidden flex-shrink-0 w-full"
           >
             <CarouselContent className="-ml-4">
               <CarouselItem>
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                  {homeFeaturesfirstSlide?.slice(0, 4)?.map((el, index) => (
+                    <div key={index} className="custom-home-feature-card-style">
+                      <img
+                        className="pb-4 w-7"
+                        src={el?.iconUrl}
+                        alt="feature-icon"
+                      />
+
+                      <h2 className="font-semibold text-xs lg:text-lg text-[#313030]">
+                        {el?.title}
+                      </h2>
+
+                      <p className="font-medium text-xs lg:text-sm text-[#313030] py-2">
+                        {el?.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </CarouselItem>
+
+              <CarouselItem>
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                  {homeFeaturesfirstSlide?.slice(4, 8)?.map((el, index) => (
+                    <div key={index} className="custom-home-feature-card-style">
+                      <img
+                        className="pb-4 w-7"
+                        src={el?.iconUrl}
+                        alt="feature-icon"
+                      />
+
+                      <h2 className="font-semibold text-xs lg:text-lg text-[#313030]">
+                        {el?.title}
+                      </h2>
+
+                      <p className="font-medium text-xs lg:text-sm text-[#313030] py-2">
+                        {el?.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </CarouselItem>
+
+              <CarouselItem>
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                  {homeFeaturesSecSlide?.slice(0, 4)?.map((el, index) => (
+                    <div key={index} className="custom-home-feature-card-style">
+                      <img
+                        className="pb-4 w-7"
+                        src={el?.iconUrl}
+                        alt="feature-icon"
+                      />
+
+                      <h2 className="font-semibold text-xs lg:text-lg text-[#313030]">
+                        {el?.title}
+                      </h2>
+
+                      <p className="font-medium text-xs lg:text-sm text-[#313030] py-2">
+                        {el?.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </CarouselItem>
+
+              <CarouselItem>
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                  {homeFeaturesSecSlide?.slice(4, 8)?.map((el, index) => (
+                    <div key={index} className="custom-home-feature-card-style">
+                      <img
+                        className="pb-4 w-7"
+                        src={el?.iconUrl}
+                        alt="feature-icon"
+                      />
+
+                      <h2 className="font-semibold text-xs lg:text-lg text-[#313030]">
+                        {el?.title}
+                      </h2>
+
+                      <p className="font-medium text-xs lg:text-sm text-[#313030] py-2">
+                        {el?.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </CarouselItem>
+
+              <CarouselItem>
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                  {homeFeaturesThirdSlide?.slice(0, 4)?.map((el, index) => (
+                    <div key={index} className="custom-home-feature-card-style">
+                      <img
+                        className="pb-4 w-7"
+                        src={el?.iconUrl}
+                        alt="feature-icon"
+                      />
+
+                      <h2 className="font-semibold text-xs lg:text-lg text-[#313030]">
+                        {el?.title}
+                      </h2>
+
+                      <p className="font-medium text-xs lg:text-sm text-[#313030] py-2">
+                        {el?.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </CarouselItem>
+
+              <CarouselItem>
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                  {homeFeaturesThirdSlide?.slice(4, 8)?.map((el, index) => (
+                    <div key={index} className="custom-home-feature-card-style">
+                      <img
+                        className="pb-4 w-7"
+                        src={el?.iconUrl}
+                        alt="feature-icon"
+                      />
+
+                      <h2 className="font-semibold text-xs lg:text-lg text-[#313030]">
+                        {el?.title}
+                      </h2>
+
+                      <p className="font-medium text-xs lg:text-sm text-[#313030] py-2">
+                        {el?.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </CarouselItem>
+
+              <CarouselItem>
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                  {homeFeaturesFourthSlide?.slice(0, 4)?.map((el, index) => (
+                    <div key={index} className="custom-home-feature-card-style">
+                      <img
+                        className="pb-4 w-7"
+                        src={el?.iconUrl}
+                        alt="feature-icon"
+                      />
+
+                      <h2 className="font-semibold text-xs lg:text-lg text-[#313030]">
+                        {el?.title}
+                      </h2>
+
+                      <p className="font-medium text-xs lg:text-sm text-[#313030] py-2">
+                        {el?.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </CarouselItem>
+
+              <CarouselItem>
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                  {homeFeaturesFourthSlide?.slice(4, 8)?.map((el, index) => (
+                    <div key={index} className="custom-home-feature-card-style">
+                      <img
+                        className="pb-4 w-7"
+                        src={el?.iconUrl}
+                        alt="feature-icon"
+                      />
+
+                      <h2 className="font-semibold text-xs lg:text-lg text-[#313030]">
+                        {el?.title}
+                      </h2>
+
+                      <p className="font-medium text-xs lg:text-sm text-[#313030] py-2">
+                        {el?.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </CarouselItem>
+            </CarouselContent>
+
+            <CarouselPrevious className="border border-white" />
+
+            <CarouselNext className="border border-white" />
+          </Carousel>
+
+          <Carousel
+            opts={{ loop: true }}
+            // plugins={[
+            //   Autoplay({
+            //     delay: 6000,
+            //   }),
+            // ]}
+            className="hidden lg:flex flex-shrink-0 w-full"
+          >
+            <CarouselContent className="-ml-4">
+              <CarouselItem>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {homeFeaturesfirstSlide?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -383,7 +586,7 @@ const HomePage = () => {
               </CarouselItem>
 
               <CarouselItem>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {homeFeaturesSecSlide?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -405,7 +608,7 @@ const HomePage = () => {
               </CarouselItem>
 
               <CarouselItem>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {homeFeaturesThirdSlide?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -427,7 +630,7 @@ const HomePage = () => {
               </CarouselItem>
 
               <CarouselItem>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {homeFeaturesFourthSlide?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -454,10 +657,10 @@ const HomePage = () => {
             <CarouselNext className="border border-white" />
           </Carousel>
 
-          <div className="flex justify-center items-center intersect:animate-fade-up animate-duration-700 animate-ease-linear intersect-once">
+          <div className="flex justify-center text-center items-center intersect:animate-fade-up animate-duration-700 animate-ease-linear intersect-once">
             <a
               href="#contact-us"
-              className="custom-mawared-btn-style h-9 lg:h-12 font-medium text-sm lg:text-lg mt-12 hover:opacity-90 transition-opacity"
+              className="custom-mawared-btn-style h-9 lg:h-12 font-medium text-xs lg:text-lg lg:mt-12 hover:opacity-90 transition-opacity"
               // onClick={() => handleNavigateToPage(`/contact`)}
             >
               {homePageContent?.featuresSectionBtnLabel}
@@ -489,16 +692,16 @@ const HomePage = () => {
                 width={950}
               />
 
-              <div className="flex flex-col gap-6">
+              <div className="grid grid-cols-2 xl:flex xl:flex-col gap-6">
                 {homeServices?.slice(0, 4)?.map((el, index) => (
                   <div key={index} className="flex items-center">
-                    <img src={el?.iconUrl} alt="service-icon" />
+                    <img src={el?.iconUrl} alt="service-icon" className="w-9" />
 
                     <div className="mx-4">
-                      <h2 className="font-semibold text-sm lg:text-lg text-[#313030]">
+                      <h2 className="font-semibold text-sm xl:text-lg text-[#313030]">
                         {el?.title}
                       </h2>
-                      <p className="font-normal text-sm lg:text-sm text-[#313030]">
+                      <p className="font-normal text-sm xl:text-sm text-[#313030] mt-1">
                         {el?.description}
                       </p>
                     </div>
@@ -514,16 +717,16 @@ const HomePage = () => {
                 className="mt-16 flex xl:hidden"
               />
 
-              <div className="flex flex-col gap-6">
+              <div className="grid grid-cols-2 xl:flex xl:flex-col gap-6">
                 {homeServices?.slice(4, 8)?.map((el, index) => (
                   <div key={index} className="flex items-center">
-                    <img src={el?.iconUrl} alt="service-icon" />
+                    <img src={el?.iconUrl} alt="service-icon" className="w-9" />
 
                     <div className="mx-4">
-                      <h2 className="font-medium text-sm lg:text-lg text-[#313030]">
+                      <h2 className="font-bold text-sm xl:text-lg text-[#313030]">
                         {el?.title}
                       </h2>
-                      <p className="font-normal text-sm lg:text-sm text-[#313030]">
+                      <p className="font-normal text-sm xl:text-lg text-[#313030] mt-1">
                         {el?.description}
                       </p>
                     </div>

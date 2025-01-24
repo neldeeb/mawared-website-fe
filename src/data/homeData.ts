@@ -85,6 +85,7 @@ export const homeFeaturesModules: HomeFeaturesModulesProps[] = [
     content:
       "Mawared HR’s employee management centralizes profiles, allowing HR to access and update balances, statuses, calendars, salaries, documents, and assets in real-time. This advanced system enhances decision-making, organization, and efficiency by keeping all employee details in one place.",
     imgUrl: "./img/employee-managment.svg",
+    mobileImgUrl: "./img/employee-managment-mobile.svg",
     btnLabel: "Discover more",
   },
   {
@@ -92,6 +93,7 @@ export const homeFeaturesModules: HomeFeaturesModulesProps[] = [
     content:
       "Mawared HR’s attendance module uses GPS and facial recognition for accurate employee tracking and verification. It automates tardiness penalties, supports customizable policies, and adapts to various work setups, including remote and multi-site operations. This ensures efficient, tailored attendance management with reduced manual effort.",
     imgUrl: "./img/att-managment-img.svg",
+    mobileImgUrl: "./img/att-managment-mobile.svg",
     btnLabel: "Discover more",
   },
   {
@@ -99,6 +101,7 @@ export const homeFeaturesModules: HomeFeaturesModulesProps[] = [
     content:
       "Mawared HR’s payroll module ensures precise salary calculations, integrating attendance, allowances, deductions, and loan management. Employees can request loans, with installments automatically deducted and reflected in pay slips. The module also supports expense management, enabling detailed tracking and reporting for better financial oversight. Running payroll and financial operations in one platform.",
     imgUrl: "./img/payroll-finances-img.svg",
+    mobileImgUrl: "./img/payroll-finances-mobile.svg",
     btnLabel: "Discover more",
   },
 ];

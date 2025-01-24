@@ -41,6 +41,7 @@ export interface HomeFeaturesModulesProps {
   titleFirstSection: string;
   content: string;
   imgUrl: string;
+  mobileImgUrl: string;
   btnLabel: string;
 }
 
