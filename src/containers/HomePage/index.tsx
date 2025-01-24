@@ -280,7 +280,7 @@ const HomePage = () => {
                   alt="flexibility-view"
                   // height={1500}
                   // width={1500}
-                  className="md:max-w-auto 2xl:max-w-2xl"
+                  className="md:max-w-auto 2xl:max-w-3xl"
                 />
               </div>
 
