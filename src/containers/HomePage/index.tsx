@@ -75,7 +75,7 @@ const HomePage = () => {
       <div className="flex flex-col justify-center items-center px-5 md:px-24 mt-6 md:mt-20">
         <div id="home-intro">
           <div className="text-center mb-6 xl:mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
-            <h2 className="text-2xl lg:text-5xl font-semibold text-[#303030]">
+            <h2 className="text-xl lg:text-5xl font-semibold text-[#303030]">
               <span className="text-customBlueWaveyColor mx-2 font-bold">
                 {homePageContent?.introMainTitle}
               </span>
@@ -167,7 +167,7 @@ const HomePage = () => {
           className="mb-12 xl:mb-28 w-3/4 md:w-full"
         >
           <div className="text-center mb-6 xl:mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
-            <h2 className="text-2xl lg:text-5xl font-bold text-[#303030]">
+            <h2 className="text-xl lg:text-5xl font-bold text-[#303030]">
               {homePageContent?.mawaredModulesMainTitle}
               {/* <br className="flex lg:hidden" /> */}
               <span className="text-customBlueWaveyColor mx-2">
@@ -191,7 +191,7 @@ const HomePage = () => {
                 <CarouselItem key={index}>
                   <div className="flex flex-col justify-center items-center">
                     <div className="text-center mb-6 xl:mb-12">
-                      <h2 className="text-xl lg:text-4xl font-bold text-[#303030]">
+                      <h2 className="text-base lg:text-4xl font-bold text-[#303030]">
                         {el?.titleFirstSection}
                       </h2>
 
@@ -350,7 +350,7 @@ const HomePage = () => {
 
         <div id="features" className="mb-12 xl:mb-28 w-3/4 md:w-full">
           <div className="text-center mb-6 xl:mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
-            <h2 className="text-2xl lg:text-4xl font-bold text-[#303030]">
+            <h2 className="text-xl lg:text-4xl font-bold text-[#303030]">
               <span className="text-customBlueWaveyColor mx-2">
                 {homePageContent?.featuresSectionTitleFirstPart}
               </span>
@@ -753,7 +753,7 @@ const HomePage = () => {
 
         <div id="services" className="mb-12 xl:mb-28">
           <div className="text-center mb-16">
-            <h2 className="text-2xl lg:text-4xl font-bold text-[#303030]">
+            <h2 className="text-xl lg:text-4xl font-bold text-[#303030]">
               {homePageContent?.servicesSectionTitleFirstPart}
               {/* <br className="flex lg:hidden" /> */}
               <span className="text-customBlueWaveyColor mx-2">
@@ -841,7 +841,7 @@ const HomePage = () => {
       <div id="contact-us" className="mb-12 xl:mb-28">
         <div className="lg:flex flex-col justify-center items-center px-7 w-full">
           <div className="text-center mb-6 xl:mb-12">
-            <h2 className="text-2xl lg:text-5xl font-bold text-[#303030]">
+            <h2 className="text-xl lg:text-5xl font-bold text-[#303030]">
               {homePageContent?.contactUsSectionTitleFirstPart}
               {/* <br className="flex lg:hidden" /> */}
               <span className="text-customBlueWaveyColor mx-2">
@@ -849,7 +849,7 @@ const HomePage = () => {
               </span>
             </h2>
 
-            <p className="text-[#5A5959] font-normal text-base lg:text-3xl mt-2">
+            <p className="text-[#5A5959] font-normal text-sm lg:text-3xl mt-2">
               {homePageContent?.contactUsSectionDescription}
             </p>
           </div>

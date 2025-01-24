@@ -11,7 +11,7 @@ const PartnerSection: React.FC = () => {
   return (
     <div className="w-full max-w-5xl mx-auto px-5 py-40 xl:px-6 xl:py-44">
       <div className="text-center mb-8">
-        <h2 className="text-2xl lg:text-4xl font-bold text-[#303030] mb-2">
+        <h2 className="text-xl lg:text-4xl font-bold text-[#303030] mb-2">
           {homePageContent?.trustedSectionTitleFirstPart}
           {/* <br className="flex lg:hidden" /> */}
           <span className="text-customBlueWaveyColor mx-2">
