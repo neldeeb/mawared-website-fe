@@ -839,7 +839,7 @@ const HomePage = () => {
       </div>
 
       <div id="contact-us" className="mb-12 xl:mb-28">
-        <div className="lg:flex flex-col justify-center items-center px-10 w-full">
+        <div className="lg:flex flex-col justify-center items-center px-7 w-full">
           <div className="text-center mb-6 xl:mb-12">
             <h2 className="text-2xl lg:text-5xl font-bold text-[#303030]">
               {homePageContent?.contactUsSectionTitleFirstPart}
@@ -849,7 +849,7 @@ const HomePage = () => {
               </span>
             </h2>
 
-            <p className="text-[#5A5959] font-normal text-lg lg:text-3xl mt-2">
+            <p className="text-[#5A5959] font-normal text-base lg:text-3xl mt-2">
               {homePageContent?.contactUsSectionDescription}
             </p>
           </div>
