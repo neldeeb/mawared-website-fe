@@ -108,7 +108,7 @@ const HomePage = () => {
         </div>
 
         <div id="join-empowred" className="mb-20 xl:mb-28">
-          <h3 className="font-semibold text-base lg:text-3xl text-[#313030] text-center mb-4">
+          <h3 className="font-semibold text-xl lg:text-3xl text-[#313030] text-center mb-4">
             {homePageContent?.joinEmpowerdSectionTitleFirstPart}
 
             {/* <br className="flex lg:hidden" /> */}
