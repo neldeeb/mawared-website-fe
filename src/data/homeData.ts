@@ -28,7 +28,7 @@ export const homePageContent: HomePageContentProps = {
     "./img/ufc-gym-logo.svg",
     "./img/next-logo.svg",
     "./img/lazaro-logo.svg",
-    "./img/the-chef-logo.svg",
+    // "./img/the-chef-logo.svg",
     "./img/fhakrany-logo.svg",
     "./img/merkah-logo.svg",
     "./img/zumra.svg",

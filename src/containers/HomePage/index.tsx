@@ -31,6 +31,8 @@ import {
   flexabilityContent,
 } from "@/data/homeData";
 import ContactForm from "@/components/ContactForm";
+import PartnerSection from "@/components/PartnerSection";
+import WaveBackground from "@/components/WavBackground";
 
 const HomePage = () => {
   // const navigate = useNavigate();
@@ -483,6 +485,8 @@ const HomePage = () => {
               <img
                 src={homePageContent?.servicesSectionFirstRowImgUrl}
                 alt="service-img"
+                height={950}
+                width={950}
               />
 
               <div className="flex flex-col gap-6">
@@ -531,44 +535,20 @@ const HomePage = () => {
                 src={homePageContent?.servicesSectionSecRowImgUrl}
                 alt="service-img"
                 className="hidden xl:flex"
+                height={950}
+                width={950}
               />
             </div>
           </div>
         </div>
       </div>
 
-      <div
-        id="partners"
-        style={{
-          backgroundImage: `url(./img/partner-section-bg.svg)`,
-        }}
-        className="bg-no-repeat bg-cover p-20 md:p-60 xl:p-80"
-      >
-        <div className="text-center mb-8">
-          <h2 className="text-2xl lg:text-4xl font-bold text-[#303030] mb-6">
-            {homePageContent?.trustedSectionTitleFirstPart}
-            {/* <br className="flex lg:hidden" /> */}
-            <span className="text-customBlueWaveyColor mx-2">
-              {homePageContent?.trustedSectionTitleSecPart}
-            </span>
-            {homePageContent?.trustedSectionTitleThirdPart}
-          </h2>
-
-          <p className="font-medium text-[#5A5959] text-sm lg:text-lg">
-            {homePageContent?.trustedSectionDescription}
-          </p>
+      <div id="partners" className="relative min-h-screen">
+        <div className="absolute inset-0 z-0">
+          <WaveBackground className="w-full h-full" />
         </div>
-
-        <div className="flex items-center justify-center mb-16">
-          <img src={homePageContent?.trustedSectionImgUrl} alt="stats-img" />
-        </div>
-
-        <div className="grid grid-cols-2 lg:grid-cols-6 gap-10">
-          {homePageContent?.companyLogsUrls?.map((el, index) => (
-            <div key={index} className="flex justify-center items-center">
-              <img src={el} alt="logo" height={75} width={110} />
-            </div>
-          ))}
+        <div className="relative z-10">
+          <PartnerSection />
         </div>
       </div>
 
