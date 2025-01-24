@@ -12,7 +12,7 @@ export const homePageContent: HomePageContentProps = {
   introDescription:
     "The Ultimate Cloud-Based HRMS Platform For Your HR Operations.",
   introBtnLabel: "See Mawared HR in Action",
-  introImgUrl: "./img/laptop-view.svg",
+  introImgUrl: "./img/laptop-view.png",
   joinEmpowerdSectionTitleFirstPart: "Trusted by",
   joinEmpowerdSectionTitleSecPart: "Businesses.",
   joinEmpowerdSectionTitleThirdPart: "Empowering Workforces Every Day.",
@@ -55,7 +55,7 @@ export const homePageContent: HomePageContentProps = {
   flexabilitySecondSectionTitle: "Fingertips",
   flexabilityDescription:
     "Manage attendance, payroll, and operations effortlessly with AI-powered tools, GPS tracking, real-time alerts, and custom policies. Access insights, handle tasks, and stay connected with a cloud-based platform.",
-  flexabilityImgUrl: "./img/flexibility-img.svg",
+  flexabilityImgUrl: "./img/flexibility-img.png",
   featuresSectionTitleFirstPart: "All Features",
   featuresSectionTitleSecPart: "You Need at One Place",
   featuresSectionDescription:
@@ -65,8 +65,8 @@ export const homePageContent: HomePageContentProps = {
   servicesSectionTitleSecPart: "Self-Services",
   servicesSectionDescription:
     "Effortlessly manage your entire workforce from one centralized system. Track employee profiles, roles, performance, and attendance with ease. Automate routine tasks.",
-  servicesSectionFirstRowImgUrl: "./img/service-fisrt-row-img.svg",
-  servicesSectionSecRowImgUrl: "./img/service-sec-row-img.svg",
+  servicesSectionFirstRowImgUrl: "./img/service-fisrt-row-img.png",
+  servicesSectionSecRowImgUrl: "./img/service-sec-row-img.png",
   trustedSectionTitleFirstPart: "Your",
   trustedSectionTitleSecPart: "Best Partner",
   trustedSectionTitleThirdPart: "in Numbers",
@@ -84,24 +84,24 @@ export const homeFeaturesModules: HomeFeaturesModulesProps[] = [
     titleFirstSection: "Employee Management",
     content:
       "Mawared HR’s employee management centralizes profiles, allowing HR to access and update balances, statuses, calendars, salaries, documents, and assets in real-time. This advanced system enhances decision-making, organization, and efficiency by keeping all employee details in one place.",
-    imgUrl: "./img/employee-managment.svg",
-    mobileImgUrl: "./img/employee-managment-mobile.svg",
+    imgUrl: "./img/employee-managment.png",
+    mobileImgUrl: "./img/employee-managment-mobile.png",
     btnLabel: "Discover more",
   },
   {
     titleFirstSection: "Attendance Management",
     content:
       "Mawared HR’s attendance module uses GPS and facial recognition for accurate employee tracking and verification. It automates tardiness penalties, supports customizable policies, and adapts to various work setups, including remote and multi-site operations. This ensures efficient, tailored attendance management with reduced manual effort.",
-    imgUrl: "./img/att-managment-img.svg",
-    mobileImgUrl: "./img/att-managment-mobile.svg",
+    imgUrl: "./img/att-managment-img.png",
+    mobileImgUrl: "./img/att-managment-mobile.png",
     btnLabel: "Discover more",
   },
   {
     titleFirstSection: "Payroll & Financials",
     content:
       "Mawared HR’s payroll module ensures precise salary calculations, integrating attendance, allowances, deductions, and loan management. Employees can request loans, with installments automatically deducted and reflected in pay slips. The module also supports expense management, enabling detailed tracking and reporting for better financial oversight. Running payroll and financial operations in one platform.",
-    imgUrl: "./img/payroll-finances-img.svg",
-    mobileImgUrl: "./img/payroll-finances-mobile.svg",
+    imgUrl: "./img/payroll-finances-img.png",
+    mobileImgUrl: "./img/payroll-finances-mobile.png",
     btnLabel: "Discover more",
   },
 ];

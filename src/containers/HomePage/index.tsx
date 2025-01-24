@@ -103,7 +103,7 @@ const HomePage = () => {
           <img
             src={homePageContent?.introImgUrl}
             alt="laptop-view"
-            className="intersect:animate-fade-right animate-duration-700 animate-ease-linear intersect-once mb-20"
+            className="intersect:animate-fade-right animate-duration-700 animate-ease-linear intersect-once mb-20 xl:max-w-6xl"
           />
         </div>
 
@@ -688,8 +688,8 @@ const HomePage = () => {
               <img
                 src={homePageContent?.servicesSectionFirstRowImgUrl}
                 alt="service-img"
-                height={950}
-                width={950}
+                height={850}
+                width={850}
               />
 
               <div className="grid grid-cols-2 xl:flex xl:flex-col gap-6">
@@ -738,8 +738,8 @@ const HomePage = () => {
                 src={homePageContent?.servicesSectionSecRowImgUrl}
                 alt="service-img"
                 className="hidden xl:flex"
-                height={950}
-                width={950}
+                height={850}
+                width={850}
               />
             </div>
           </div>
