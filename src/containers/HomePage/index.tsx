@@ -107,7 +107,7 @@ const HomePage = () => {
           />
         </div>
 
-        <div id="join-empowred" className="mb-20 xl:mb-28">
+        <div id="join-empowred" className="mb-12 xl:mb-28">
           <h3 className="font-semibold text-xl lg:text-3xl text-[#313030] text-center mb-4">
             {homePageContent?.joinEmpowerdSectionTitleFirstPart}
 
@@ -164,7 +164,7 @@ const HomePage = () => {
         <div
           ref={containerRef}
           id="mawared-modules"
-          className="mb-20 xl:mb-28 w-3/4 md:w-full"
+          className="mb-12 xl:mb-28 w-3/4 md:w-full"
         >
           <div className="text-center mb-6 xl:mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
             <h2 className="text-2xl lg:text-5xl font-bold text-[#303030]">
@@ -232,7 +232,7 @@ const HomePage = () => {
           </Carousel>
         </div>
 
-        <div id="mobile-app" className="mb-20 xl:mb-28">
+        <div id="mobile-app" className="mb-12 xl:mb-28">
           <div className="intersect:animate-fade-right animate-duration-700 animate-ease-linear">
             <div className="text-center mb-6 xl:mb-12">
               <h2 className="text-xl lg:text-4xl font-bold text-[#303030]">
@@ -348,7 +348,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div id="features" className="mb-20 xl:mb-28 w-3/4 md:w-full">
+        <div id="features" className="mb-12 xl:mb-28 w-3/4 md:w-full">
           <div className="text-center mb-6 xl:mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
             <h2 className="text-2xl lg:text-4xl font-bold text-[#303030]">
               <span className="text-customBlueWaveyColor mx-2">
@@ -375,7 +375,7 @@ const HomePage = () => {
           >
             <CarouselContent className="-ml-4">
               <CarouselItem>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
                   {homeFeaturesfirstSlide?.slice(0, 4)?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -394,10 +394,20 @@ const HomePage = () => {
                     </div>
                   ))}
                 </div>
+
+                <div className="flex justify-center text-center items-center intersect:animate-fade-up animate-duration-700 animate-ease-linear intersect-once">
+                  <a
+                    href="#contact-us"
+                    className="custom-mawared-btn-style h-9 font-medium text-xs mt-8 hover:opacity-90 transition-opacity"
+                    // onClick={() => handleNavigateToPage(`/contact`)}
+                  >
+                    {homePageContent?.featuresSectionBtnLabel}
+                  </a>
+                </div>
               </CarouselItem>
 
               <CarouselItem>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
                   {homeFeaturesfirstSlide?.slice(4, 8)?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -416,10 +426,20 @@ const HomePage = () => {
                     </div>
                   ))}
                 </div>
+
+                <div className="flex justify-center text-center items-center intersect:animate-fade-up animate-duration-700 animate-ease-linear intersect-once">
+                  <a
+                    href="#contact-us"
+                    className="custom-mawared-btn-style h-9 font-medium text-xs mt-8 hover:opacity-90 transition-opacity"
+                    // onClick={() => handleNavigateToPage(`/contact`)}
+                  >
+                    {homePageContent?.featuresSectionBtnLabel}
+                  </a>
+                </div>
               </CarouselItem>
 
               <CarouselItem>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
                   {homeFeaturesSecSlide?.slice(0, 4)?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -438,10 +458,20 @@ const HomePage = () => {
                     </div>
                   ))}
                 </div>
+
+                <div className="flex justify-center text-center items-center intersect:animate-fade-up animate-duration-700 animate-ease-linear intersect-once">
+                  <a
+                    href="#contact-us"
+                    className="custom-mawared-btn-style h-9 font-medium text-xs mt-8 hover:opacity-90 transition-opacity"
+                    // onClick={() => handleNavigateToPage(`/contact`)}
+                  >
+                    {homePageContent?.featuresSectionBtnLabel}
+                  </a>
+                </div>
               </CarouselItem>
 
               <CarouselItem>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
                   {homeFeaturesSecSlide?.slice(4, 8)?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -460,10 +490,20 @@ const HomePage = () => {
                     </div>
                   ))}
                 </div>
+
+                <div className="flex justify-center text-center items-center intersect:animate-fade-up animate-duration-700 animate-ease-linear intersect-once">
+                  <a
+                    href="#contact-us"
+                    className="custom-mawared-btn-style h-9 font-medium text-xs mt-8 hover:opacity-90 transition-opacity"
+                    // onClick={() => handleNavigateToPage(`/contact`)}
+                  >
+                    {homePageContent?.featuresSectionBtnLabel}
+                  </a>
+                </div>
               </CarouselItem>
 
               <CarouselItem>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
                   {homeFeaturesThirdSlide?.slice(0, 4)?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -482,10 +522,20 @@ const HomePage = () => {
                     </div>
                   ))}
                 </div>
+
+                <div className="flex justify-center text-center items-center intersect:animate-fade-up animate-duration-700 animate-ease-linear intersect-once">
+                  <a
+                    href="#contact-us"
+                    className="custom-mawared-btn-style h-9 font-medium text-xs mt-8 hover:opacity-90 transition-opacity"
+                    // onClick={() => handleNavigateToPage(`/contact`)}
+                  >
+                    {homePageContent?.featuresSectionBtnLabel}
+                  </a>
+                </div>
               </CarouselItem>
 
               <CarouselItem>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
                   {homeFeaturesThirdSlide?.slice(4, 8)?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -504,10 +554,20 @@ const HomePage = () => {
                     </div>
                   ))}
                 </div>
+
+                <div className="flex justify-center text-center items-center intersect:animate-fade-up animate-duration-700 animate-ease-linear intersect-once">
+                  <a
+                    href="#contact-us"
+                    className="custom-mawared-btn-style h-9 font-medium text-xs mt-8 hover:opacity-90 transition-opacity"
+                    // onClick={() => handleNavigateToPage(`/contact`)}
+                  >
+                    {homePageContent?.featuresSectionBtnLabel}
+                  </a>
+                </div>
               </CarouselItem>
 
               <CarouselItem>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
                   {homeFeaturesFourthSlide?.slice(0, 4)?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -526,10 +586,20 @@ const HomePage = () => {
                     </div>
                   ))}
                 </div>
+
+                <div className="flex justify-center text-center items-center intersect:animate-fade-up animate-duration-700 animate-ease-linear intersect-once">
+                  <a
+                    href="#contact-us"
+                    className="custom-mawared-btn-style h-9 font-medium text-xs mt-8 hover:opacity-90 transition-opacity"
+                    // onClick={() => handleNavigateToPage(`/contact`)}
+                  >
+                    {homePageContent?.featuresSectionBtnLabel}
+                  </a>
+                </div>
               </CarouselItem>
 
               <CarouselItem>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
                   {homeFeaturesFourthSlide?.slice(4, 8)?.map((el, index) => (
                     <div key={index} className="custom-home-feature-card-style">
                       <img
@@ -547,6 +617,16 @@ const HomePage = () => {
                       </p>
                     </div>
                   ))}
+                </div>
+
+                <div className="flex justify-center text-center items-center intersect:animate-fade-up animate-duration-700 animate-ease-linear intersect-once">
+                  <a
+                    href="#contact-us"
+                    className="custom-mawared-btn-style h-9 font-medium text-xs mt-8 hover:opacity-90 transition-opacity"
+                    // onClick={() => handleNavigateToPage(`/contact`)}
+                  >
+                    {homePageContent?.featuresSectionBtnLabel}
+                  </a>
                 </div>
               </CarouselItem>
             </CarouselContent>
@@ -660,7 +740,7 @@ const HomePage = () => {
             <CarouselNext className="border border-white" />
           </Carousel>
 
-          <div className="flex justify-center text-center items-center intersect:animate-fade-up animate-duration-700 animate-ease-linear intersect-once">
+          <div className="hidden lg:flex justify-center text-center items-center intersect:animate-fade-up animate-duration-700 animate-ease-linear intersect-once">
             <a
               href="#contact-us"
               className="custom-mawared-btn-style h-9 lg:h-12 font-medium text-xs lg:text-lg lg:mt-12 hover:opacity-90 transition-opacity"
@@ -671,7 +751,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div id="services" className="mb-20 xl:mb-28">
+        <div id="services" className="mb-12 xl:mb-28">
           <div className="text-center mb-16">
             <h2 className="text-2xl lg:text-4xl font-bold text-[#303030]">
               {homePageContent?.servicesSectionTitleFirstPart}
@@ -758,7 +838,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div id="contact-us" className="mb-20 xl:mb-28">
+      <div id="contact-us" className="mb-12 xl:mb-28">
         <div className="lg:flex flex-col justify-center items-center px-10 w-full">
           <div className="text-center mb-6 xl:mb-12">
             <h2 className="text-2xl lg:text-5xl font-bold text-[#303030]">
