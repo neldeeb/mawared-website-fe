@@ -849,7 +849,7 @@ const HomePage = () => {
               </span>
             </h2>
 
-            <p className="text-[#5A5959] font-normal text-lg lg:text-3xl mt-8">
+            <p className="text-[#5A5959] font-normal text-lg lg:text-3xl mt-2">
               {homePageContent?.contactUsSectionDescription}
             </p>
           </div>
