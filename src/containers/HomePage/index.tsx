@@ -631,9 +631,9 @@ const HomePage = () => {
               </CarouselItem>
             </CarouselContent>
 
-            <CarouselPrevious className="border border-white" />
+            <CarouselPrevious className="border translate-x-2 border-white" />
 
-            <CarouselNext className="border border-white" />
+            <CarouselNext className="border -translate-x-2 border-white" />
           </Carousel>
 
           <Carousel
