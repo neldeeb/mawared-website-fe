@@ -226,9 +226,9 @@ const HomePage = () => {
               ))}
             </CarouselContent>
 
-            <CarouselPrevious className="border translate-y-[-770%] translate-x-12 lg:translate-y-0 border-white" />
+            <CarouselPrevious className="border translate-y-[-770%] translate-x-9 md:translate-y-0 border-white" />
 
-            <CarouselNext className="border translate-y-[-770%] -translate-x-12 lg:translate-y-0  border-white" />
+            <CarouselNext className="border translate-y-[-770%] -translate-x-9 md:translate-y-0  border-white" />
           </Carousel>
         </div>
 
