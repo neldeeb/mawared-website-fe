@@ -158,21 +158,21 @@ const Footer = () => {
               target="_blank"
               className="hover:opacity-90 transition-opacity"
             >
-              <img src="./img/facebook-icon.png" alt="facebook" />
+              <img src="./img/facebook-icon.svg" alt="facebook" />
             </a>
             <a
               href="https://www.instagram.com/mawaredhrsystem"
               target="_blank"
               className="hover:opacity-90 transition-opacity"
             >
-              <img src="./img/instgram-icon.png" alt="instgram" />
+              <img src="./img/instgram-icon.svg" alt="instgram" />
             </a>
             <a
               href="https://eg.linkedin.com/company/mawaredhr-system"
               target="_blank"
               className="hover:opacity-90 transition-opacity"
             >
-              <img src="./img/linkedn-icon.png" alt="linkedn" />
+              <img src="./img/linkedn-icon.svg" alt="linkedn" />
             </a>
           </div>
 
