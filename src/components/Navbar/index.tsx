@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <div className="bg-[#FFFFFFA6] flex items-center justify-between custom-nav-shadow-box-style gap-10 px-5 xl:px-24 h-14 xl:h-20 fixed w-full z-50">
       <img
-        src="./img/mawared-logo.png"
+        src="./img/mawared-logo.svg"
         alt="logo"
         className="h-7 xl:h-auto hidden lg:flex"
       />
@@ -114,7 +114,7 @@ const Navbar = () => {
           className="cursor-pointer text-[#23AAEB] font-medium text-sm xl:text-lg flex items-center"
         >
           Login
-          <img src="./img/login-icon.png" alt="login-icon" className="px-1" />
+          <img src="./img/login-icon.svg" alt="login-icon" className="px-1" />
         </a>
 
         <a
@@ -135,7 +135,7 @@ const Navbar = () => {
             </DrawerTrigger>
 
             <img
-              src="./img/mawared-logo.png"
+              src="./img/mawared-logo.svg"
               alt="logo"
               className="h-6 xl:h-auto"
             />
@@ -241,7 +241,7 @@ const Navbar = () => {
               >
                 Login
                 <img
-                  src="./img/login-icon.png"
+                  src="./img/login-icon.svg"
                   alt="login-icon"
                   className="px-1"
                 />

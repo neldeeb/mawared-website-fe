@@ -164,7 +164,7 @@ const HomePage = () => {
         <div
           ref={containerRef}
           id="mawared-modules"
-          className="mb-12 xl:mb-28 w-3/4 md:w-full"
+          className="mb-12 xl:mb-28 w-10/12 md:w-full"
         >
           <div className="text-center mb-6 xl:mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
             <h2 className="text-xl lg:text-5xl font-bold text-[#303030]">
@@ -226,9 +226,9 @@ const HomePage = () => {
               ))}
             </CarouselContent>
 
-            <CarouselPrevious className="border border-white" />
+            <CarouselPrevious className="border translate-y-[-770%] translate-x-5 lg:translate-y-0 border-white" />
 
-            <CarouselNext className="border border-white" />
+            <CarouselNext className="border translate-y-[-770%] -translate-x-5 lg:translate-y-0  border-white" />
           </Carousel>
         </div>
 
@@ -348,7 +348,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div id="features" className="mb-12 xl:mb-28 w-3/4 md:w-full">
+        <div id="features" className="mb-12 xl:mb-28 w-10/12 md:w-full">
           <div className="text-center mb-6 xl:mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
             <h2 className="text-xl lg:text-4xl font-bold text-[#303030]">
               <span className="text-customBlueWaveyColor mx-2">
@@ -775,16 +775,20 @@ const HomePage = () => {
                 width={850}
               />
 
-              <div className="grid grid-cols-2 xl:flex xl:flex-col gap-6">
+              <div className="grid grid-cols-2 xl:flex xl:flex-col gap-3 lg:gap-6">
                 {homeServices?.slice(0, 4)?.map((el, index) => (
-                  <div key={index} className="flex items-center">
-                    <img src={el?.iconUrl} alt="service-icon" className="w-9" />
+                  <div key={index} className="flex items-start">
+                    <img
+                      src={el?.iconUrl}
+                      alt="service-icon"
+                      className="w-7 lg:w-9"
+                    />
 
                     <div className="mx-4">
-                      <h2 className="font-semibold text-sm xl:text-lg text-[#313030]">
+                      <h2 className="font-semibold text-xs xl:text-lg text-[#313030]">
                         {el?.title}
                       </h2>
-                      <p className="font-normal text-sm xl:text-sm text-[#313030] mt-1">
+                      <p className="font-normal text-xs xl:text-sm text-[#313030] mt-1">
                         {el?.description}
                       </p>
                     </div>
@@ -800,16 +804,20 @@ const HomePage = () => {
                 className="mt-16 flex xl:hidden"
               />
 
-              <div className="grid grid-cols-2 xl:flex xl:flex-col gap-6">
+              <div className="grid grid-cols-2 xl:flex xl:flex-col gap-3 lg:gap-6">
                 {homeServices?.slice(4, 8)?.map((el, index) => (
-                  <div key={index} className="flex items-center">
-                    <img src={el?.iconUrl} alt="service-icon" className="w-9" />
+                  <div key={index} className="flex items-start">
+                    <img
+                      src={el?.iconUrl}
+                      alt="service-icon"
+                      className="w-7 lg:w-9"
+                    />
 
                     <div className="mx-4">
-                      <h2 className="font-bold text-sm xl:text-lg text-[#313030]">
+                      <h2 className="font-bold text-xs xl:text-lg text-[#313030]">
                         {el?.title}
                       </h2>
-                      <p className="font-normal text-sm xl:text-lg text-[#313030] mt-1">
+                      <p className="font-normal text-xs xl:text-lg text-[#313030] mt-1">
                         {el?.description}
                       </p>
                     </div>
