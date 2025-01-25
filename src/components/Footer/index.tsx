@@ -18,7 +18,7 @@ const Footer = () => {
                 className="hover:opacity-90 transition-opacity"
               >
                 <img
-                  src="./img/google-play-icon.png"
+                  src="./img/google-play-icon.svg"
                   alt="Get it on Google Play"
                   className="h-12"
                 />
@@ -29,7 +29,7 @@ const Footer = () => {
                 className="hover:opacity-90 transition-opacity"
               >
                 <img
-                  src="./img/apple-store-icon.png"
+                  src="./img/apple-store-icon.svg"
                   alt="Download on App Store"
                   className="h-12"
                 />
@@ -40,7 +40,7 @@ const Footer = () => {
                 className="hover:opacity-90 transition-opacity"
               >
                 <img
-                  src="./img/app-gallery-icon.png"
+                  src="./img/app-gallery-icon.svg"
                   alt="Explore it on AppGallery"
                   className="h-12"
                 />
