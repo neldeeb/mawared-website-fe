@@ -164,7 +164,7 @@ const HomePage = () => {
         <div
           ref={containerRef}
           id="mawared-modules"
-          className="mb-12 xl:mb-28 w-10/12 md:w-full"
+          className="mb-12 xl:mb-28 w-full"
         >
           <div className="text-center mb-6 xl:mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
             <h2 className="text-xl lg:text-5xl font-bold text-[#303030]">
@@ -226,9 +226,9 @@ const HomePage = () => {
               ))}
             </CarouselContent>
 
-            <CarouselPrevious className="border translate-y-[-770%] translate-x-5 lg:translate-y-0 border-white" />
+            <CarouselPrevious className="border translate-y-[-770%] translate-x-12 lg:translate-y-0 border-white" />
 
-            <CarouselNext className="border translate-y-[-770%] -translate-x-5 lg:translate-y-0  border-white" />
+            <CarouselNext className="border translate-y-[-770%] -translate-x-12 lg:translate-y-0  border-white" />
           </Carousel>
         </div>
 
