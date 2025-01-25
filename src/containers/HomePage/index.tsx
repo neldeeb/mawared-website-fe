@@ -164,7 +164,7 @@ const HomePage = () => {
         <div
           ref={containerRef}
           id="mawared-modules"
-          className="mb-12 xl:mb-28 w-10/12 md:w-full"
+          className="mb-12 xl:mb-28 w-4/5 md:w-full"
         >
           <div className="text-center mb-6 xl:mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
             <h2 className="text-xl lg:text-5xl font-bold text-[#303030]">
@@ -348,7 +348,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div id="features" className="mb-12 xl:mb-28 w-3/4 md:w-full">
+        <div id="features" className="mb-12 xl:mb-28 w-4/5 md:w-full">
           <div className="text-center mb-6 xl:mb-12 intersect:animate-fade-down animate-duration-700 animate-ease-linear intersect-once">
             <h2 className="text-xl lg:text-4xl font-bold text-[#303030]">
               <span className="text-customBlueWaveyColor mx-2">
