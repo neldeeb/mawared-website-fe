@@ -374,46 +374,46 @@ export const flexabilityContent: flexabilityContentProps[] = [
 export const homeServices: HomeFeaturesSlideProps[] = [
   {
     title: "Biometrics",
-    iconUrl: "./img/biometric-service-icon.png",
+    iconUrl: "./img/biometric-service-icon.svg",
     description:
       "Sign in/out using facial recognition and GPS from your phone.",
   },
   {
     title: "Requests",
-    iconUrl: "./img/request-service-icon.png",
+    iconUrl: "./img/request-service-icon.svg",
     description: "Submit, view and track requests. All directly from the app.",
   },
   {
     title: "Payroll Access",
-    iconUrl: "./img/payroll-service-icon.png",
+    iconUrl: "./img/payroll-service-icon.svg",
     description:
       "Employees can check their detailed pay-slips at the end of each month.",
   },
   {
     title: "Attendance history",
-    iconUrl: "./img/att-history-service-icon.png",
+    iconUrl: "./img/att-history-service-icon.svg",
     description: "Track detailed attendance records with timing and locations.",
   },
   {
     title: "Dashboard & real-time statistics",
-    iconUrl: "./img/dashboard-service-icon.png",
+    iconUrl: "./img/dashboard-service-icon.svg",
     description: "Access a dashboard with real-time statistics.",
   },
   {
     title: "Break management",
-    iconUrl: "./img/break-service-icon.png",
+    iconUrl: "./img/break-service-icon.svg",
     description:
       "Manage and track break times, durations, and sessions directly from the app.",
   },
   {
     title: "Penalty tracking",
-    iconUrl: "./img/penalty-tracking-service-icon.png",
+    iconUrl: "./img/penalty-tracking-service-icon.svg",
     description:
       "Track and check for penalties with Type, reason, value and more across the month.",
   },
   {
     title: "Push Notifications",
-    iconUrl: "./img/push-not-service-icon.png",
+    iconUrl: "./img/push-not-service-icon.svg",
     description:
       "Receive real-time updates for sign-ins, penalties, requests, and more.",
   },
