@@ -195,13 +195,18 @@
 /*--------------------------------------- End of tailwindcss utilities ---------------------------------------*/
 
 /*--------------------------------------- Start of General styles ---------------------------------------*/
-html {
-  height: 100%;
-  scroll-behavior: smooth;
+html,
+body {
   overflow-x: hidden;
 }
 
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
 body {
+  position: relative;
   font-family: "Poppins", sans-serif;
   min-height: 100%;
   background-image: url("/img/mawared-bg.png");
@@ -211,7 +216,6 @@ body {
   background-color: #f4f6f9;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   text-align: inherit;
 }
 
