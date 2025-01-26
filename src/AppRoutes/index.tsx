@@ -10,7 +10,7 @@ import { Toaster } from "react-hot-toast";
 const AppRoutes = () => {
   return (
     <>
-      <Router basename="/mawared-website-fe/">
+      <Router basename="/">
         <Routes>
           <Route path="/" element={<HomePage />} />
           {/* <Route path="/features" element={<FeaturesPage />} /> */}
